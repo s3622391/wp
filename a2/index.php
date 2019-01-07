@@ -13,35 +13,46 @@
 </head>
 
 <body>
-    <background-color: rgb(300,200,000);>
-        <header>
-            <div>
+    <title>Font Family</title>
+    <style type="text/css">
+        body {
+            font-family: Arial;
+            font-size: 14px;
+        }
 
-                <p><img src='../../media/cinema-logo.png' width='200' height='200' /> <strong>Numpty Cinemas</strong></p>
+        .name {
+            font-family: fantasy, cursive, monospace;
+        }
 
-            </div>
-        </header>
+    </style>
+    <header>
+        <div>
 
-        <nav>
-            <div>Put website navigation links here</div>
-        </nav>
+            <p><img src='../../media/cinema-logo.png' width='200' height='200' /> class="name"><strong>Numpty Cinemas</strong></p>
 
-        <main>
-            <article id='Website Under Construction'>
-                <!-- Creative Commons image sourced from https://pixabay.com/en/maintenance-under-construction-2422173/ and used for educational purposes only -->
-                <img src='../../media/website-under-construction.png' alt='Website Under Construction' />
-            </article>
-        </main>
+        </div>
+    </header>
 
-        <footer>
-            <div>&copy;<script>
-                    document.write(new Date().getFullYear());
+    <nav>
+        <div>Put website navigation links here</div>
+    </nav>
 
-                </script> Put your name(s), student number(s) and group name here. Last modified
-                <?= date ("Y F d  H:i", filemtime($_SERVER['SCRIPT_FILENAME'])); ?>.</div>
-            <div>Disclaimer: This website is not a real website and is being developed as part of a School of Science Web Programming course at RMIT University in Melbourne, Australia.</div>
-            <div><button id='toggleWireframeCSS' onclick='toggleWireframe()'>Toggle Wireframe CSS</button></div>
-        </footer>
+    <main>
+        <article id='Website Under Construction'>
+            <!-- Creative Commons image sourced from https://pixabay.com/en/maintenance-under-construction-2422173/ and used for educational purposes only -->
+            <img src='../../media/website-under-construction.png' alt='Website Under Construction' />
+        </article>
+    </main>
+
+    <footer>
+        <div>&copy;<script>
+                document.write(new Date().getFullYear());
+
+            </script> Put your name(s), student number(s) and group name here. Last modified
+            <?= date ("Y F d  H:i", filemtime($_SERVER['SCRIPT_FILENAME'])); ?>.</div>
+        <div>Disclaimer: This website is not a real website and is being developed as part of a School of Science Web Programming course at RMIT University in Melbourne, Australia.</div>
+        <div><button id='toggleWireframeCSS' onclick='toggleWireframe()'>Toggle Wireframe CSS</button></div>
+    </footer>
 
 </body>
 
