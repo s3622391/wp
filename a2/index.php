@@ -16,9 +16,10 @@
 
     <header>
         <div>
-            <p>
-                <img src='../media/cinema-logo.png' />
-            </p>Put company logo and name here
+
+            <img src='../media/cinema-logo.png' width='600' height='701' />
+            <h2>Numpty Cinemas</h2>
+
         </div>
     </header>
 
