@@ -17,7 +17,7 @@
     <header>
         <div>
 
-            <img src='../media/cinema-logo.png' width='600' height='701' />
+            <img src='../../media/cinema-logo.png'  />
             <h2>Numpty Cinemas</h2>
 
         </div>
