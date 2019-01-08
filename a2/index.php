@@ -13,14 +13,15 @@
 
     <style>
         body {
-            
+
             background-color: darkgoldenrod;
         }
+
         main {
             width: 100%;
         }
 
-        a {
+        a#1 {
             width: 23%;
             float: left;
             margin: 0.5%;
@@ -61,13 +62,13 @@
 
     <nav>
         <div>
-            <a href="#About">About Us</a>
+            <a id="1" href="#About">About Us</a>
 
-            <a href="SeatsandPricing">Seats and Pricing</a>
+            <a id="1" href="SeatsandPricing">Seats and Pricing</a>
 
-            <a href="NowShowing">Now Showing</a>
+            <a id="1" href="NowShowing">Now Showing</a>
 
-            <a href="Booking">Booking</a><br />
+            <a id="1" href="Booking">Booking</a><br />
         </div>
     </nav>
 
