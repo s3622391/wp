@@ -31,7 +31,7 @@
             font-size: 200%;
             text-align: center;
         }
-        li {
+      /*  li {
             display: inline;
             margin-right: 20px;
             font-size: 200%;
@@ -42,7 +42,7 @@
             border-style: double;
             padding: 5px;
         }
-
+*/
         h2 {
             font-family: fantasy, sans-serif, monospace;
             font-size: 200%;
