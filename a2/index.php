@@ -57,15 +57,9 @@
         <div>
             <ul>
                 <li><a href="#About">About Us</a></li>
-            </ul>
-            <ul>
-                <li><a href="SeatsandPricing">Seats and Pricing</a></li>
-            </ul>
-            <ul>
-                <li><a href="NowShowing">Now Showing</a></li>
-            </ul>
-            <ul>
-                <li><a href="Booking">Booking</a><br /></li>
+                <li><a href="#SeatsandPricing">Seats and Pricing</a></li>
+                <li><a href="#NowShowing">Now Showing</a></li>
+                <li><a href="#Booking">Booking</a><br /></li>
             </ul>
         </div>
     </nav>
