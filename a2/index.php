@@ -11,18 +11,7 @@
     <link id='stylecss' type="text/css" rel="stylesheet" href="css/style.css">
     <script src='../wireframe.js'></script>
 
-    <style type="text/css">
-        img.align-centre {
-            display: block;
-            margin: auto;
-        }
-        header {
-            font-family: sans-serif;
-            font-size: 200%;
-            text-align: center;
-        }
-
-    </style>
+    
 </head>
 
 <body>
@@ -30,8 +19,8 @@
     <header>
         <div>
 
-            <p><img src='../../media/cinema-logo.png' alt="Cinema Logo" width='200' height='200' class="align-centre" />
-                <br><strong>Numpty Cinemas</strong></p>
+            <p><img src='../../media/cinema-logo.png' alt="Cinema Logo" width='200' height='200' class="align-centre" /></p>
+               <p> Numpty Cinemas</p>
             
 
 
