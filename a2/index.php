@@ -55,13 +55,12 @@
 
     <nav>
         <div>
-            <a href="#About">About Us</a>
-
-            <a href="SeatsandPricing">Seats and Pricing</a>
-
-            <a href="NowShowing">Now Showing</a>
-
-            <a href="Booking">Booking</a><br />
+            <ul>
+                <li><a href="#About">About Us</a></li>
+                <li><a href="SeatsandPricing">Seats and Pricing</a></li>
+                <li><a href="NowShowing">Now Showing</a></li>
+                <li><a href="Booking">Booking</a><br /></li>
+            </ul>
         </div>
     </nav>
 
