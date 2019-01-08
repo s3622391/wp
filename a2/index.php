@@ -16,12 +16,12 @@
             width: 100%;
         }
 
-        /*a {
+        a {
             width: 31.5%;
             float: left;
             margin: 0.5%;
             padding: 0.5%;
-        }*/
+        }
 
         img.align-centre {
             display: block;
@@ -38,13 +38,6 @@
             font-family: fantasy, sans-serif, monospace;
             font-size: 200%;
             text-align: left;
-        }
-
-        nav>a {
-            width: 31.5%;
-            float: left;
-            margin: 0.5%;
-            padding: 0.5%;
         }
 
     </style>
@@ -65,8 +58,11 @@
     <nav>
         <div>
             <a href="#About">About Us</a>
+            
             <a href="SeatsandPricing">Seats and Pricing</a>
+            
             <a href="NowShowing">Now Showing</a>
+            
             <a href="Booking">Booking</a>
         </div>
     </nav>
