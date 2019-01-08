@@ -8,21 +8,22 @@ body {
 }
 
 main > article {
-        background-color: burlywood;
+    background-color: burlywood;
 }
 
-/*header {
-    img.align-centre {
-        display: block;
-        margin: auto;
-    }
 
+img.align-centre {
+    display: block;
+    margin: auto;
+}
+
+/*
     header {
         font-family: sans-serif;
         font-size: 200%;
         text-align: center;
     }
-}*/
+*/
 
 header {
     padding: 10px;
