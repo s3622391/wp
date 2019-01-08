@@ -7,13 +7,15 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-img.align-centre {
-    display: block;
-    margin: auto;
-}
-
 header {
-    font-family: sans-serif;
-    font-size: 200%;
-    text-align: center;
+    img.align-centre {
+        display: block;
+        margin: auto;
+    }
+
+    header {
+        font-family: sans-serif;
+        font-size: 200%;
+        text-align: center;
+    }
 }

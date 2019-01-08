@@ -10,7 +10,8 @@
     <link id='wireframecss' type="text/css" rel="stylesheet" href="../wireframe.css" disabled>
     <link id='stylecss' type="text/css" rel="stylesheet" href="css/style.css">
     <script src='../wireframe.js'></script>
-
+    
+    <link href="css/style.css" type="text/css" rel="stylesheet">
 </head>
 
 <body>
