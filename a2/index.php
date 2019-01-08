@@ -31,6 +31,17 @@
             font-size: 200%;
             text-align: center;
         }
+        li {
+            display: inline;
+            margin-right: 20px;
+            font-size: 200%;
+        }
+        
+        li.one {
+            border-width: thin;
+            border-style: double;
+            padding: 5px;
+        }
 
         h2 {
             font-family: fantasy, sans-serif, monospace;
@@ -56,7 +67,7 @@
     <nav>
         <div>
             <ul>
-                <li><a href="#About">About Us</a></li>
+                <li class="one"><a href="#About">About Us</a></li>
                 <li><a href="#SeatsandPricing">Seats and Pricing</a></li>
                 <li><a href="#NowShowing">Now Showing</a></li>
                 <li><a href="#Booking">Booking</a><br /></li>
