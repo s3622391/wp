@@ -19,6 +19,7 @@
         header {
             font-family: sans-serif;
             font-size: 200%;
+            text-align: center;
         }
 
     </style>
