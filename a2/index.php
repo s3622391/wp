@@ -11,6 +11,26 @@
     <link id='stylecss' type="text/css" rel="stylesheet" href="css/style.css">
     <script src='../wireframe.js'></script>
 
+    <style>
+        img.align-centre {
+            display: block;
+            margin: auto;
+        }
+
+        header {
+            font-family: sans-serif;
+            font-size: 200%;
+            text-align: center;
+        }
+
+        main {
+            font-family: fantasy, sans-serif, monospace;
+            font-size: 200%;
+            text-align: left;
+        }
+
+    </style>
+    
 </head>
 
 <body>
@@ -32,22 +52,24 @@
 
     <main>
         <article id='About'>
-            <img src='../../media/pic.png' alt='pic' />
-            <p>Test 1</p>
+            <p>About</p>
+            <img src='../../media/pic.png' alt='pic' class="align-centre" />
+
         </article>
         <article id='Seats and Pricing'>
+            <p>Seats and Pricing</p>
             <img src='../../media/website-under-construction.png' alt='Website Under Construction' />
-            <p>Test 2</p>
+
         </article>
         <article id='Now Showing'>
+            <p>Now Showing</p>
+            <img src='../../media/avatar.png' alt='Avatar' class="align-centre" />
 
-            <img src='../../media/avatar.png' alt='Avatar' />
-            <p>Test 3</p>
         </article>
         <article id='Booking'>
-
+            <p>TBooking</p>
             <img src='../../media/RMIT-Logo.png' alt='RMIT-Logo' />
-            <p>Test 4</p>
+
         </article>
     </main>
 
