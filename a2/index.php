@@ -21,13 +21,6 @@
             width: 100%;
         }
 
-        a#1 {
-            width: 23%;
-            float: left;
-            margin: 0.5%;
-            padding: 0.5%;
-        }
-
         img.align-centre {
             display: block;
             margin: auto;
@@ -62,13 +55,13 @@
 
     <nav>
         <div>
-            <a id="1" href="#About">About Us</a>
+            <a href="#About">About Us</a>
 
-            <a id="1" href="SeatsandPricing">Seats and Pricing</a>
+            <a href="SeatsandPricing">Seats and Pricing</a>
 
-            <a id="1" href="NowShowing">Now Showing</a>
+            <a href="NowShowing">Now Showing</a>
 
-            <a id="1" href="Booking">Booking</a><br />
+            <a href="Booking">Booking</a><br />
         </div>
     </nav>
 
