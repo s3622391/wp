@@ -12,26 +12,17 @@
     <script src='../wireframe.js'></script>
 </head>
 
-<title>Font Family</title>
-<style type="text/css">
-    body {
-        font-family: Arial;
-        font-size: 14px;
-    }
-
-    .name {
-        font-family: fantasy, cursive, monospace;
-    }
-
-</style>
-
 <body>
 
     <header>
         <div>
 
-            <p><img src='../../media/cinema-logo.png' alt="Cinema Logo" width='200' height='200' />
-                <p class="name" text-indent:20px><strong>Numpty Cinemas</strong></p>
+            <p><img src='../../media/cinema-logo.png' alt="Cinema Logo" width='200' height='200' class="align-left" />
+                <strong>Numpty Cinemas</strong></p>
+            img.align-left {
+            float: left;
+            margin-left: 10px;}
+            }
 
         </div>
     </header>
