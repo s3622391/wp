@@ -10,6 +10,14 @@
     <link id='wireframecss' type="text/css" rel="stylesheet" href="../wireframe.css" disabled>
     <link id='stylecss' type="text/css" rel="stylesheet" href="css/style.css">
     <script src='../wireframe.js'></script>
+
+    <style type="text/css">
+        img.align-left {
+            float: left;
+            margin-left: 10px;
+        }
+
+    </style>
 </head>
 
 <body>
@@ -19,10 +27,7 @@
 
             <p><img src='../../media/cinema-logo.png' alt="Cinema Logo" width='200' height='200' class="align-left" />
                 <strong>Numpty Cinemas</strong></p>
-            img.align-left {
-            float: left;
-            margin-left: 10px;}
-            }
+
 
         </div>
     </header>
