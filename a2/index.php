@@ -59,12 +59,12 @@
     <nav>
         <div>
             <a href="#About">About Us</a>
-            
+
             <a href="SeatsandPricing">Seats and Pricing</a>
-            
+
             <a href="NowShowing">Now Showing</a>
-            
-            <a href="Booking">Booking</a>
+
+            <a href="Booking">Booking</a><br />
         </div>
     </nav>
 
