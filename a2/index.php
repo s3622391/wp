@@ -10,8 +10,7 @@
     <link id='wireframecss' type="text/css" rel="stylesheet" href="../wireframe.css" disabled>
     <link id='stylecss' type="text/css" rel="stylesheet" href="css/style.css">
     <script src='../wireframe.js'></script>
-    
-    <link href="css/style.css" type="text/css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -32,9 +31,23 @@
     </nav>
 
     <main>
-        <article id='Website Under Construction'>
-            <!-- Creative Commons image sourced from https://pixabay.com/en/maintenance-under-construction-2422173/ and used for educational purposes only -->
+        <article id='About'>
+            <img src='../../media/pic.png' alt='pic' />
+            <p>Test 1</p>
+        </article>
+        <article id='Seats and Pricing'>
             <img src='../../media/website-under-construction.png' alt='Website Under Construction' />
+            <p>Test 2</p>
+        </article>
+        <article id='Now Showing'>
+
+            <img src='../../media/avatar.png' alt='Avatar' />
+            <p>Test 3</p>
+        </article>
+        <article id='Booking'>
+
+            <img src='../../media/RMIT-Logo.png' alt='RMIT-Logo' />
+            <p>Test 4</p>
         </article>
     </main>
 
