@@ -14,6 +14,11 @@
     <style type="text/css">
         img.align-left {
             float: left;
+            margin-right: 10px;
+        }
+
+        img.align-right {
+            float: right;
             margin-left: 10px;
         }
 
@@ -26,7 +31,8 @@
         <div>
 
             <p><img src='../../media/cinema-logo.png' alt="Cinema Logo" width='200' height='200' class="align-left" />
-                <strong>Numpty Cinemas</strong></p>
+                <br><strong>Numpty Cinemas</strong></p>
+            <p><img src='../../media/cinema-logo.png' alt="Cinema Logo" width='200' height='200' class="align-right" />
 
 
         </div>
