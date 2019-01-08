@@ -12,6 +12,17 @@
     <script src='../wireframe.js'></script>
 
     <style>
+        body {
+            width: 100%;
+        }
+
+        /*a {
+            width: 31.5%;
+            float: left;
+            margin: 0.5%;
+            padding: 0.5%;
+        }*/
+
         img.align-centre {
             display: block;
             margin: auto;
@@ -29,6 +40,13 @@
             text-align: left;
         }
 
+        nav>a {
+            width: 31.5%;
+            float: left;
+            margin: 0.5%;
+            padding: 0.5%;
+        }
+
     </style>
 
 </head>
@@ -38,8 +56,8 @@
     <header>
         <div>
 
-            <p><img src='../../media/cinema-logo.png' alt="Cinema Logo" width='200' height='200' class="align-centre" /></p>
-            <p id="top"> Numpty Cinemas</p>
+            <p id="top"><img src='../../media/cinema-logo.png' alt="Cinema Logo" width='200' height='200' class="align-centre" /></p>
+            <p> Numpty Cinemas</p>
 
         </div>
     </header>
@@ -47,8 +65,8 @@
     <nav>
         <div>
             <a href="#About">About Us</a>
-            <a href="Seats and Pricing">Seats and Pricing</a>
-            <a href="Now Showing">Now Showing</a>
+            <a href="SeatsandPricing">Seats and Pricing</a>
+            <a href="NowShowing">Now Showing</a>
             <a href="Booking">Booking</a>
         </div>
     </nav>
@@ -61,20 +79,21 @@
 
         </article>
         <article>
-            <h2 id="Seats and Pricing">Seats and Pricing</h2>
+            <h2 id="SeatsandPricing">Seats and Pricing</h2>
             <img src='../../media/website-under-construction.png' alt='Website Under Construction' />
 
         </article>
         <article>
-            <h2 id="Now Showing">Now Showing<h2>
+            <h2 id="NowShowing">Now Showing<h2>
                     <img src='../../media/avatar.png' alt='Avatar' class="align-centre" />
 
         </article>
         <article>
             <h2 id="Booking">Booking<h2>
                     <img src='../../media/RMIT-Logo.png' alt='RMIT-Logo' />
-        <p><a href="#top">Top</a></p>
+
         </article>
+        <p><a href="#top">Top</a></p>
     </main>
 
     <footer>
