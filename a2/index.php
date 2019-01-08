@@ -13,12 +13,15 @@
 
     <style>
         body {
-            width: 100%;
+            
             background-color: darkgoldenrod;
+        }
+        main {
+            width: 100%;
         }
 
         a {
-            width: 24%;
+            width: 23%;
             float: left;
             margin: 0.5%;
             padding: 0.5%;
