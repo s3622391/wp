@@ -7,7 +7,7 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-header {
+body header {
     img.align-centre {
         display: block;
         margin: auto;
