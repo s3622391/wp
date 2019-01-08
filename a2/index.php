@@ -11,7 +11,6 @@
     <link id='stylecss' type="text/css" rel="stylesheet" href="css/style.css">
     <script src='../wireframe.js'></script>
 
-    
 </head>
 
 <body>
@@ -20,8 +19,8 @@
         <div>
 
             <p><img src='../../media/cinema-logo.png' alt="Cinema Logo" width='200' height='200' class="align-centre" /></p>
-               <p> Numpty Cinemas</p>
-            
+            <p> Numpty Cinemas</p>
+
 
 
         </div>

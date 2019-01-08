@@ -1,8 +1,19 @@
 body {
-  padding: 0px;
-  margin: 0px;
-  box-sizing: border-box;
-  min-height: 100%;
-  clear: both;
-  font-family: 'Open Sans', Arial, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    min-height: 100%;
+    clear: both;
+    font-family: 'Open Sans', sans-serif;
+}
+
+img.align-centre {
+    display: block;
+    margin: auto;
+}
+
+header {
+    font-family: sans-serif;
+    font-size: 200%;
+    text-align: center;
 }
