@@ -38,7 +38,7 @@
         }
         
         li.one {
-            border-width: thin;
+            border-width: thick;
             border-style: double;
             padding: 5px;
         }
@@ -68,9 +68,9 @@
         <div>
             <ul>
                 <li class="one"><a href="#About">About Us</a></li>
-                <li><a href="#SeatsandPricing">Seats and Pricing</a></li>
-                <li><a href="#NowShowing">Now Showing</a></li>
-                <li><a href="#Booking">Booking</a><br /></li>
+                <li class="one"><a href="#SeatsandPricing">Seats and Pricing</a></li>
+                <li class="one"><a href="#NowShowing">Now Showing</a></li>
+                <li class="one"><a href="#Booking">Booking</a><br /></li>
             </ul>
         </div>
     </nav>
