@@ -23,14 +23,14 @@
             text-align: center;
         }
 
-        main {
+        h2 {
             font-family: fantasy, sans-serif, monospace;
             font-size: 200%;
             text-align: left;
         }
 
     </style>
-    
+
 </head>
 
 <body>
@@ -39,37 +39,41 @@
         <div>
 
             <p><img src='../../media/cinema-logo.png' alt="Cinema Logo" width='200' height='200' class="align-centre" /></p>
-            <p> Numpty Cinemas</p>
-
-
+            <p id="top"> Numpty Cinemas</p>
 
         </div>
     </header>
 
     <nav>
-        <div>Put website navigation links here</div>
+        <div>
+            <a href="#About">About Us</a>
+            <a href="Seats and Pricing">Seats and Pricing</a>
+            <a href="Now Showing">Now Showing</a>
+            <a href="Booking">Booking</a>
+        </div>
     </nav>
 
     <main>
-        <article id='About'>
-            <p>About</p>
+        <article>
+            <h2 id="About">About Us</h2>
+
             <img src='../../media/pic.png' alt='pic' class="align-centre" />
 
         </article>
-        <article id='Seats and Pricing'>
-            <p>Seats and Pricing</p>
+        <article>
+            <h2 id="Seats and Pricing">Seats and Pricing</h2>
             <img src='../../media/website-under-construction.png' alt='Website Under Construction' />
 
         </article>
-        <article id='Now Showing'>
-            <p>Now Showing</p>
-            <img src='../../media/avatar.png' alt='Avatar' class="align-centre" />
+        <article>
+            <h2 id="Now Showing">Now Showing<h2>
+                    <img src='../../media/avatar.png' alt='Avatar' class="align-centre" />
 
         </article>
-        <article id='Booking'>
-            <p>TBooking</p>
-            <img src='../../media/RMIT-Logo.png' alt='RMIT-Logo' />
-
+        <article>
+            <h2 id="Booking">Booking<h2>
+                    <img src='../../media/RMIT-Logo.png' alt='RMIT-Logo' />
+        <p><a href="#top">Top</a></p>
         </article>
     </main>
 
