@@ -12,14 +12,13 @@
     <script src='../wireframe.js'></script>
 
     <style type="text/css">
-        img.align-left {
-            float: left;
-            margin-right: 10px;
+        img.align-centre {
+            display: block;
+            margin: auto;
         }
-
-        img.align-right {
-            float: right;
-            margin-left: 10px;
+        header {
+            font-family: sans-serif;
+            font-size: 200%;
         }
 
     </style>
@@ -30,9 +29,9 @@
     <header>
         <div>
 
-            <p><img src='../../media/cinema-logo.png' alt="Cinema Logo" width='200' height='200' class="align-left" />
+            <p><img src='../../media/cinema-logo.png' alt="Cinema Logo" width='200' height='200' class="align-centre" />
                 <br><strong>Numpty Cinemas</strong></p>
-            <p><img src='../../media/cinema-logo.png' alt="Cinema Logo" width='200' height='200' class="align-right" />
+            
 
 
         </div>
