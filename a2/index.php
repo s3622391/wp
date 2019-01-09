@@ -50,10 +50,20 @@
             padding: 2px;
         }
 
-        .sticky {
+        #sticky {
             position: sticky;
-            top: 0px;
+            top: 400px;
         }
+
+      /*  body,
+        .one {
+            display: grid;
+        }
+
+        .one {
+            grid-template-columns: minmax(30px, 1fr) minmax(300px, 3fr);
+            grid-gap: 0.5em;
+        }*/
 
     </style>
 
@@ -71,9 +81,9 @@
     </header>
 
     <nav>
-        <div>
+        <div id="sticky">
 
-            <ul class="sticky">
+            <ul>
                 <li class="one"><a href="#About">About Us </a></li>
                 <li class="one"><a href="#SeatsandPricing">Seats and Pricing</a></li>
                 <li class="one"><a href="#NowShowing">Now Showing</a></li>
