@@ -47,10 +47,10 @@
         li.one {
             border-width: thick;
             border-style: double;
-            padding: 5px;
+            padding: 2px;
         }
 
-        .sticky {
+        p.sticky {
             position: sticky;
             top: auto;
         }
