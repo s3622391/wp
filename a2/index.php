@@ -22,7 +22,7 @@
             margin: auto;
         }
 
-        header, p.name {
+        header, #name {
             font-family: sans-serif;
             font-size: 300%;
             text-align: center;
