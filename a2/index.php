@@ -55,20 +55,7 @@
             padding: 2px;
         }
 
-        div.sticky {
-            position: sticky;
-            top: 0px;
-            padding: 5px;
-            
-        }
-
-         .one {
-            display: grid;
-        }
-
-        .one {
-            grid-template-columns: minmax(30px, 1fr) minmax(300px, 3fr);
-            grid-gap: 0.5em;
+        
         } -->
 
         </head>

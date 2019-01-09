@@ -18,7 +18,7 @@ h2 {
 }
 
 #navbar {
-    
+    position: sticky;
     list-style-type: none;
     padding: 10px;
     overflow: hidden;
@@ -55,5 +55,6 @@ img.align-centre {
 }
 body {
 
-    background-color: chocolate;
+    background-color: white;
 }
+
