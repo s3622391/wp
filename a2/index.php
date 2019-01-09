@@ -31,22 +31,28 @@
             font-size: 200%;
             text-align: center;
         }
-      /*  li {
+
+        h2 {
+            font-family: fantasy, sans-serif, monospace;
+            font-size: 200%;
+            text-align: left;
+        }
+
+        li {
             display: inline;
             margin-right: 20px;
             font-size: 200%;
         }
-        
+
         li.one {
             border-width: thick;
             border-style: double;
             padding: 5px;
         }
-*/
-        h2 {
-            font-family: fantasy, sans-serif, monospace;
-            font-size: 200%;
-            text-align: left;
+
+        div.sticky {
+            position: sticky;
+            top: 0px;
         }
 
     </style>
@@ -65,9 +71,10 @@
     </header>
 
     <nav>
-        <div>
+        <div id="sticky">
+
             <ul>
-                <li class="one"><a href="#About">About Us</a></li>
+                <li class="one"><a href="#About">About Us </a></li>
                 <li class="one"><a href="#SeatsandPricing">Seats and Pricing</a></li>
                 <li class="one"><a href="#NowShowing">Now Showing</a></li>
                 <li class="one"><a href="#Booking">Booking</a><br /></li>
