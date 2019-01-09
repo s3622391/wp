@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Coiny" rel="stylesheet">
 
                
-        /* <style>
+     <!--   /* <style>
          body {
             height: auto;
             background-color: chocolate;
@@ -69,9 +69,8 @@
         .one {
             grid-template-columns: minmax(30px, 1fr) minmax(300px, 3fr);
             grid-gap: 0.5em;
-        }
+        } -->
 
-  
         </head>
             <body>
                 <header>
