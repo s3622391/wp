@@ -1,13 +1,3 @@
-body {
-
-    background-color: blueviolet;
-}
-
-img.align-centre {
-    display: block;
-    margin: auto;
-}
-
 header,
 #name {
     font-family: 'Coiny', cursive;
@@ -57,4 +47,13 @@ li.one {
 
 li a:hover {
     background-color: coral; 
+}
+
+img.align-centre {
+    display: block;
+    margin: auto;
+}
+body {
+
+    background-color: chocolate;
 }
