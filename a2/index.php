@@ -13,12 +13,9 @@
 
     <style>
         body {
-
-            background-color: darkgoldenrod;
-        }
-
-        main {
             width: 100%;
+            height: auto;
+            background-color: darkgoldenrod;
         }
 
         img.align-centre {
@@ -57,8 +54,7 @@
             
         }
 
-      /*  body,
-        .one {
+      /* .one {
             display: grid;
         }
 
