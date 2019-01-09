@@ -13,7 +13,6 @@
 
     <style>
         body {
-            width: 100%;
             height: auto;
             background-color: chocolate;
         }
@@ -25,7 +24,7 @@
 
         header, p.name {
             font-family: sans-serif;
-            font-size: 200%;
+            font-size: 300%;
             text-align: center;
         }
 
@@ -101,7 +100,7 @@
             <img src='../../media/StandardSeat.png' alt='Standard Cinema Seat' height="200" width="200"/>
             <img src='../../media/FirstClassSeat.png' alt='First Class Cinema Seat' class="align-centre" height="200" width="200"/>
             <br>
-            <p>New standard and First class seating available.</p>
+            <p id="name">New standard and First class seating available.</p>
 
         </article>
         <article>
