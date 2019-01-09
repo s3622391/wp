@@ -3,7 +3,8 @@ body {
     background-color: white;
 }
 
-html, body {
+html,
+body {
     height: 100%;
 }
 
@@ -12,14 +13,9 @@ html, body {
 }
 
 header,
-#name {
-    font-family: 'Coiny', cursive;
-    font-size: 200%;
-    text-align: center;
-}
-
+#name,
 #textfont {
-    font-family: sans-serif;
+    font-family: 'Coiny', cursive;
     font-size: 200%;
     text-align: center;
 }
@@ -30,23 +26,22 @@ h2 {
     text-align: left;
 }
 
-#navbar {    
-    list-style-type: circle ;
+#navbar {
+    list-style-type: none;
     padding: 10px;
     overflow: hidden;
 }
 
-div.sticky {
+.sticky {
     position: sticky;
     top: 0;
-    
 }
 
 li {
-   float: left; 
+    float: left;
 }
 
-li.one {    
+li.one {
     display: block;
     color: blue;
     text-align: center;
@@ -60,7 +55,7 @@ li.one {
 }
 
 li a:hover {
-    background-color: mistyrose; 
+    background-color: mistyrose;
 }
 
 img.align-centre {
@@ -68,3 +63,14 @@ img.align-centre {
     margin: auto;
 }
 
+.column {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
