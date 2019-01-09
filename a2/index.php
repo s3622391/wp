@@ -12,52 +12,6 @@
     <script src='../wireframe.js'></script>
     <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Coiny" rel="stylesheet">
 
-
-    <!--   /* <style>
-         body {
-            height: auto;
-            background-color: chocolate;
-        }
-                
-        img.align-centre {
-            display: block;
-            margin: auto;
-        }
-
-        header,#name  {
-            font-family: 'Coiny', cursive;
-            font-size: 200%;
-            text-align: center;
-        }
-        
-        #textfont {
-            font-family: sans-serif;
-            font-size: 200%;
-            text-align: center;
-        }
-
-        h2 {
-            
-            font-family: 'Bree Serif', serif;            
-            font-size: 200%;
-            text-align: left;
-        }
-
-        li {
-            display: inline;
-            margin-right: 10px;
-            font-size: 150%;
-        }
-
-        li.one {
-            border-width: thick;
-            border-style: double;
-            padding: 2px;
-        }
-
-        
-        } -->
-
 </head>
 
 <body>
@@ -78,11 +32,14 @@
             </ul>
         </div>
     </nav>
+
     <main>
         <div>
             <div class="full-height">
                 <h2 id="About">About Us</h2>
-                <p>I'm not sure what to put here</p>
+                <p>Welcome to the Numpty Cinemas! We have just finished our extensive refurbishment, revamping the place bring to you a fantastic movie experience with brand new seating now including reclinable First class.</p>
+                <p>Our projection system has been upgraded and now has <a href="https://www.dolby.com/us/en/brands/dolby-vision.html">3D Dolby Vision</a> projection and <a href="https://www.dolby.com/us/en/brands/dolby-atmos.html">Dolby Atmos</a> sound. </p>
+                <p id="name"><strong>Come and check us out!</strong></p>
             </div>
 
             <div class="full-height">
