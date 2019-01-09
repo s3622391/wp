@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Coiny" rel="stylesheet">
 
     <style>
-       /* body {
+        /* body {
             height: auto;
             background-color: chocolate;
         }
@@ -61,7 +61,7 @@
             
         }*/
 
-      /* .one {
+        /* .one {
             display: grid;
         }
 
@@ -86,15 +86,12 @@
     </header>
 
     <nav>
-        <div class="sticky">
-
-            <ul>
-                <li class="one"><a href="#About">About Us </a></li>
-                <li class="one"><a href="#SeatsandPricing">Seats and Pricing</a></li>
-                <li class="one"><a href="#NowShowing">Now Showing</a></li>
-                <li class="one"><a href="#Booking">Booking</a><br /></li>
-            </ul>
-        </div>
+        <ul id="navbar">
+            <li class="one"><a href="#About">About Us </a></li>
+            <li class="one"><a href="#SeatsandPricing">Seats and Pricing</a></li>
+            <li class="one"><a href="#NowShowing">Now Showing</a></li>
+            <li class="one"><a href="#Booking">Booking</a><br /></li>
+        </ul>
     </nav>
 
     <main>
@@ -105,8 +102,8 @@
         </article>
         <article>
             <h2 id="SeatsandPricing">Seats and Pricing</h2>
-            <img src='../../media/StandardSeat.png' alt='Standard Cinema Seat' height="200" width="200"/>
-            <img src='../../media/FirstClassSeat.png' alt='First Class Cinema Seat' class="align-centre" height="200" width="200"/>
+            <img src='../../media/StandardSeat.png' alt='Standard Cinema Seat' height="200" width="200" />
+            <img src='../../media/FirstClassSeat.png' alt='First Class Cinema Seat' class="align-centre" height="200" width="200" />
             <br>
             <p id="textfont">New standard and First class seating available.</p>
 
@@ -114,13 +111,13 @@
         <article>
             <h2 id="NowShowing">Now Showing<h2>
                     <img src='../../media/avatar.png' alt='Avatar' class="align-centre" />
-                <p id="textfont">Now Showing Here.</p>
+                    <p id="textfont">Now Showing Here.</p>
 
         </article>
         <article>
             <h2 id="Booking">Booking<h2>
                     <img src='../../media/RMIT-Logo.png' alt='RMIT-Logo' />
-                <p id="textfont">Book Here.</p>
+                    <p id="textfont">Book Here.</p>
 
         </article>
         <p><a href="#top">Top</a></p>

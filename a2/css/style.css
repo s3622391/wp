@@ -27,13 +27,34 @@ h2 {
     text-align: left;
 }
 
+#navbar {
+    
+    list-style-type: none;
+    padding: 10px;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    
+}
+
+li {
+   float: left; 
+}
+
 li.one {
-    float: left;
+    
     display: block;
-    margin-right: 20px;
+    color: darkslateblue;
+    text-align: center;
     font-size: 200%;
     border-width: thick;
     border-style: double;
-    padding: 5px;
-    background-color: coral;
+    padding: 10px 10px;
+    width: 230px;
+    margin: 2%;
+    background-color: darkgoldenrod;
+}
+
+li a:hover {
+    background-color: coral; 
 }
