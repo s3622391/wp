@@ -17,12 +17,15 @@ h2 {
     text-align: left;
 }
 
-#navbar {
-    
+#navbar {    
     list-style-type: circle ;
     padding: 10px;
     overflow: hidden;
-    
+}
+
+div.sticky {
+    position: sticky;
+    top: 0;
     
 }
 
@@ -30,9 +33,7 @@ li {
    float: left; 
 }
 
-li.one {
-    position: sticky;
-    top: 0;
+li.one {    
     display: block;
     color: blue;
     text-align: center;

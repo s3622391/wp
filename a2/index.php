@@ -66,13 +66,16 @@
                             <p id="name">Numpty Cinemas</p>
                         </div>
                 </header>
-            <nav>
-                <ul id="navbar">
-                    <li class="one"><a href="#About">About Us </a></li>
-                    <li class="one"><a href="#SeatsandPricing">Seats and Pricing</a></li>
-                    <li class="one"><a href="#NowShowing">Now Showing</a></li>
-                    <li class="one"><a href="#Booking">Booking</a><br /></li>
-                </ul>
+            <nav id="navbar">
+                <div class="sticky">
+                    <ul>
+                        <li class="one"><a href="#About">About Us </a></li>
+                        <li class="one"><a href="#SeatsandPricing">Seats and Pricing</a></li>
+                        <li class="one"><a href="#NowShowing">Now Showing</a></li>
+                        <li class="one"><a href="#Booking">Booking</a><br /></li>
+                    </ul><
+                /div>
+                
             </nav>
             <main>
                 <article>
