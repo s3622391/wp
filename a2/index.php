@@ -98,11 +98,12 @@
         <article>
             <h2 id="About">About Us</h2>
 
-            <img src='../../media/pic.png' alt='pic' class="align-centre" />
+            <p></p>
         </article>
         <article>
             <h2 id="SeatsandPricing">Seats and Pricing</h2>
-            <img src='../../media/website-under-construction.png' alt='Website Under Construction' />
+            <img src='../../media/StandardSeat.png' alt='Standard Cinema Seat' />
+            <img src='../../media/FirstClassSeat.png' alt='First Class Cinema Seat' class="align-centre"/>
 
         </article>
         <article>
