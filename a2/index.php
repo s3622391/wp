@@ -102,8 +102,10 @@
         </article>
         <article>
             <h2 id="SeatsandPricing">Seats and Pricing</h2>
-            <img src='../../media/StandardSeat.png' alt='Standard Cinema Seat' />
-            <img src='../../media/FirstClassSeat.png' alt='First Class Cinema Seat' class="align-centre"/>
+            <img src='../../media/StandardSeat.png' alt='Standard Cinema Seat' height="200" width="200"/>
+            <img src='../../media/FirstClassSeat.png' alt='First Class Cinema Seat' class="align-centre" height="200" width="200"/>
+            <br>
+            <p>New standard and First class seating available.</p>
 
         </article>
         <article>
