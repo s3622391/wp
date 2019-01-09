@@ -13,11 +13,8 @@
     <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Coiny" rel="stylesheet">
 
     <style>
-        <?php include("css/style.css"); 
-        <style>
-        
-        /*<script><?php include("js/tools.js"); 
-        </script>*/
+         <?php include("css/style.css"); // or wherever your css file is located ?>
+    <style>           
         /* <style>
          body {
             height: auto;
