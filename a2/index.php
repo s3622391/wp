@@ -50,7 +50,7 @@
             padding: 5px;
         }
 
-        div.sticky {
+        ul.sticky {
             position: sticky;
             top: 0px;
         }
@@ -71,9 +71,9 @@
     </header>
 
     <nav>
-        <div id="sticky">
+        <div>
 
-            <ul>
+            <ul id="sticky">
                 <li class="one"><a href="#About">About Us </a></li>
                 <li class="one"><a href="#SeatsandPricing">Seats and Pricing</a></li>
                 <li class="one"><a href="#NowShowing">Now Showing</a></li>
