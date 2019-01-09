@@ -64,13 +64,14 @@ img.align-centre {
 }
 
 .column {
-  float: left;
-  width: 50%;
-  padding: 5px;
+    box-sizing: border-box;
+    float: left;
+    width: 50%;
+    padding: 5px;
 }
 
 .row::after {
-  content: "";
-  clear: both;
-  display: table;
+    content: "";
+    clear: both;
+    display: table;
 }
