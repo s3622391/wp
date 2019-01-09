@@ -15,15 +15,15 @@
         body {
             width: 100%;
             height: auto;
-            background-color: darkgoldenrod;
+            background-color: chocolate;
         }
-
+                
         img.align-centre {
             display: block;
             margin: auto;
         }
 
-        header {
+        header, p.name {
             font-family: sans-serif;
             font-size: 200%;
             text-align: center;
@@ -73,7 +73,7 @@
         <div>
 
             <p id="top"><img src='../../media/cinema-logo.png' alt="Cinema Logo" width='200' height='200' class="align-centre" /></p>
-            <p> Numpty Cinemas</p>
+            <p id="name"> Numpty Cinemas</p>
 
         </div>
     </header>
