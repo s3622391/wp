@@ -19,11 +19,11 @@ h2 {
 
 #navbar {
     position: sticky;
-    list-style-type: none;
+    top: 0;
+    list-style-type: circle ;
     padding: 10px;
     overflow: hidden;
-    position: sticky;
-    top: 0;
+    
     
 }
 
