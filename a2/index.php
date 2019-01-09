@@ -10,9 +10,10 @@
     <link id='wireframecss' type="text/css" rel="stylesheet" href="../wireframe.css" disabled>
     <link id='stylecss' type="text/css" rel="stylesheet" href="css/style.css">
     <script src='../wireframe.js'></script>
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Coiny" rel="stylesheet">
 
     <style>
-        body {
+       /* body {
             height: auto;
             background-color: chocolate;
         }
@@ -22,36 +23,43 @@
             margin: auto;
         }
 
-        header, #name {
+        header,#name  {
+            font-family: 'Coiny', cursive;
+            font-size: 200%;
+            text-align: center;
+        }
+        
+        #textfont {
             font-family: sans-serif;
-            font-size: 300%;
+            font-size: 200%;
             text-align: center;
         }
 
         h2 {
-            font-family: fantasy, sans-serif, monospace;
+            
+            font-family: 'Bree Serif', serif;            
             font-size: 200%;
             text-align: left;
         }
 
         li {
             display: inline;
-            margin-right: 20px;
-            font-size: 200%;
+            margin-right: 10px;
+            font-size: 150%;
         }
 
         li.one {
             border-width: thick;
             border-style: double;
             padding: 2px;
-        }
+        }*/
 
-        div.sticky {
+        /*div.sticky {
             position: sticky;
             top: 0px;
             padding: 5px;
             
-        }
+        }*/
 
       /* .one {
             display: grid;
@@ -100,17 +108,19 @@
             <img src='../../media/StandardSeat.png' alt='Standard Cinema Seat' height="200" width="200"/>
             <img src='../../media/FirstClassSeat.png' alt='First Class Cinema Seat' class="align-centre" height="200" width="200"/>
             <br>
-            <p id="name">New standard and First class seating available.</p>
+            <p id="textfont">New standard and First class seating available.</p>
 
         </article>
         <article>
             <h2 id="NowShowing">Now Showing<h2>
                     <img src='../../media/avatar.png' alt='Avatar' class="align-centre" />
+                <p id="textfont">Now Showing Here.</p>
 
         </article>
         <article>
             <h2 id="Booking">Booking<h2>
                     <img src='../../media/RMIT-Logo.png' alt='RMIT-Logo' />
+                <p id="textfont">Book Here.</p>
 
         </article>
         <p><a href="#top">Top</a></p>

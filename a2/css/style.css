@@ -1,11 +1,39 @@
-li {
-    display: inline;
-    margin-right: 20px;
+body {
+
+    background-color: chocolate;
+}
+
+img.align-centre {
+    display: block;
+    margin: auto;
+}
+
+header,
+#name {
+    font-family: 'Coiny', cursive;
     font-size: 200%;
+    text-align: center;
+}
+
+#textfont {
+    font-family: sans-serif;
+    font-size: 200%;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Bree Serif', serif;
+    font-size: 200%;
+    text-align: left;
 }
 
 li.one {
+    float: left;
+    display: block;
+    margin-right: 20px;
+    font-size: 200%;
     border-width: thick;
     border-style: double;
     padding: 5px;
+    background-color: coral;
 }
