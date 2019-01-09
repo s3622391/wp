@@ -50,9 +50,9 @@
             padding: 2px;
         }
 
-        p.sticky {
+        .sticky {
             position: sticky;
-            top: auto;
+            top: 0px;
         }
 
     </style>
@@ -73,7 +73,7 @@
     <nav>
         <div>
 
-            <ul id="sticky">
+            <ul class="sticky">
                 <li class="one"><a href="#About">About Us </a></li>
                 <li class="one"><a href="#SeatsandPricing">Seats and Pricing</a></li>
                 <li class="one"><a href="#NowShowing">Now Showing</a></li>
@@ -87,7 +87,6 @@
             <h2 id="About">About Us</h2>
 
             <img src='../../media/pic.png' alt='pic' class="align-centre" />
-            <p id="sticky">Testing for stickyness ???</p>
         </article>
         <article>
             <h2 id="SeatsandPricing">Seats and Pricing</h2>
