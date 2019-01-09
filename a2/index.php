@@ -71,8 +71,7 @@
             grid-gap: 0.5em;
         }
 
-    */
-
+  
         </head>
             <body>
                 <header>
