@@ -11,9 +11,17 @@
     <link id='stylecss' type="text/css" rel="stylesheet" href="css/style.css">
     <script src='../wireframe.js'></script>
     <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Coiny" rel="stylesheet">
-    
+
     <style>
-        /* body {
+        <?php include("css/style.css"); // or wherever your css file is located ?>
+        <style>
+        
+        <script>
+            <?php include("js/tools.js"); // or wherever your js file is located ?>
+        </script>
+        
+        /* <style>
+         body {
             height: auto;
             background-color: chocolate;
         }
@@ -52,25 +60,25 @@
             border-width: thick;
             border-style: double;
             padding: 2px;
-        }*/
+        }
 
-        /*div.sticky {
+        div.sticky {
             position: sticky;
             top: 0px;
             padding: 5px;
             
-        }*/
+        }
 
-        /* .one {
+         .one {
             display: grid;
         }
 
         .one {
             grid-template-columns: minmax(30px, 1fr) minmax(300px, 3fr);
             grid-gap: 0.5em;
-        }*/
+        }
 
-    </style>
+    */
 
 </head>
 
