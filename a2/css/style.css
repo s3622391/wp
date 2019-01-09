@@ -13,17 +13,18 @@ body {
 }
 
 header,
-#name,
-#textfont {
+#name {
     font-family: 'Coiny', cursive;
     font-size: 200%;
     text-align: center;
 }
 
-h2 {
+h2,
+#textfont  {
     font-family: 'Bree Serif', serif;
     font-size: 200%;
     text-align: center;
+    margin: 0p% 2% 0% 2%;
 }
 
 #navbar {
