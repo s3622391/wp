@@ -18,8 +18,7 @@ h2 {
 }
 
 #navbar {
-    position: sticky;
-    top: 0;
+    
     list-style-type: circle ;
     padding: 10px;
     overflow: hidden;
@@ -32,9 +31,10 @@ li {
 }
 
 li.one {
-    
+    position: sticky;
+    top: 0;
     display: block;
-    color: darkslateblue;
+    color: blue;
     text-align: center;
     font-size: 200%;
     border-width: thick;
@@ -42,11 +42,11 @@ li.one {
     padding: 10px 10px;
     width: 230px;
     margin: 2%;
-    background-color: darkgoldenrod;
+    background-color: pink;
 }
 
 li a:hover {
-    background-color: coral; 
+    background-color: mistyrose; 
 }
 
 img.align-centre {
