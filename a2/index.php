@@ -78,25 +78,25 @@
                 
             </nav>
             <main>
-                <article>
+                <div class="full-height">
                     <h2 id="About">About Us</h2>
                     <p></p>
-                </article>
-                <article>
+                </div>
+                <div class="full-height">
                     <h2 id="SeatsandPricing">Seats and Pricing</h2>
                         <img src='../../media/StandardSeat.png'alt='Standard Cinema Seat'height="300"/>
                         <img src='../../media/FirstClassSeat.png'alt='First Class Cinema Seat'height="300"/>
                         <br>
                         <p id="textfont">New standard and First class seating available.</p>
-                </article>
-                <article>
+                </div>
+                <div class="full-height">
                         <h2 id="NowShowing">Now Showing<h2><img src='../../media/avatar.png'alt='Avatar'class="align-centre"/>
                         <p id="textfont">Now Showing Here.</p>
-                </article>
-                <article>
+                </div>
+                <div class="full-height">
                         <h2 id="Booking">Booking<h2><img src='../../media/RMIT-Logo.png'alt='RMIT-Logo'/>
                         <p id="textfont">Book Here.</p>
-                </article>
+                </div>
         
                 <p><a href="#top">Top</a></p>
             </main>
