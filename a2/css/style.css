@@ -24,18 +24,15 @@ h2,
     font-family: 'Bree Serif', serif;
     font-size: 200%;
     text-align: center;
-    margin: 0p% 2% 0% 2%;
+    margin: 0p% 3% 0% 3%;
 }
 
 #navbar {
+    position: sticky;
+    top: 0;
     list-style-type: none;
     padding: 10px;
     overflow: hidden;
-}
-
-.sticky {
-    position: sticky;
-    top: 0;
 }
 
 li {

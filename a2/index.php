@@ -18,19 +18,19 @@
     <header>
         <div>
             <p id="top"><img src='../../media/cinema-logo.png' alt="Cinema Logo" width='200' height='200' class="align-centre" /></p>
-            <p id="name">Numpty Cinemas</p>
+            <p id="name">Lunardo</p>
         </div>
     </header>
 
     <nav id="navbar">
-        <div class="sticky">
-            <ul>
-                <li class="one"><a href="#About">About Us </a></li>
-                <li class="one"><a href="#SeatsandPricing">Seats and Pricing</a></li>
-                <li class="one"><a href="#NowShowing">Now Showing</a></li>
-                <li class="one"><a href="#Booking">Booking</a><br /></li>
-            </ul>
-        </div>
+
+        <ul>
+            <li class="one"><a href="#About">About Us </a></li>
+            <li class="one"><a href="#SeatsandPricing">Seats and Pricing</a></li>
+            <li class="one"><a href="#NowShowing">Now Showing</a></li>
+            <li class="one"><a href="#Booking">Booking</a><br /></li>
+        </ul>
+
     </nav>
 
     <main>
@@ -38,7 +38,7 @@
             <div class="full-height">
                 <h2 id="About">About Us</h2>
                 <hr />
-                <p id="textfont">Welcome to the Numpty Cinemas! We have just finished our extensive refurbishment, revamping the place bring to you a fantastic movie experience with brand new seating now including reclinable First class.</p>
+                <p id="textfont">Welcome to the Lunardo Cinema! We have just finished our extensive refurbishment, revamping the place bring to you a fantastic movie experience with brand new seating now including reclinable First class.</p>
                 <p id="textfont">Our projection system has been upgraded and now has <a href="https://www.dolby.com/us/en/brands/dolby-vision.html">3D Dolby Vision</a> projection and <a href="https://www.dolby.com/us/en/brands/dolby-atmos.html">Dolby Atmos</a> sound. </p>
                 <p id="name"><strong>Come and check us out!</strong></p>
             </div>
@@ -55,15 +55,17 @@
                 </div>
                 <p id="textfont">New standard and First class seating available.</p>
             </div>
-
+            
             <div class="full-height">
-                <h2 id="NowShowing">Now Showing<h2>
+                <h2 id="NowShowing">Now Showing</h2>
                         <img src='../../media/avatar.png' alt='Avatar' class="align-centre" />
                         <p id="textfont">Now Showing Here.</p>
             </div>
-
+                    
             <div class="full-height">
-                <h2 id="Booking">Booking<h2><img src='../../media/RMIT-Logo.png' alt='RMIT-Logo' />
+                
+                <h2 id="Booking">Booking</h2>h2>
+                    <img src='../../media/RMIT-Logo.png' alt='RMIT-Logo'>
                         <p id="textfont">Book Here.</p>
             </div>
         </div>
