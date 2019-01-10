@@ -8,10 +8,6 @@ body {
     height: 100%;
 }
 
-#mainindex {
-    z-index: 0;
-}
-
 header,
 #name {
     font-family: 'Coiny', cursive;
@@ -20,7 +16,7 @@ header,
 }
 
 h2,
-#textfont  {
+#textfont {
     font-family: 'Bree Serif', serif;
     font-size: 200%;
     text-align: center;
@@ -33,7 +29,6 @@ h2,
     list-style-type: none;
     padding: 10px;
     overflow: hidden;
-    z-index: 10;
 }
 
 li {
@@ -74,4 +69,26 @@ img.align-centre {
     content: "";
     clear: both;
     display: table;
+}
+
+table {
+    position: relative;
+    left: 20%;
+    width: 60%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    font-family: 'Bree Serif', serif;
+    letter-spacing: 0.1em;
+    font-size: 90%;
+    border-width: medium;
+    border-style: solid;
+    
+    text-align: left;
+}
+
+.money {
+    text-align: right;
 }

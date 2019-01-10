@@ -37,7 +37,7 @@
         <div>
             <div>
                 <h2 id="About">About Us</h2>
-                
+
                 <p id="textfont">Welcome to the Lunardo Cinema! We have just finished our extensive refurbishment, revamping the place bring to you a fantastic movie experience with brand new seating now including reclinable First class.</p>
                 <p id="textfont">Our projection system has been upgraded and now has <a href="https://www.dolby.com/us/en/brands/dolby-vision.html">3D Dolby Vision</a> projection and <a href="https://www.dolby.com/us/en/brands/dolby-atmos.html">Dolby Atmos</a> sound. </p>
                 <p id="name"><strong>Come and check us out!</strong></p>
@@ -54,6 +54,50 @@
                     </div>
                 </div>
                 <p id="textfont">New standard and First class seating available.</p>
+                <table>
+                    <tr>
+                        <th scope="col">Seat Type</th>
+                        <th scope="col">All Day Monday and Wednesday</th>
+                        <th scope="col">12pm Weekdays</th>
+                        <th scope="col">All other times</th>
+                    </tr>
+                    <tr>
+                        <th scope="row">Standard Adult</th>
+                        <td class="money">$14.00</td>
+                        <td class="money">$14.00</td>
+                        <td class="money">$19.80</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Standard Consession</th>
+                        <td class="money">$12.50</td>
+                        <td class="money">$12.50</td>
+                        <td class="money">$17.50</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Standard Child</th>
+                        <td class="money">$11.00</td>
+                        <td class="money">$11.00</td>
+                        <td class="money">$15.30</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">First Adult</th>
+                        <td class="money">$24.00</td>
+                        <td class="money">$24.00</td>
+                        <td class="money">$30.00</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">First Consession</th>
+                        <td class="money">$22.50</td>
+                        <td class="money">$22.50</td>
+                        <td class="money">$27.00</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">First Child</th>
+                        <td class="money">$21.00</td>
+                        <td class="money">$21.00</td>
+                        <td class="money">$24.00</td>
+                    </tr>
+                </table>
             </div>
 
             <div>
