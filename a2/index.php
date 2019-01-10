@@ -37,14 +37,16 @@
         <div>
             <div>
                 <h2 id="About">About Us</h2>
-
+                <hr />
                 <p id="textfont">Welcome to the Lunardo Cinema! We have just finished our extensive refurbishment, revamping the place bring to you a fantastic movie experience with brand new seating now including reclinable First class.</p>
                 <p id="textfont">Our projection system has been upgraded and now has <a href="https://www.dolby.com/us/en/brands/dolby-vision.html">3D Dolby Vision</a> projection and <a href="https://www.dolby.com/us/en/brands/dolby-atmos.html">Dolby Atmos</a> sound. </p>
                 <p id="name"><strong>Come and check us out!</strong></p>
+                <hr />
             </div>
 
             <div>
                 <h2 id="SeatsandPricing">Seats and Pricing</h2>
+                <hr />
                 <div class="row">
                     <div class="column">
                         <img src='../../media/StandardSeat.png' alt='Standard Cinema Seat' height="300" />
@@ -62,55 +64,114 @@
                         <th scope="col">All other times</th>
                     </tr>
                     <tr>
-                        <th scope="row">Standard Adult</th>
+                        <th scope="row" id="STA">Standard Adult</th>
                         <td class="money">$14.00</td>
                         <td class="money">$14.00</td>
                         <td class="money">$19.80</td>
                     </tr>
                     <tr>
-                        <th scope="row">Standard Consession</th>
+                        <th scope="row" id="STP">Standard Consession</th>
                         <td class="money">$12.50</td>
                         <td class="money">$12.50</td>
                         <td class="money">$17.50</td>
                     </tr>
                     <tr>
-                        <th scope="row">Standard Child</th>
+                        <th scope="row" id="STC">Standard Child</th>
                         <td class="money">$11.00</td>
                         <td class="money">$11.00</td>
                         <td class="money">$15.30</td>
                     </tr>
                     <tr>
-                        <th scope="row">First Adult</th>
+                        <th scope="row" id="FCA">First Adult</th>
                         <td class="money">$24.00</td>
                         <td class="money">$24.00</td>
                         <td class="money">$30.00</td>
                     </tr>
                     <tr>
-                        <th scope="row">First Consession</th>
+                        <th scope="row" id="FCP">First Consession</th>
                         <td class="money">$22.50</td>
                         <td class="money">$22.50</td>
                         <td class="money">$27.00</td>
                     </tr>
                     <tr>
-                        <th scope="row">First Child</th>
+                        <th scope="row" id="FCC">First Child</th>
                         <td class="money">$21.00</td>
                         <td class="money">$21.00</td>
                         <td class="money">$24.00</td>
                     </tr>
                 </table>
+                <hr />
             </div>
 
             <div>
                 <h2 id="NowShowing">Now Showing</h2>
-                <img src='../../media/avatar.png' alt='Avatar' class="align-centre" />
-                <p id="textfont">Now Showing Here.</p>
+                <hr />
+                <section id="showing">
+                    <div>
+                        <img src='../../media/Ralphbreaksinternet.png' width='200' alt='Ralphbreaksinternetimage'>
+                        <p><strong>Ralph Breaks the Internet PG</strong></p>
+                        <ul>
+                            <li>Monday - 12pm</li><br />
+                            <li>Tuesday - 12pm</li><br />
+                            <li>Wednesday - 6pm</li><br />
+                            <li>Thursday - 6pm</li><br />
+                            <li>Friday - 6pm</li><br />
+                            <li>Saturday - 12pm</li><br />
+                            <li>Sunday - 12pm</li><br />
+                        </ul>
+                    </div>
+                    <div>
+                        <img src='../../media/Spiderweb.png' width='200' alt='Girlinthespiderswebimage'>
+                        <p><strong>The Girl in the Spider's Web R</strong></p>
+                        <ul>
+                            <li>Monday - NA</li><br />
+                            <li>Tuesday - NA</li><br />
+                            <li>Wednesday - 9pm</li><br />
+                            <li>Thursday - 9pm</li><br />
+                            <li>Friday - 9pm</li><br />
+                            <li>Saturday - 6pm</li><br />
+                            <li>Sunday - 6pm</li><br />
+                        </ul>
+                    </div>
+                    <div>
+                        <img src='../../media/Boyerased.png' width='200' alt='BoyErasedImage'>
+                        <p><strong>Boy Erased R</strong></p>
+                        <ul>
+                            <li>Monday - NA</li><br />
+                            <li>Tuesday - NA</li><br />
+                            <li>Wednesday - 12pm</li><br />
+                            <li>Thursday - 12pm</li><br />
+                            <li>Friday - 12pm</li><br />
+                            <li>Saturday - 9pm</li><br />
+                            <li>Sunday - 9pm</li><br />
+                        </ul>
+                    </div>
+                    <div>
+                        <img src='../../media/Starisborn.png' width='200' alt='AStarisBornImage'>
+                        <p><strong>A Star is Born R</strong></p>
+                        <ul>
+                            <li>Monday - 18pm</li><br />
+                            <li>Tuesday - 18pm</li><br />
+                            <li>Wednesday - NA</li><br />
+                            <li>Thursday - NA</li><br />
+                            <li>Friday - 6pm</li><br />
+                            <li>Saturday - 15pm</li><br />
+                            <li>Sunday - 15pm</li><br />
+                        </ul>
+                    </div>
+
+                </section>
+
+                <hr />
             </div>
 
             <div>
 
                 <h2 id="Booking">Booking</h2>
+                <hr />
                 <img src='../../media/RMIT-Logo.png' alt='RMIT-Logo'>
                 <p id="textfont">Book Here.</p>
+                <hr />
             </div>
         </div>
         <p><a href="#top">Top</a></p>

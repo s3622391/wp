@@ -85,10 +85,21 @@ td {
     font-size: 90%;
     border-width: medium;
     border-style: solid;
-    
+
     text-align: left;
 }
 
 .money {
     text-align: right;
+}
+
+#showing {
+    display: grid;
+    border-width: medium;
+    border-style: solid;
+    padding: 0.5e;
+    grid-template-columns: max-content max-content max-content max-content;
+    
+    grid-gap: 5em;
+    text-align: center;
 }
