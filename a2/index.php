@@ -35,7 +35,7 @@
 
     <main>
         <div>
-            <div class="full-height">
+            <div>
                 <h2 id="About">About Us</h2>
                 <hr />
                 <p id="textfont">Welcome to the Lunardo Cinema! We have just finished our extensive refurbishment, revamping the place bring to you a fantastic movie experience with brand new seating now including reclinable First class.</p>
@@ -43,7 +43,7 @@
                 <p id="name"><strong>Come and check us out!</strong></p>
             </div>
 
-            <div class="full-height">
+            <div>
                 <h2 id="SeatsandPricing">Seats and Pricing</h2>
                 <div class="row">
                     <div class="column">
@@ -55,18 +55,18 @@
                 </div>
                 <p id="textfont">New standard and First class seating available.</p>
             </div>
-            
-            <div class="full-height">
+
+            <div>
                 <h2 id="NowShowing">Now Showing</h2>
-                        <img src='../../media/avatar.png' alt='Avatar' class="align-centre" />
-                        <p id="textfont">Now Showing Here.</p>
+                <img src='../../media/avatar.png' alt='Avatar' class="align-centre" />
+                <p id="textfont">Now Showing Here.</p>
             </div>
-                    
-            <div class="full-height">
-                
-                <h2 id="Booking">Booking</h2>h2>
-                    <img src='../../media/RMIT-Logo.png' alt='RMIT-Logo'>
-                        <p id="textfont">Book Here.</p>
+
+            <div>
+
+                <h2 id="Booking">Booking</h2>
+                <img src='../../media/RMIT-Logo.png' alt='RMIT-Logo'>
+                <p id="textfont">Book Here.</p>
             </div>
         </div>
         <p><a href="#top">Top</a></p>
@@ -74,7 +74,7 @@
 
     <footer>
         <div>
-            <p><a href="mailto:NumptyCinema@example.com">Email US !</a>Phone: TBA, Address: TBA<br /></p>
+            <p><a href="mailto:LundardoCinema@example.com">Email US !</a>Phone: TBA, Address: TBA<br /></p>
         </div>
         <div>&copy;
             <script>
