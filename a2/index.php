@@ -16,10 +16,12 @@
 
 <body>
     <header>
+
         <div>
             <p id="top"><img src='../../media/cinema-logo.png' alt="Cinema Logo" width='200' height='200' class="align-centre" /></p>
             <p id="name">Lunardo</p>
         </div>
+
     </header>
 
     <nav id="navbar">
@@ -35,7 +37,8 @@
 
     <main>
         <div>
-            <div>
+            <div id="aboutposition">
+                <hr />
                 <h2 id="About">About Us</h2>
                 <hr />
                 <p id="textfont">Welcome to the Lunardo Cinema! We have just finished our extensive refurbishment, revamping the place bring to you a fantastic movie experience with brand new seating now including reclinable First class.</p>
@@ -169,8 +172,16 @@
 
                 <h2 id="Booking">Booking</h2>
                 <hr />
-                <img src='../../media/RMIT-Logo.png' alt='RMIT-Logo'>
-                <p id="textfont">Book Here.</p>
+                <section id="showbooking">
+                    <div>
+                        <p><strong>Ralph Breaks the Internet PG</strong></p>
+                        <p> Synopsis</p>
+                        <p> Ralp Blah Blah Blah</p>
+                        <div id="vidright">
+                            <video src="https://www.youtube.com/watch?v=_BcYBFC6zfY" poster="../../media/Ralphbreaksinternet.png" width="200" preload controls></video>
+                        </div>
+                    </div>
+                </section>
                 <hr />
             </div>
         </div>
