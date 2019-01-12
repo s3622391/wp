@@ -39,19 +39,19 @@ h2,
     list-style-type: none;
     padding: 10px;
     width: 100%;
-    min-height: 15%;
-    
+    min-height: 15%;    
 }
 
-li {
+/*li {
     float: left;
-}
+}*/
 
 li.one {
-    display: block;
+    display: inline-block;
     color: blue;
     text-align: center;
     font-size: 200%;
+    border-radius: 8px; 
     border-width: thick;
     border-style: double;
     padding: 10px 10px;
@@ -64,9 +64,29 @@ li a:hover {
     background-color: mistyrose;
 }
 
-#vidright {
-    position: relative;
-    left: 20%;
+.button {
+  border: none;
+  border-radius: 8px;  
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+}
+
+.buttonhover:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.notshowing {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+span {
+    float: right;
+    padding-right: 5%;
 }
 
 img.align-centre {
@@ -74,9 +94,16 @@ img.align-centre {
     margin: auto;
 }
 
+#seatimages {
+    display: inline-block;
+    width: auto;
+    padding: 10px;
+    margin-left: 25%;
+}
+
 .column {
-    box-sizing: border-box;
-    float: left;
+    display: inline-block;
+    box-sizing: border-box;    
     width: 40%;
     padding: 5px;
     margin-left: 10%;
@@ -114,17 +141,17 @@ td {
     display: grid;
     border-width: medium;
     border-style: solid;
-    padding: 0.5e;
+    padding-left: 5%;
+    margin-top: 15px;
     grid-template-columns: max-content max-content max-content max-content;
     
-    grid-gap: 5em;
+    grid-gap: 10%;
     text-align: center;
 }
 
-
-
-
-
+.synopsissize {
+    min-height: 320px;
+}
 
 
 

@@ -36,6 +36,7 @@
     </nav>
 
     <main>
+
         <div>
             <div id="aboutposition">
                 <hr />
@@ -44,19 +45,18 @@
                 <p id="textfont">Welcome to the Lunardo Cinema! We have just finished our extensive refurbishment, revamping the place bring to you a fantastic movie experience with brand new seating now including reclinable First class.</p>
                 <p id="textfont">Our projection system has been upgraded and now has <a href="https://www.dolby.com/us/en/brands/dolby-vision.html">3D Dolby Vision</a> projection and <a href="https://www.dolby.com/us/en/brands/dolby-atmos.html">Dolby Atmos</a> sound. </p>
                 <p id="name"><strong>Come and check us out!</strong></p>
-                <hr />
+
             </div>
 
             <div>
+                <hr />
                 <h2 id="SeatsandPricing">Seats and Pricing</h2>
                 <hr />
-                <div class="row">
-                    <div class="column">
-                        <img src='../../media/StandardSeat.png' alt='Standard Cinema Seat' height="300" />
-                    </div>
-                    <div class="column">
-                        <img src='../../media/FirstClassSeat.png' alt='First Class Cinema Seat' height="300" />
-                    </div>
+                <div id="seatimages">
+
+                    <img src='../../media/StandardSeat.png' alt='Standard Cinema Seat' height="300" />
+                    <img src='../../media/FirstClassSeat.png' alt='First Class Cinema Seat' height="300" />
+
                 </div>
                 <p id="textfont">New standard and First class seating available.</p>
                 <table>
@@ -170,22 +170,103 @@
 
             <div>
 
+                <div>
+                    <div>
+                        <p class="synopsissize"><span> <iframe width="560" height="315" src="https://www.youtube.com/embed/_BcYBFC6zfY?start=1"></iframe></span>
+                            <strong>Ralph Breaks the Internet PG</strong><br /> Synopsis<br />
+                            Ralp Blah Blah Blah This is some text. This is some text.
+                            This is some text. This is some text. This is some text.
+                            This is some text. This is some text. This is some text.
+                            This is some text. This is some text. This is some text.
+                            This is some text. This is some text. This is some text.
+                            This is some text. This is some text. This is some text.
+                            This is some text. This is some text. This is some text.</p>
+
+                        <p><strong>Make a Booking:</strong></p>
+                        <button class="button buttonhover">Monday - 12pm</button>
+                        <button class="button buttonhover">Tuesday - 12pm</button>
+                        <button class="button buttonhover">Wednesday - 6pm</button>
+                        <button class="button buttonhover">Thursday - 6pm</button>
+                        <button class="button buttonhover">Friday - 6pm</button>
+                        <button class="button buttonhover">Saturday - 12pm</button>
+                        <button class="button buttonhover">Sunday - 12pm</button>
+                        <hr />
+                    </div>
+                    <div>
+                        <p class="synopsissize"><span> <iframe width="560" height="315" src="https://www.youtube.com/embed/XKMSP9OKspQ?start=1"></iframe></span>
+                            <strong>The Girl in the Spider's Web R</strong><br /> Synopsis<br />
+                            The Girl in the Spider's Web RBlah Blah Blah This is some text.
+                            This is some text. This is some text. This is some text.
+                            This is some text. This is some text. This is some text.
+                            This is some text. This is some text. This is some text.
+                            This is some text. This is some text. This is some text.
+                            This is some text. This is some text. This is some text.
+                            This is some text. This is some text. This is some text.</p>
+
+                        <p><strong>Make a Booking:</strong></p>
+                        <button class="button buttonhover notshowing">Monday - </button>
+                        <button class="button buttonhover notshowing">Tuesday - </button>
+                        <button class="button buttonhover">Wednesday - 9pm</button>
+                        <button class="button buttonhover">Thursday - 9pm</button>
+                        <button class="button buttonhover">Friday - 9pm</button>
+                        <button class="button buttonhover">Saturday - 6pm</button>
+                        <button class="button buttonhover">Sunday - 6pm</button>
+                        <hr />
+                    </div>
+                    <div>
+                        <p class="synopsissize"><span> <iframe width="560" height="315" src="https://www.youtube.com/embed/-B71eyB_Onw?start=1"></iframe></span>
+                            <strong>Boy Erased R</strong><br /> Synopsis<br />
+                            Boy Erased R Blah This is some text. This is some text.
+                            This is some text. This is some text. This is some text.
+                            This is some text. This is some text. This is some text.
+                            This is some text. This is some text. This is some text.
+                            This is some text. This is some text. This is some text.
+                            This is some text. This is some text. This is some text.
+                            This is some text. This is some text. This is some text.</p>
+
+                        <p><strong>Make a Booking:</strong></p>
+                        <button class="button buttonhover notshowing">Monday - </button>
+                        <button class="button buttonhover notshowing">Tuesday - </button>
+                        <button class="button buttonhover">Wednesday - 12pm</button>
+                        <button class="button buttonhover">Thursday - 12pm</button>
+                        <button class="button buttonhover">Friday - 12pm</button>
+                        <button class="button buttonhover">Saturday - 9pm</button>
+                        <button class="button buttonhover">Sunday - 9pm</button>
+                        <hr />
+                    </div>
+                    <div>
+                        <p class="synopsissize"><span> <iframe width="560" height="315" src="https://www.youtube.com/embed/4-tcHHyy1Rw?start=1"></iframe></span>
+                            <strong>A Star is Born R</strong><br /> Synopsis<br />
+                            A Star is Born R This is some text. This is some text.
+                            This is some text. This is some text. This is some text.
+                            This is some text. This is some text. This is some text.
+                            This is some text. This is some text. This is some text.
+                            This is some text. This is some text. This is some text.
+                            This is some text. This is some text. This is some text.
+                            This is some text. This is some text. This is some text.</p>
+
+                        <p><strong>Make a Booking:</strong></p>
+                        <button class="button buttonhover">Monday - 6pm</button>
+                        <button class="button buttonhover">Tuesday - 6pm</button>
+                        <button class="button buttonhover notshowing">Wednesday - </button>
+                        <button class="button buttonhover notshowing">Thursday - </button>
+                        <button class="button buttonhover">Friday - 6pm</button>
+                        <button class="button buttonhover">Saturday - 15pm</button>
+                        <button class="button buttonhover">Sunday - 15pm</button>
+                        <hr />
+                    </div>
+
+                    <hr />
+                </div>
                 <h2 id="Booking">Booking</h2>
                 <hr />
                 <section id="showbooking">
                     <div>
-                        <p><strong>Ralph Breaks the Internet PG</strong></p>
-                        <p> Synopsis</p>
-                        <p> Ralp Blah Blah Blah</p>
-                        <div id="vidright">
-                            <video src="https://www.youtube.com/watch?v=_BcYBFC6zfY" poster="../../media/Ralphbreaksinternet.png" width="200" preload controls></video>
-                        </div>
+
                     </div>
                 </section>
-                <hr />
             </div>
-        </div>
-        <p><a href="#top">Top</a></p>
+            <p><a href="#top">Top</a></p>
     </main>
 
     <footer>
