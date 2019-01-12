@@ -109,8 +109,8 @@
             <div>
                 <h2 id="NowShowing">Now Showing</h2>
                 <hr />
-                <section id="showing">
-                    <div>
+                <section>
+                    <div class="showing">
                         <img src='../../media/Ralphbreaksinternet.png' width='200' alt='Ralphbreaksinternetimage'>
                         <p><strong>Ralph Breaks the Internet PG</strong></p>
                         <ul>
@@ -123,7 +123,7 @@
                             <li>Sunday - 12pm</li><br />
                         </ul>
                     </div>
-                    <div>
+                    <div class="showing">
                         <img src='../../media/Spiderweb.png' width='200' alt='Girlinthespiderswebimage'>
                         <p><strong>The Girl in the Spider's Web R</strong></p>
                         <ul>
@@ -136,7 +136,7 @@
                             <li>Sunday - 6pm</li><br />
                         </ul>
                     </div>
-                    <div>
+                    <div class="showing">
                         <img src='../../media/Boyerased.png' width='200' alt='BoyErasedImage'>
                         <p><strong>Boy Erased R</strong></p>
                         <ul>
@@ -149,7 +149,7 @@
                             <li>Sunday - 9pm</li><br />
                         </ul>
                     </div>
-                    <div>
+                    <div class="showing">
                         <img src='../../media/Starisborn.png' width='200' alt='AStarisBornImage'>
                         <p><strong>A Star is Born R</strong></p>
                         <ul>
