@@ -6,6 +6,7 @@ body {
 html,
 body {
     min-height: 100vh;
+    scroll-behavior: smooth;
 }
 
 header,
@@ -13,13 +14,14 @@ header,
     font-family: 'Coiny', cursive;
     font-size: 200%;
     text-align: center;
+    color: #ee3e80;
 }
 
 header {
     width: 100%;
     min-height: 15%;
     padding-top: 80px;
-    background-color: blue;
+    background-color: darkblue;
 }
 
 #top {
@@ -27,13 +29,16 @@ header {
 }
 
 h2 {
-    padding-top: 100px;
+    padding-top: 120px;
+    background-color: darkblue; 
+    color: yellow;
 }
 
 h2,
 #textfont {
     font-family: 'Bree Serif', serif;
     font-size: 200%;
+    
     text-align: center;
     margin: 0p% 3% 0% 3%;
 }
@@ -42,9 +47,10 @@ h2,
     position: sticky;
     top: 0;
     list-style-type: none;
-    
+
     width: 100%;
     min-height: 15%;
+    background-color: darkblue;
 }
 
 /*li {
@@ -62,16 +68,16 @@ li.one {
     padding: 10px 10px;
     width: 240px;
     margin: 2%;
-    background-color: pink;
+    background-color: lightskyblue;
 }
 
 li a:hover {
-    background-color: mistyrose;
+    background-color: lightcyan;
 }
 
 .showing {
     display: inline-block;
-    min-width:  220px;
+    min-width: 220px;
     margin-left: 7%;
     border-style: solid;
     border-radius: 8px;
@@ -99,7 +105,8 @@ li a:hover {
     cursor: not-allowed;
 }
 
-span {
+span
+ {
     float: right;
     padding-right: 5%;
 }
@@ -138,13 +145,14 @@ table {
 }
 
 th,
-td {
+td,
+.seating,
+#pagetitle {
     font-family: 'Bree Serif', serif;
     letter-spacing: 0.1em;
     font-size: 90%;
     border-width: medium;
     border-style: solid;
-
     text-align: left;
 }
 
@@ -164,8 +172,35 @@ td {
     text-align: center;
 }*/
 
-
-
 .synopsissize {
     min-height: 320px;
+}
+
+.seating {
+    max-width: 150px;
+    text-align: right;
+}
+
+.legendposition {
+    text-align: left;
+    font-size: 100%;
+}
+
+#bookingposition,
+.bookingdetails {
+    text-align: right;
+    font-family: 'Bree Serif', serif;
+    letter-spacing: 0.1em;
+    font-size: 90%;   
+    
+    border-style: none;
+    
+}
+
+ 
+.infoposition {
+    display: inline-block;
+    border-style: solid;
+    border-radius: 8px;
+    padding: 10px 0px 0px 15px;
 }

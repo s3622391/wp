@@ -246,7 +246,7 @@
                             This is some text. This is some text. This is some text.</p>
 
                         <p><strong>Make a Booking:</strong></p>
-                        <button class="button buttonhover">Monday - 6pm</button>
+                        <button class="button buttonhover" onclick="MovieID(3)">Monday - 6pm</button>
                         <button class="button buttonhover">Tuesday - 6pm</button>
                         <button class="button buttonhover notshowing">Wednesday - </button>
                         <button class="button buttonhover notshowing">Thursday - </button>
@@ -258,15 +258,124 @@
 
                     <hr />
                 </div>
-                <h2 id="Booking">Booking</h2>
-                <hr />
-                <section id="showbooking">
-                    <div>
-
-                    </div>
-                </section>
             </div>
-            <p><a href="#top">Top</a></p>
+            <h2 id="Booking">Booking</h2>
+            <hr />
+            <section id="showbooking">
+
+                <form action="https://titan.csit.rmit.edu.au/~e54061/wp/lunardo-formtest.php" method="post" id="bookingform">
+
+                    <div id="infoposition">
+                        <p id="pagetitle"> Movie Title - Day - Time</p>
+                        <div>
+                            <fieldset class="seating">
+                                <legend class="legendposition">Standard</legend>
+                                <label>Adults<select>
+                                        <option value="zero">0</option>
+                                        <option value="one">1</option>
+                                        <option value="two">2</option>
+                                        <option value="three">3</option>
+                                        <option value="four">4</option>
+                                        <option value="five">5</option>
+                                        <option value="six">6</option>
+                                        <option value="seven">7</option>
+                                        <option value="eight">8</option>
+                                        <option value="nine">9</option>
+                                        <option value="ten">10</option>
+                                    </select><br />
+                                </label>
+                                <label>Consession<select>
+                                        <option value="zero">0</option>
+                                        <option value="one">1</option>
+                                        <option value="two">2</option>
+                                        <option value="three">3</option>
+                                        <option value="four">4</option>
+                                        <option value="five">5</option>
+                                        <option value="six">6</option>
+                                        <option value="seven">7</option>
+                                        <option value="eight">8</option>
+                                        <option value="nine">9</option>
+                                        <option value="ten">10</option>
+                                    </select><br />
+                                </label>
+                                <label>Child<select>
+                                        <option value="zero">0</option>
+                                        <option value="one">1</option>
+                                        <option value="two">2</option>
+                                        <option value="three">3</option>
+                                        <option value="four">4</option>
+                                        <option value="five">5</option>
+                                        <option value="six">6</option>
+                                        <option value="seven">7</option>
+                                        <option value="eight">8</option>
+                                        <option value="nine">9</option>
+                                        <option value="ten">10</option>
+                                    </select><br />
+                                </label>
+                            </fieldset>
+                        </div>
+                        <div id="bookingposition">
+                            <fieldset class="bookingdetails">
+                                <label>Name <input type="text" custname=cust[name] /></label><br />
+                                <label>Email <input type="email" custemail=cust[email] /></label><br />
+                                <label>Mobile <input type="tel" custmobile=cust[mobile] /></label><br />
+                                <label>Credit Card <input type="text" custcard=cust[card] /></label><br />
+                                <label>Expiry <input type="month" custexpiry=cust[expiry] /></label><br />
+                            </fieldset>
+                        </div>
+                    </div>
+                    <div>
+                        <fieldset class="seating">
+                            <legend class="legendposition">First Class</legend>
+                            <label>Adults<select>
+                                    <option value="zero">0</option>
+                                    <option value="one">1</option>
+                                    <option value="two">2</option>
+                                    <option value="three">3</option>
+                                    <option value="four">4</option>
+                                    <option value="five">5</option>
+                                    <option value="six">6</option>
+                                    <option value="seven">7</option>
+                                    <option value="eight">8</option>
+                                    <option value="nine">9</option>
+                                    <option value="ten">10</option>
+                                </select><br />
+                            </label>
+                            <label>Consession<select>
+                                    <option value="zero">0</option>
+                                    <option value="one">1</option>
+                                    <option value="two">2</option>
+                                    <option value="three">3</option>
+                                    <option value="four">4</option>
+                                    <option value="five">5</option>
+                                    <option value="six">6</option>
+                                    <option value="seven">7</option>
+                                    <option value="eight">8</option>
+                                    <option value="nine">9</option>
+                                    <option value="ten">10</option>
+                                </select><br />
+                            </label>
+                            <label>Child<select>
+                                    <option value="zero">0</option>
+                                    <option value="one">1</option>
+                                    <option value="two">2</option>
+                                    <option value="three">3</option>
+                                    <option value="four">4</option>
+                                    <option value="five">5</option>
+                                    <option value="six">6</option>
+                                    <option value="seven">7</option>
+                                    <option value="eight">8</option>
+                                    <option value="nine">9</option>
+                                    <option value="ten">10</option>
+                                </select><br />
+                            </label>
+                        </fieldset>
+                    </div>
+                    <input type="submit" value="Order">
+                </form>
+            </section>
+        </div>
+        <p><a href="#top">Top</a></p>
     </main>
 
     <footer>
@@ -287,6 +396,7 @@
             <button id='toggleWireframeCSS' onclick='toggleWireframe()'>Toggle Wireframe CSS</button>
         </div>
     </footer>
+    <script src='../wireframe.js'></script>
 </body>
 
 </html>
