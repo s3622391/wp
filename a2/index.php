@@ -173,14 +173,10 @@
                 <div>
                     <div>
                         <p class="synopsissize"><span> <iframe width="560" height="315" src="https://www.youtube.com/embed/_BcYBFC6zfY?start=1"></iframe></span>
-                            <strong>Ralph Breaks the Internet PG</strong><br /> Synopsis<br />
-                            Ralp Blah Blah Blah This is some text. This is some text.
-                            This is some text. This is some text. This is some text.
-                            This is some text. This is some text. This is some text.
-                            This is some text. This is some text. This is some text.
-                            This is some text. This is some text. This is some text.
-                            This is some text. This is some text. This is some text.
-                            This is some text. This is some text. This is some text.</p>
+                            <!---Clip used for educational purposes from Walt Disney Animation Studios --->
+                            <strong>Ralph Breaks the Internet PG</strong><br />
+                            <br />Synopsis<br />
+                            <br />Video game bad guy Ralph and fellow misfit Vanellope von Schweetz must risk it all by traveling to the World Wide Web in search of a replacement part to save Vanellope's video game, "Sugar Rush." In way over their heads, Ralph and Vanellope rely on the citizens of the internet -- the netizens -- to help navigate their way, including an entrepreneur named Yesss, who is the head algorithm and the heart and soul of trend-making site BuzzzTube.</p>
 
                         <p><strong>Make a Booking:</strong></p>
                         <button class="button buttonhover">Monday - 12pm</button>
@@ -194,14 +190,9 @@
                     </div>
                     <div>
                         <p class="synopsissize"><span> <iframe width="560" height="315" src="https://www.youtube.com/embed/XKMSP9OKspQ?start=1"></iframe></span>
-                            <strong>The Girl in the Spider's Web R</strong><br /> Synopsis<br />
-                            The Girl in the Spider's Web RBlah Blah Blah This is some text.
-                            This is some text. This is some text. This is some text.
-                            This is some text. This is some text. This is some text.
-                            This is some text. This is some text. This is some text.
-                            This is some text. This is some text. This is some text.
-                            This is some text. This is some text. This is some text.
-                            This is some text. This is some text. This is some text.</p>
+                            <!---Clip used for educational purposes from Sony Pictures Entertainment --->
+                            <strong>The Girl in the Spider's Web R</strong><br /> <br />Synopsis<br /><br />
+                            Fired from the National Security Agency, Frans Balder recruits hacker Lisbeth Salander to steal FireWall, a computer program that can access codes for nuclear weapons worldwide. The download soon draws attention from an NSA agent who traces the activity to Stockholm. Further problems arise when Russian thugs take Lisbeth's laptop and kidnap a math whiz who can make FireWall work. Now, Lisbeth and an unlikely ally must race against time to save the boy and recover the codes to avert disaster.</p>
 
                         <p><strong>Make a Booking:</strong></p>
                         <button class="button buttonhover notshowing">Monday - </button>
@@ -215,14 +206,9 @@
                     </div>
                     <div>
                         <p class="synopsissize"><span> <iframe width="560" height="315" src="https://www.youtube.com/embed/-B71eyB_Onw?start=1"></iframe></span>
-                            <strong>Boy Erased R</strong><br /> Synopsis<br />
-                            Boy Erased R Blah This is some text. This is some text.
-                            This is some text. This is some text. This is some text.
-                            This is some text. This is some text. This is some text.
-                            This is some text. This is some text. This is some text.
-                            This is some text. This is some text. This is some text.
-                            This is some text. This is some text. This is some text.
-                            This is some text. This is some text. This is some text.</p>
+                            <!---Clip used for educational purposes from Focus Features --->
+                            <strong>Boy Erased R</strong><br /><br /> Synopsis<br /><br />
+                            Jared Eamons, the son of a small-town Baptist pastor, must overcome the fallout after being outed as gay to his parents. His father and mother struggle to reconcile their love for their son with their beliefs. Fearing a loss of family, friends and community, Jared is pressured into attending a conversion therapy program. While there, Jared comes into conflict with its leader and begins his journey to finding his own voice and accepting his true self.</p>
 
                         <p><strong>Make a Booking:</strong></p>
                         <button class="button buttonhover notshowing">Monday - </button>
@@ -236,14 +222,9 @@
                     </div>
                     <div>
                         <p class="synopsissize"><span> <iframe width="560" height="315" src="https://www.youtube.com/embed/4-tcHHyy1Rw?start=1"></iframe></span>
-                            <strong>A Star is Born R</strong><br /> Synopsis<br />
-                            A Star is Born R This is some text. This is some text.
-                            This is some text. This is some text. This is some text.
-                            This is some text. This is some text. This is some text.
-                            This is some text. This is some text. This is some text.
-                            This is some text. This is some text. This is some text.
-                            This is some text. This is some text. This is some text.
-                            This is some text. This is some text. This is some text.</p>
+                            <!---Clip used for educational purposes from Movieclips Trailers --->
+                            <strong>A Star is Born R</strong><br /><br /> Synopsis<br /><br />
+                            Seasoned musician Jackson Maine discovers -- and falls in love with -- struggling artist Ally. She has just about given up on her dream to make it big as a singer until Jackson coaxes her into the spotlight. But even as Ally's career takes off, the personal side of their relationship is breaking down, as Jackson fights an ongoing battle with his own internal demons.</p>
 
                         <p><strong>Make a Booking:</strong></p>
                         <button class="button buttonhover" onclick="MovieID(3)">Monday - 6pm</button>
@@ -267,7 +248,7 @@
 
                     <div id="infoposition">
                         <p id="pagetitle"> Movie Title - Day - Time</p>
-                        <div>
+                        <span>
                             <fieldset class="seating">
                                 <legend class="legendposition">Standard</legend>
                                 <label>Adults<select>
@@ -313,8 +294,56 @@
                                     </select><br />
                                 </label>
                             </fieldset>
+                        </span>
+                        <div>
+                            <br />
+                            <fieldset class="seating">
+                                <legend class="legendposition">First Class</legend>
+                                <label>Adults<select>
+                                        <option value="zero">0</option>
+                                        <option value="one">1</option>
+                                        <option value="two">2</option>
+                                        <option value="three">3</option>
+                                        <option value="four">4</option>
+                                        <option value="five">5</option>
+                                        <option value="six">6</option>
+                                        <option value="seven">7</option>
+                                        <option value="eight">8</option>
+                                        <option value="nine">9</option>
+                                        <option value="ten">10</option>
+                                    </select><br />
+                                </label>
+                                <label>Consession<select>
+                                        <option value="zero">0</option>
+                                        <option value="one">1</option>
+                                        <option value="two">2</option>
+                                        <option value="three">3</option>
+                                        <option value="four">4</option>
+                                        <option value="five">5</option>
+                                        <option value="six">6</option>
+                                        <option value="seven">7</option>
+                                        <option value="eight">8</option>
+                                        <option value="nine">9</option>
+                                        <option value="ten">10</option>
+                                    </select><br />
+                                </label>
+                                <label>Child<select>
+                                        <option value="zero">0</option>
+                                        <option value="one">1</option>
+                                        <option value="two">2</option>
+                                        <option value="three">3</option>
+                                        <option value="four">4</option>
+                                        <option value="five">5</option>
+                                        <option value="six">6</option>
+                                        <option value="seven">7</option>
+                                        <option value="eight">8</option>
+                                        <option value="nine">9</option>
+                                        <option value="ten">10</option>
+                                    </select><br />
+                                </label>
+                            </fieldset>
                         </div>
-                        <div id="bookingposition">
+                        <span id="bookingposition">
                             <fieldset class="bookingdetails">
                                 <label>Name <input type="text" custname=cust[name] /></label><br />
                                 <label>Email <input type="email" custemail=cust[email] /></label><br />
@@ -322,55 +351,9 @@
                                 <label>Credit Card <input type="text" custcard=cust[card] /></label><br />
                                 <label>Expiry <input type="month" custexpiry=cust[expiry] /></label><br />
                             </fieldset>
-                        </div>
+                        </span>
                     </div>
-                    <div>
-                        <fieldset class="seating">
-                            <legend class="legendposition">First Class</legend>
-                            <label>Adults<select>
-                                    <option value="zero">0</option>
-                                    <option value="one">1</option>
-                                    <option value="two">2</option>
-                                    <option value="three">3</option>
-                                    <option value="four">4</option>
-                                    <option value="five">5</option>
-                                    <option value="six">6</option>
-                                    <option value="seven">7</option>
-                                    <option value="eight">8</option>
-                                    <option value="nine">9</option>
-                                    <option value="ten">10</option>
-                                </select><br />
-                            </label>
-                            <label>Consession<select>
-                                    <option value="zero">0</option>
-                                    <option value="one">1</option>
-                                    <option value="two">2</option>
-                                    <option value="three">3</option>
-                                    <option value="four">4</option>
-                                    <option value="five">5</option>
-                                    <option value="six">6</option>
-                                    <option value="seven">7</option>
-                                    <option value="eight">8</option>
-                                    <option value="nine">9</option>
-                                    <option value="ten">10</option>
-                                </select><br />
-                            </label>
-                            <label>Child<select>
-                                    <option value="zero">0</option>
-                                    <option value="one">1</option>
-                                    <option value="two">2</option>
-                                    <option value="three">3</option>
-                                    <option value="four">4</option>
-                                    <option value="five">5</option>
-                                    <option value="six">6</option>
-                                    <option value="seven">7</option>
-                                    <option value="eight">8</option>
-                                    <option value="nine">9</option>
-                                    <option value="ten">10</option>
-                                </select><br />
-                            </label>
-                        </fieldset>
-                    </div>
+
                     <input type="submit" value="Order">
                 </form>
             </section>
@@ -386,8 +369,8 @@
             <script>
                 document.write(new Date().getFullYear());
 
-            </script>Ian Dowdle, student number (s3622391)
-            <a href="https://github.com/s3622391/wp">GitHub Repository</a>. Last modified
+            </script> Ian Dowdle, student number (s3622391)
+            <a href="https://github.com/s3622391/wp"> GitHub Repository</a>. Last modified
             <?=date ("Y F d  H:i", filemtime($_SERVER['SCRIPT_FILENAME']));?>.
         </div>
         <div>Disclaimer: This website is not a real website and is being developed as part of a School of Science Web Programming course at RMIT University in Melbourne, Australia.

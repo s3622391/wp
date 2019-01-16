@@ -1,12 +1,14 @@
 body {
 
     background-color: white;
+
 }
 
 html,
 body {
     min-height: 100vh;
     scroll-behavior: smooth;
+
 }
 
 header,
@@ -30,7 +32,7 @@ header {
 
 h2 {
     padding-top: 120px;
-    background-color: darkblue; 
+    background-color: darkblue;
     color: yellow;
 }
 
@@ -38,7 +40,7 @@ h2,
 #textfont {
     font-family: 'Bree Serif', serif;
     font-size: 200%;
-    
+
     text-align: center;
     margin: 0p% 3% 0% 3%;
 }
@@ -105,10 +107,9 @@ li a:hover {
     cursor: not-allowed;
 }
 
-span
- {
+span {
     float: right;
-    padding-right: 5%;
+    padding: 2%;
 }
 
 img.align-centre {
@@ -174,11 +175,19 @@ td,
 
 .synopsissize {
     min-height: 320px;
+    text-align: justify;
+    font-size: 16px;
+    font-family: 'Bree Serif', serif;
+    min-width: 25%;
+    max-width: 100%;
+    padding: 5px;
+    margin: 2px;
 }
 
 .seating {
     max-width: 150px;
     text-align: right;
+    font-size: 150%;
 }
 
 .legendposition {
@@ -191,13 +200,9 @@ td,
     text-align: right;
     font-family: 'Bree Serif', serif;
     letter-spacing: 0.1em;
-    font-size: 90%;   
-    
-    border-style: none;
-    
-}
+    font-size: 130%;
+   }
 
- 
 .infoposition {
     display: inline-block;
     border-style: solid;
