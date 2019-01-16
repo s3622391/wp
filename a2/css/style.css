@@ -184,28 +184,53 @@ td,
     margin: 2px;
 }
 
-.seating {
-    max-width: 150px;
+.seating1,
+.seating2 {
+    float: left;
+    margin: 30px;
+    padding: 30px;
+    width: 200px;
     text-align: right;
     font-size: 150%;
+    background-color: peachpuff;
 }
+
+/*.seating1 {
+    margin-left: 10px;
+}
+
+.seating2 {
+    margin-left: 300px;
+}*/
 
 .legendposition {
     text-align: left;
     font-size: 100%;
 }
 
-#bookingposition,
+
 .bookingdetails {
+    width: 300px;
+    margin-left: 100px;
+    padding: 30px;
     text-align: right;
     font-family: 'Bree Serif', serif;
     letter-spacing: 0.1em;
     font-size: 130%;
-   }
+    background-color: goldenrod;
+}
 
 .infoposition {
-    display: inline-block;
+
     border-style: solid;
     border-radius: 8px;
     padding: 10px 0px 0px 15px;
+}
+
+#showbooking {
+    background-color: aqua;
+}
+
+.clear{
+    clear: left;
 }

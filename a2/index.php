@@ -248,58 +248,10 @@
 
                     <div id="infoposition">
                         <p id="pagetitle"> Movie Title - Day - Time</p>
-                        <span>
-                            <fieldset class="seating">
-                                <legend class="legendposition">Standard</legend>
-                                <label>Adults<select>
-                                        <option value="zero">0</option>
-                                        <option value="one">1</option>
-                                        <option value="two">2</option>
-                                        <option value="three">3</option>
-                                        <option value="four">4</option>
-                                        <option value="five">5</option>
-                                        <option value="six">6</option>
-                                        <option value="seven">7</option>
-                                        <option value="eight">8</option>
-                                        <option value="nine">9</option>
-                                        <option value="ten">10</option>
-                                    </select><br />
-                                </label>
-                                <label>Consession<select>
-                                        <option value="zero">0</option>
-                                        <option value="one">1</option>
-                                        <option value="two">2</option>
-                                        <option value="three">3</option>
-                                        <option value="four">4</option>
-                                        <option value="five">5</option>
-                                        <option value="six">6</option>
-                                        <option value="seven">7</option>
-                                        <option value="eight">8</option>
-                                        <option value="nine">9</option>
-                                        <option value="ten">10</option>
-                                    </select><br />
-                                </label>
-                                <label>Child<select>
-                                        <option value="zero">0</option>
-                                        <option value="one">1</option>
-                                        <option value="two">2</option>
-                                        <option value="three">3</option>
-                                        <option value="four">4</option>
-                                        <option value="five">5</option>
-                                        <option value="six">6</option>
-                                        <option value="seven">7</option>
-                                        <option value="eight">8</option>
-                                        <option value="nine">9</option>
-                                        <option value="ten">10</option>
-                                    </select><br />
-                                </label>
-                            </fieldset>
-                        </span>
                         <div>
-                            <br />
-                            <fieldset class="seating">
-                                <legend class="legendposition">First Class</legend>
-                                <label>Adults<select>
+                            <fieldset class="seating1">
+                                <legend class="legendposition">Standard</legend>
+                                <label>Adults <select>
                                         <option value="zero">0</option>
                                         <option value="one">1</option>
                                         <option value="two">2</option>
@@ -313,7 +265,7 @@
                                         <option value="ten">10</option>
                                     </select><br />
                                 </label>
-                                <label>Consession<select>
+                                <label>Consession <select>
                                         <option value="zero">0</option>
                                         <option value="one">1</option>
                                         <option value="two">2</option>
@@ -327,7 +279,7 @@
                                         <option value="ten">10</option>
                                     </select><br />
                                 </label>
-                                <label>Child<select>
+                                <label>Child <select>
                                         <option value="zero">0</option>
                                         <option value="one">1</option>
                                         <option value="two">2</option>
@@ -339,11 +291,59 @@
                                         <option value="eight">8</option>
                                         <option value="nine">9</option>
                                         <option value="ten">10</option>
-                                    </select><br />
+                                    </select>
                                 </label>
                             </fieldset>
                         </div>
-                        <span id="bookingposition">
+                        <div>
+
+                            <fieldset class="seating2">
+                                <legend class="legendposition">First Class</legend>
+                                <label>Adults <select>
+                                        <option value="zero">0</option>
+                                        <option value="one">1</option>
+                                        <option value="two">2</option>
+                                        <option value="three">3</option>
+                                        <option value="four">4</option>
+                                        <option value="five">5</option>
+                                        <option value="six">6</option>
+                                        <option value="seven">7</option>
+                                        <option value="eight">8</option>
+                                        <option value="nine">9</option>
+                                        <option value="ten">10</option>
+                                    </select><br />
+                                </label>
+                                <label>Consession <select>
+                                        <option value="zero">0</option>
+                                        <option value="one">1</option>
+                                        <option value="two">2</option>
+                                        <option value="three">3</option>
+                                        <option value="four">4</option>
+                                        <option value="five">5</option>
+                                        <option value="six">6</option>
+                                        <option value="seven">7</option>
+                                        <option value="eight">8</option>
+                                        <option value="nine">9</option>
+                                        <option value="ten">10</option>
+                                    </select><br />
+                                </label>
+                                <label>Child <select>
+                                        <option value="zero">0</option>
+                                        <option value="one">1</option>
+                                        <option value="two">2</option>
+                                        <option value="three">3</option>
+                                        <option value="four">4</option>
+                                        <option value="five">5</option>
+                                        <option value="six">6</option>
+                                        <option value="seven">7</option>
+                                        <option value="eight">8</option>
+                                        <option value="nine">9</option>
+                                        <option value="ten">10</option>
+                                    </select>
+                                </label>
+                            </fieldset>
+                        </div>
+                        <div>
                             <fieldset class="bookingdetails">
                                 <label>Name <input type="text" custname=cust[name] /></label><br />
                                 <label>Email <input type="email" custemail=cust[email] /></label><br />
@@ -351,10 +351,11 @@
                                 <label>Credit Card <input type="text" custcard=cust[card] /></label><br />
                                 <label>Expiry <input type="month" custexpiry=cust[expiry] /></label><br />
                             </fieldset>
-                        </span>
+                        </div>
                     </div>
-
-                    <input type="submit" value="Order">
+                    <br />
+                    <span id="clear">
+                    <input type="submit" value="Order"></span>
                 </form>
             </section>
         </div>
