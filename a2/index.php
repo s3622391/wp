@@ -242,159 +242,120 @@
             </div>
             <h2 id="Booking">Booking</h2>
             <hr />
-            <form action="https://titan.csit.rmit.edu.au/~e54061/wp/lunardo-formtest.php" method="post">
-                    <label for="seats[STA]">Standard Adult</label>
-                    <select name="seats[STA]">
-                        <option>0</option>
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                        <option>6</option>
-                        <option>7</option>
-                        <option>8</option>
-                        <option>9</option>
-                        <option>10</option>                                      
-                    </select>
-                <br />
-                <label for="seats[STC]">Standard Concession</label>
-                    <select name="seats[STP]">
-                        <option>0</option>
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                        <option>6</option>
-                        <option>7</option>
-                        <option>8</option>
-                        <option>9</option>
-                        <option>10</option>                                      
-                    </select>
-                <br />
-                   <button type="submit">Order</button>
-                    </form>
             <section id="showbooking">
+                <div id="infoposition">
+                    <p id="pagetitle"> Movie Title - Day - Time</p>
+                    <form action="https://titan.csit.rmit.edu.au/~e54061/wp/lunardo-formtest.php" method="post">
+                        <fieldset class="seating1">
+                            <legend class="legendposition">Standard</legend>
+                            <label for="seats[STA]">Adult</label>
+                            <select name="seats[STA]">
+                                <option>0</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                                <option>7</option>
+                                <option>8</option>
+                                <option>9</option>
+                                <option>10</option>
+                            </select>
+                            <br />
+                            <label for="seats[STP]">Concession</label>
+                            <select name="seats[STP]">
+                                <option>0</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                                <option>7</option>
+                                <option>8</option>
+                                <option>9</option>
+                                <option>10</option>
+                            </select>
+                            <br />
+                            <label for="seats[STC]">Child</label>
+                            <select name="seats[STC]">
+                                <option>0</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                                <option>7</option>
+                                <option>8</option>
+                                <option>9</option>
+                                <option>10</option>
+                            </select>
+                            <br />
+                        </fieldset>
+                        <fieldset class="seating2">
+                            <legend class="legendposition">First Class</legend>
+                            <label for="seats[FCA]">Adult</label>
+                            <select name="seats[FCA]">
+                                <option>0</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                                <option>7</option>
+                                <option>8</option>
+                                <option>9</option>
+                                <option>10</option>
+                            </select>
+                            <br />
+                            <label for="seats[FCP]">Concession</label>
+                            <select name="seats[FCP]">
+                                <option>0</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                                <option>7</option>
+                                <option>8</option>
+                                <option>9</option>
+                                <option>10</option>
+                            </select>
+                            <br />
+                            <label for="seats[FCC]">Child</label>
+                            <select name="seats[FCC]">
+                                <option>0</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                                <option>7</option>
+                                <option>8</option>
+                                <option>9</option>
+                                <option>10</option>
+                            </select>
+                            <br />
+                        </fieldset>
+                        <fieldset class="bookingdetails">
+                            <label>Name <input type="text" custname=cust[name] /></label><br />
+                            <label>Email <input type="email" custemail=cust[email] /></label><br />
+                            <label>Mobile <input type="tel" custmobile=cust[mobile] /></label><br />
+                            <label>Credit Card <input type="text" custcard=cust[card] /></label><br />
+                            <label>Expiry <input type="month" custexpiry=cust[expiry] /></label><br />
+                        </fieldset>
+                        <button type="submit">Order</button>
+                    </form>
 
-                <!---<form action="https://titan.csit.rmit.edu.au/~e54061/wp/lunardo-formtest.php" method="post" id="bookingform">--->
-                
-                    <div id="infoposition">
-                        <p id="pagetitle"> Movie Title - Day - Time</p>
-                        <div>
+                </div>
+                <br />
+                <span id="clear"></span>
 
-
-                            <fieldset class="seating1">
-                                <legend class="legendposition">Standard</legend>
-                                <label>Adults <select>
-                                        <option value="zero">0</option>
-                                        <option value="one">1</option>
-                                        <option value="two">2</option>
-                                        <option value="three">3</option>
-                                        <option value="four">4</option>
-                                        <option value="five">5</option>
-                                        <option value="six">6</option>
-                                        <option value="seven">7</option>
-                                        <option value="eight">8</option>
-                                        <option value="nine">9</option>
-                                        <option value="ten">10</option>
-                                    </select><br />
-                                </label>
-                                <label>Consession <select>
-                                        <option value="zero">0</option>
-                                        <option value="one">1</option>
-                                        <option value="two">2</option>
-                                        <option value="three">3</option>
-                                        <option value="four">4</option>
-                                        <option value="five">5</option>
-                                        <option value="six">6</option>
-                                        <option value="seven">7</option>
-                                        <option value="eight">8</option>
-                                        <option value="nine">9</option>
-                                        <option value="ten">10</option>
-                                    </select><br />
-                                </label>
-                                <label>Child <select>
-                                        <option value="zero">0</option>
-                                        <option value="one">1</option>
-                                        <option value="two">2</option>
-                                        <option value="three">3</option>
-                                        <option value="four">4</option>
-                                        <option value="five">5</option>
-                                        <option value="six">6</option>
-                                        <option value="seven">7</option>
-                                        <option value="eight">8</option>
-                                        <option value="nine">9</option>
-                                        <option value="ten">10</option>
-                                    </select>
-                                </label>
-                            </fieldset>
-
-
-                        </div>
-                        <div>
-
-                            <fieldset class="seating2">
-                                <legend class="legendposition">First Class</legend>
-                                <label>Adults <select>
-                                        <option value="zero">0</option>
-                                        <option value="one">1</option>
-                                        <option value="two">2</option>
-                                        <option value="three">3</option>
-                                        <option value="four">4</option>
-                                        <option value="five">5</option>
-                                        <option value="six">6</option>
-                                        <option value="seven">7</option>
-                                        <option value="eight">8</option>
-                                        <option value="nine">9</option>
-                                        <option value="ten">10</option>
-                                    </select><br />
-                                </label>
-                                <label>Consession <select>
-                                        <option value="zero">0</option>
-                                        <option value="one">1</option>
-                                        <option value="two">2</option>
-                                        <option value="three">3</option>
-                                        <option value="four">4</option>
-                                        <option value="five">5</option>
-                                        <option value="six">6</option>
-                                        <option value="seven">7</option>
-                                        <option value="eight">8</option>
-                                        <option value="nine">9</option>
-                                        <option value="ten">10</option>
-                                    </select><br />
-                                </label>
-                                <label>Child <select>
-                                        <option value="zero">0</option>
-                                        <option value="one">1</option>
-                                        <option value="two">2</option>
-                                        <option value="three">3</option>
-                                        <option value="four">4</option>
-                                        <option value="five">5</option>
-                                        <option value="six">6</option>
-                                        <option value="seven">7</option>
-                                        <option value="eight">8</option>
-                                        <option value="nine">9</option>
-                                        <option value="ten">10</option>
-                                    </select>
-                                </label>
-                            </fieldset>
-                        </div>
-                        <div>
-                            <fieldset class="bookingdetails">
-                                <label>Name <input type="text" custname=cust[name] /></label><br />
-                                <label>Email <input type="email" custemail=cust[email] /></label><br />
-                                <label>Mobile <input type="tel" custmobile=cust[mobile] /></label><br />
-                                <label>Credit Card <input type="text" custcard=cust[card] /></label><br />
-                                <label>Expiry <input type="month" custexpiry=cust[expiry] /></label><br />
-                            </fieldset>
-                        </div>
-                    </div>
-                    <br />
-                    <span id="clear">
-                        
-                    </span>
-                
             </section>
         </div>
         <p><a href="#top">Top</a></p>
