@@ -342,23 +342,23 @@
                             </select>
                             <br />
                         </fieldset>
+
                         <fieldset class="bookingdetails">
-                            <fieldset>
-                                <label>Name <input type="text" name=cust[name] /></label><br />
-                            </fieldset>
-                            <fieldset>
-                                <label>Email <input type="email" email=cust[email] /></label><br />
-                            </fieldset>
-                            <fieldset>
-                                <label>Mobile <input type="tel" mobile=cust[mobile] /></label><br />
-                            </fieldset>
-                            <fieldset>
-                                <label>Credit Card <input type="text" card=cust[card] /></label><br />
-                            </fieldset>
-                            <fieldset>
-                                <label>Expiry <input type="month" expiry=cust[expiry] /></label><br />
-                            </fieldset>
+                            <label>Name <input type="text" name=cust[name] /></label><br />
                         </fieldset>
+                        <fieldset class="bookingdetails">
+                            <label>Email <input type="email" email=cust[email] /></label><br />
+                        </fieldset>
+                        <fieldset class="bookingdetails">
+                            <label>Mobile <input type="tel" mobile=cust[mobile] /></label><br />
+                        </fieldset>
+                        <fieldset class="bookingdetails">
+                            <label>Credit Card <input type="text" card=cust[card] /></label><br />
+                        </fieldset>
+                        <fieldset class="bookingdetails">
+                            <label>Expiry <input type="month" expiry=cust[expiry] /></label><br />
+                        </fieldset>
+
                         <button type="submit">Order</button>
                     </form>
 
