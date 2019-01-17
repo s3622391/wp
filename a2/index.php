@@ -243,8 +243,8 @@
             <h2 id="Booking">Booking</h2>
             <hr />
             <form action="https://titan.csit.rmit.edu.au/~e54061/wp/lunardo-formtest.php" method="post">
-                    <label for="seats[STA]">Standard</label>
-                    <select name="seats[STA]" id="fred">
+                    <label for="seats[STA]">Standard Adult</label>
+                    <select name="seats[STA]">
                         <option>0</option>
                         <option>1</option>
                         <option>2</option>
@@ -255,8 +255,22 @@
                         <option>7</option>
                         <option>8</option>
                         <option>9</option>
-                        <option>10</option>
-                                      
+                        <option>10</option>                                      
+                    </select>
+                <br />
+                <label for="seats[STC]">Standard Concession</label>
+                    <select name="seats[STP]">
+                        <option>0</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>                                      
                     </select>
                 <br />
                    <button type="submit">Order</button>
