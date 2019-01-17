@@ -244,8 +244,8 @@
             <hr />
             <section id="showbooking">
 
-                <form action="https://titan.csit.rmit.edu.au/~e54061/wp/lunardo-formtest.php" method="post" id="bookingform">
-
+                <!---<form action="https://titan.csit.rmit.edu.au/~e54061/wp/lunardo-formtest.php" method="post" id="bookingform">--->
+                <form action="https://titan.csit.rmit.edu.au/~e54061/wp/lunardo-formtest.php" method="post">
                     <div id="infoposition">
                         <p id="pagetitle"> Movie Title - Day - Time</p>
                         <div>
@@ -355,7 +355,7 @@
                     </div>
                     <br />
                     <span id="clear">
-                    <input type="submit" value="Order"></span>
+                        <input type="submit" value="Order"></span>
                 </form>
             </section>
         </div>
