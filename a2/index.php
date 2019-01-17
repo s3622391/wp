@@ -343,11 +343,11 @@
                             <br />
                         </fieldset>
                         <fieldset class="bookingdetails">
-                            <label>Name <input type="text" custname=cust[name] /></label><br />
-                            <label>Email <input type="email" custemail=cust[email] /></label><br />
-                            <label>Mobile <input type="tel" custmobile=cust[mobile] /></label><br />
-                            <label>Credit Card <input type="text" custcard=cust[card] /></label><br />
-                            <label>Expiry <input type="month" custexpiry=cust[expiry] /></label><br />
+                            <label>Name <input type="text" name=cust[name] /></label><br />
+                            <label>Email <input type="email" email=cust[email] /></label><br />
+                            <label>Mobile <input type="tel" mobile=cust[mobile] /></label><br />
+                            <label>Credit Card <input type="text" card=cust[card] /></label><br />
+                            <label>Expiry <input type="month" expiry=cust[expiry] /></label><br />
                         </fieldset>
                         <button type="submit">Order</button>
                     </form>
