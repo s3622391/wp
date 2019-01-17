@@ -227,7 +227,7 @@
                             Seasoned musician Jackson Maine discovers -- and falls in love with -- struggling artist Ally. She has just about given up on her dream to make it big as a singer until Jackson coaxes her into the spotlight. But even as Ally's career takes off, the personal side of their relationship is breaking down, as Jackson fights an ongoing battle with his own internal demons.</p>
 
                         <p><strong>Make a Booking:</strong></p>
-                        <button class="button buttonhover" onclick="movie[id]">Monday - 6pm</button>
+                        <button type="button" class="button buttonhover" id="btnclick" onclick=clickevent()>Monday - 6pm</button>
                         <button class="button buttonhover">Tuesday - 6pm</button>
                         <button class="button buttonhover notshowing">Wednesday - </button>
                         <button class="button buttonhover notshowing">Thursday - </button>
@@ -244,7 +244,8 @@
             <hr />
             <section id="showbooking">
                 <div id="infoposition">
-                    <p id="pagetitle"></p>
+                    updatetitle();
+                    <p id="pagetitle">Movie title and rating</p>
                     <form action="https://titan.csit.rmit.edu.au/~e54061/wp/lunardo-formtest.php" method="post">
                         <fieldset class="seating1">
                             <input type="hidden" name="movie[id]" id='movie[id]'/>
