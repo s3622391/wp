@@ -246,9 +246,20 @@
 
                 <!---<form action="https://titan.csit.rmit.edu.au/~e54061/wp/lunardo-formtest.php" method="post" id="bookingform">--->
                 <form action="https://titan.csit.rmit.edu.au/~e54061/wp/lunardo-formtest.php" method="post">
+                    <fieldset class="bookingdetails">
+                                <label>Name <input type="text" custname=cust[name] /></label><br />
+                                <label>Email <input type="email" custemail=cust[email] /></label><br />
+                                <label>Mobile <input type="tel" custmobile=cust[mobile] /></label><br />
+                                <label>Credit Card <input type="text" custcard=cust[card] /></label><br />
+                                <label>Expiry <input type="month" custexpiry=cust[expiry] /></label><br />
+                            </fieldset>
+                    <input type="submit" value="Order"/>
+                    </form>
                     <div id="infoposition">
                         <p id="pagetitle"> Movie Title - Day - Time</p>
                         <div>
+
+
                             <fieldset class="seating1">
                                 <legend class="legendposition">Standard</legend>
                                 <label>Adults <select>
@@ -294,6 +305,8 @@
                                     </select>
                                 </label>
                             </fieldset>
+
+
                         </div>
                         <div>
 
@@ -355,8 +368,9 @@
                     </div>
                     <br />
                     <span id="clear">
-                        <input type="submit" value="Order"></span>
-                </form>
+                        
+                    </span>
+                
             </section>
         </div>
         <p><a href="#top">Top</a></p>
