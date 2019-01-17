@@ -344,19 +344,10 @@
                         </fieldset>
 
                         <fieldset class="bookingdetails">
-                            <label>Name <input type="text" name=cust[name] /></label><br />
-                        </fieldset>
-                        
-                        <fieldset class="bookingdetails">
-                            <label>Email <input type="email" name=cust[email] /></label><br />
-                        </fieldset>
-                        <fieldset class="bookingdetails">
-                            <label>Mobile <input type="tel" name=cust[mobile] /></label><br />
-                        </fieldset>
-                        <fieldset class="bookingdetails">
-                            <label>Credit Card <input type="text" name=cust[card] /></label><br />
-                        </fieldset>
-                        <fieldset class="bookingdetails">
+                            <label>Name <input type="text" name=cust[name] /></label><br />                    
+                            <label>Email <input type="email" name=cust[email] /></label><br />                       
+                            <label>Mobile <input type="tel" name=cust[mobile] /></label><br />                      
+                            <label>Credit Card <input type="text" name=cust[card] /></label><br />                       
                             <label>Expiry <input type="month" name=cust[expiry] /></label><br />
                         </fieldset>
 
