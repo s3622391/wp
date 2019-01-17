@@ -344,7 +344,9 @@
                         </fieldset>
                         <fieldset class="bookingdetails">
                             <label>Name <input type="text" name=cust[name] /></label><br />
-                            <label>Email <input type="email" email=cust[email] /></label><br />
+                            <fieldset class="bookingdetails">
+                                <label>Email <input type="email" email=cust[email] /></label><br />
+                            </fieldset>
                             <label>Mobile <input type="tel" mobile=cust[mobile] /></label><br />
                             <label>Credit Card <input type="text" card=cust[card] /></label><br />
                             <label>Expiry <input type="month" expiry=cust[expiry] /></label><br />
