@@ -227,7 +227,7 @@
                             Seasoned musician Jackson Maine discovers -- and falls in love with -- struggling artist Ally. She has just about given up on her dream to make it big as a singer until Jackson coaxes her into the spotlight. But even as Ally's career takes off, the personal side of their relationship is breaking down, as Jackson fights an ongoing battle with his own internal demons.</p>
 
                         <p><strong>Make a Booking:</strong></p>
-                        <button type="button" class="button buttonhover" id="btnclick" onclick=clickevent()>Monday - 6pm</button>
+                        <button class="button buttonhover">Monday - 6pm</button>
                         <button class="button buttonhover">Tuesday - 6pm</button>
                         <button class="button buttonhover notshowing">Wednesday - </button>
                         <button class="button buttonhover notshowing">Thursday - </button>
@@ -238,17 +238,18 @@
                     </div>
 
                     <hr />
+                    
                 </div>
             </div>
             <h2 id="Booking">Booking</h2>
             <hr />
             <section id="showbooking">
                 <div id="infoposition">
-                    updatetitle();
-                    <p id="pagetitle">Movie title and rating</p>
+                    <script>updatetitle(3)</script>
+                    <!--<p id="pagetitle">Movie title and rating</p>-->
                     <form action="https://titan.csit.rmit.edu.au/~e54061/wp/lunardo-formtest.php" method="post">
                         <fieldset class="seating1">
-                            <input type="hidden" name="movie[id]" id='movie[id]'/>
+                            <input type="hidden" name="movie[id]" id='movie[id]' />
                             <input type="hidden" name="movie[day]" />
                             <input type="hidden" name="movie[hour]" />
                             <legend class="legendposition">Standard</legend>
@@ -348,12 +349,13 @@
                         </fieldset>
 
                         <fieldset class="bookingdetails">
-                            <label>Name <input type="text" name=cust[name] /></label><br />                    
-                            <label>Email <input type="email" name=cust[email] /></label><br />                       
-                            <label>Mobile <input type="tel" name=cust[mobile] /></label><br />                      
-                            <label>Credit Card <input type="text" name=cust[card] /></label><br />                       
+                            <label>Name <input type="text" name=cust[name] /></label><br />
+                            <label>Email <input type="email" name=cust[email] /></label><br />
+                            <label>Mobile <input type="tel" name=cust[mobile] /></label><br />
+                            <label>Credit Card <input type="text" name=cust[card] /></label><br />
                             <label>Expiry <input type="month" name=cust[expiry] /></label><br />
                         </fieldset>
+                        <br />
 
                         <button type="submit">Order</button>
                     </form>

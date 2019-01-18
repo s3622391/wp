@@ -217,7 +217,7 @@ td,
     font-family: 'Bree Serif', serif;
     letter-spacing: 0.1em;
     font-size: 130%;
-    background-color: goldenrod;
+    background-color: peachpuff;
 }
 
 .infoposition {
@@ -227,9 +227,7 @@ td,
     padding: 10px 0px 0px 15px;
 }
 
-#showbooking {
-    background-color: aqua;
-}
+
 
 .clear{
     clear: left;
