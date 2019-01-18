@@ -1,14 +1,12 @@
 body {
 
     background-color: white;
-
 }
 
 html,
 body {
     min-height: 100vh;
     scroll-behavior: smooth;
-
 }
 
 header,
@@ -54,10 +52,6 @@ h2,
     min-height: 15%;
     background-color: darkblue;
 }
-
-/*li {
-    float: left;
-}*/
 
 li.one {
     display: inline-block;
@@ -195,19 +189,10 @@ td,
     background-color: peachpuff;
 }
 
-/*.seating1 {
-    margin-left: 10px;
-}
-
-.seating2 {
-    margin-left: 300px;
-}*/
-
 .legendposition {
     text-align: left;
     font-size: 100%;
 }
-
 
 .bookingdetails {
     width: 300px;
@@ -227,8 +212,6 @@ td,
     padding: 10px 0px 0px 15px;
 }
 
-
-
-.clear{
+.clear {
     clear: left;
 }
