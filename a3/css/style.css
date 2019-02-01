@@ -1,1 +1,217 @@
-/* Insert your styles here */
+body {
+
+    background-color: white;
+}
+
+html,
+body {
+    min-height: 100vh;
+    scroll-behavior: smooth;
+}
+
+header,
+#name {
+    font-family: 'Coiny', cursive;
+    font-size: 200%;
+    text-align: center;
+    color: #ee3e80;
+}
+
+header {
+    width: 100%;
+    min-height: 15%;
+    padding-top: 80px;
+    background-color: darkblue;
+}
+
+#top {
+    margin-top: 10px;
+}
+
+h2 {
+    padding-top: 120px;
+    background-color: darkblue;
+    color: yellow;
+}
+
+h2,
+#textfont {
+    font-family: 'Bree Serif', serif;
+    font-size: 200%;
+
+    text-align: center;
+    margin: 0p% 3% 0% 3%;
+}
+
+#navbar {
+    position: sticky;
+    top: 0;
+    list-style-type: none;
+
+    width: 100%;
+    min-height: 15%;
+    background-color: darkblue;
+}
+
+li.one {
+    display: inline-block;
+    color: blue;
+    text-align: center;
+    font-size: 200%;
+    border-radius: 8px;
+    border-width: thick;
+    border-style: double;
+    padding: 10px 10px;
+    width: 240px;
+    margin: 2%;
+    background-color: lightskyblue;
+}
+
+li a:hover {
+    background-color: lightcyan;
+}
+
+.showing {
+    display: inline-block;
+    min-width: 220px;
+    margin-left: 7%;
+    border-style: solid;
+    border-radius: 8px;
+    padding: 10px 0px 0px 15px;
+}
+
+
+.button {
+    border: none;
+    border-radius: 8px;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+}
+
+.buttonhover:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.notshowing {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+span {
+    float: right;
+    padding: 2%;
+}
+
+img.align-centre {
+    display: block;
+    margin: auto;
+}
+
+#seatimages {
+    display: inline-block;
+    width: auto;
+    padding: 10px;
+    margin-left: 25%;
+}
+
+.column {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 40%;
+    padding: 5px;
+    margin-left: 10%;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+table {
+    position: relative;
+    left: 20%;
+    width: 60%;
+    border-collapse: collapse;
+}
+
+th,
+td,
+.seating,
+#pagetitle {
+    font-family: 'Bree Serif', serif;
+    letter-spacing: 0.1em;
+    font-size: 90%;
+    border-width: medium;
+    border-style: solid;
+    text-align: left;
+}
+
+.money {
+    text-align: right;
+}
+
+/*#showing {
+    display: grid;
+    border-width: medium;
+    border-style: solid;
+    padding-left: 5%;
+    margin-top: 15px;
+    grid-template-columns: max-content max-content max-content max-content;
+
+    grid-gap: 10%;
+    text-align: center;
+}*/
+
+.synopsissize {
+    min-height: 320px;
+    text-align: justify;
+    font-size: 16px;
+    font-family: 'Bree Serif', serif;
+    min-width: 25%;
+    max-width: 100%;
+    padding: 5px;
+    margin: 2px;
+}
+
+.seating1,
+.seating2 {
+    float: left;
+    margin: 30px;
+    padding: 30px;
+    width: 200px;
+    text-align: right;
+    font-size: 150%;
+    background-color: peachpuff;
+}
+
+.legendposition {
+    text-align: left;
+    font-size: 100%;
+}
+
+.bookingdetails {
+    width: 300px;
+    margin-left: 100px;
+    padding: 30px;
+    text-align: right;
+    font-family: 'Bree Serif', serif;
+    letter-spacing: 0.1em;
+    font-size: 130%;
+    background-color: peachpuff;
+}
+
+.infoposition {
+
+    border-style: solid;
+    border-radius: 8px;
+    padding: 10px 0px 0px 15px;
+}
+
+.clear {
+    clear: left;
+}
