@@ -1,3 +1,7 @@
+<?php
+    include_once('tools.php');
+?>
+
 <!DOCTYPE html>
 <html lang='en'>
 
@@ -9,7 +13,12 @@
     <!-- Keep wireframe.css for debugging, add your css to style.css -->
     <link id='wireframecss' type="text/css" rel="stylesheet" href="../wireframe.css" disabled>
     <link id='stylecss' type="text/css" rel="stylesheet" href="css/style.css">
-    <script type="text/javascript" src='../wireframe.js'></script>
+    <style>
+    <?php include("css/style.css"); ?>
+  </style>
+    <script type="text/javascript" src='../wireframe.js'>
+        <?php include("../wireframe.js"); ?>
+    </script>
     <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Coiny" rel="stylesheet">
 
 </head>
@@ -122,6 +131,7 @@
                             <li>Saturday - 12pm</li><br />
                             <li>Sunday - 12pm</li><br />
                         </ul>
+
                     </div>
                     <div class="showing">
                         <img src='../../media/Spiderweb.png' width='200' alt='Girlinthespiderswebimage'>
@@ -180,10 +190,10 @@
 
 
                         <p><strong>Make a Booking:</strong></p>
-                        <button class="button buttonhover" class="click" onclick="setHiddenFields('0','0','0')" >Monday - 12pm</button>
+                        <button class="button buttonhover" class="click" onclick="setHiddenFields('0','0','0')">Monday - 12pm</button>
                         <button class="button buttonhover" class="click" onclick="setHiddenFields('0','1','0')">Tuesday - 12pm</button>
-                        <button class="button buttonhover"class="click" onclick="setHiddenFields('0','2','2')" >Wednesday - 6pm</button>
-                        <button class="button buttonhover" class="click" onclick="setHiddenFields('0','3','2')" >Thursday - 6pm</button>
+                        <button class="button buttonhover" class="click" onclick="setHiddenFields('0','2','2')">Wednesday - 6pm</button>
+                        <button class="button buttonhover" class="click" onclick="setHiddenFields('0','3','2')">Thursday - 6pm</button>
                         <button class="button buttonhover" class="click" onclick="setHiddenFields('0','4','2')">Friday - 6pm</button>
                         <button class="button buttonhover" class="click" onclick="setHiddenFields('0','5','0')">Saturday - 12pm</button>
                         <button class="button buttonhover" class="click" onclick="setHiddenFields('0','6','0')">Sunday - 12pm</button>
@@ -253,13 +263,13 @@
             <hr />
             <section id="showbooking">
                 <div id="infoposition">
-                    
+
                     <!--<p id="pagetitle">Movie title and rating</p>-->
                     <form action="https://titan.csit.rmit.edu.au/~e54061/wp/lunardo-formtest.php" method="post">
                         <fieldset class="seating1">
                             <input type="hidden" name="movie[id]" value=getTitle() />
-                            <input type="hidden" name="movie[day]" value=getDay()/>
-                            <input type="hidden" name="movie[hour]" value=getHour()/>
+                            <input type="hidden" name="movie[day]" value=getDay() />
+                            <input type="hidden" name="movie[hour]" value=getHour() />
                             <legend class="legendposition">Standard</legend>
                             <label for="seats[STA]">Adult</label>
                             <select name="seats[STA]">
@@ -396,8 +406,13 @@
         <div>
             <button id='toggleWireframeCSS' onclick='toggleWireframe()'>Toggle Wireframe CSS</button>
         </div>
+        echo "<p>This is what is inside POST:</p>";
+preShow($_POST);
+        echo "<p>Fingers crossed there is something called 'user' in POST:</p>";
+preShow($_POST['movie']);
+        
     </footer>
-
+    
 </body>
 
 </html>
