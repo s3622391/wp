@@ -257,9 +257,9 @@
                     <!--<p id="pagetitle">Movie title and rating</p>-->
                     <form action="https://titan.csit.rmit.edu.au/~e54061/wp/lunardo-formtest.php" method="post">
                         <fieldset class="seating1">
-                            <input type="hidden" name="movie[id]" value='getTitle()' />
-                            <input type="hidden" name="movie[day]" value='getDay()'/>
-                            <input type="hidden" name="movie[hour]" value='getHour()'/>
+                            <input type="hidden" name="movie[id]" value=getTitle() />
+                            <input type="hidden" name="movie[day]" value=getDay()/>
+                            <input type="hidden" name="movie[hour]" value=getHour()/>
                             <legend class="legendposition">Standard</legend>
                             <label for="seats[STA]">Adult</label>
                             <select name="seats[STA]">
