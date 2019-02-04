@@ -14,10 +14,11 @@
     <link id='wireframecss' type="text/css" rel="stylesheet" href="../wireframe.css" disabled>
     <link id='stylecss' type="text/css" rel="stylesheet" href="css/style.css">
     <style>
-    <?php include("css/style.css"); ?>
+        <?php include("css/style.css"); ?>
   </style>
     <script type="text/javascript" src='../wireframe.js'>
         <?php include("../wireframe.js"); ?>
+
     </script>
     <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Coiny" rel="stylesheet">
 
@@ -120,7 +121,7 @@
                 <hr />
                 <section>
                     <div class="showing">
-                        <img src='../../media/Ralphbreaksinternet.png' width='200' alt='Ralphbreaksinternetimage'>
+                        <button id="button"><img src='../../media/Ralphbreaksinternet.png' width='200' alt='Ralphbreaksinternetimage'></button>
                         <p><strong>Ralph Breaks the Internet PG</strong></p>
                         <ul>
                             <li>Monday - 12pm</li><br />
@@ -131,10 +132,33 @@
                             <li>Saturday - 12pm</li><br />
                             <li>Sunday - 12pm</li><br />
                         </ul>
+                        <div id="modalBox" class="modal">
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <div>
+                                    <p class="synopsissize"><span> <iframe width="560" height="315" src="https://www.youtube.com/embed/_BcYBFC6zfY?start=1"></iframe></span>
+                                        <!---Clip used for educational purposes from Walt Disney Animation Studios --->
+                                        <strong>Ralph Breaks the Internet PG</strong><br />
+                                        <br />Synopsis<br />
+                                        <br />Video game bad guy Ralph and fellow misfit Vanellope von Schweetz must risk it all by traveling to the World Wide Web in search of a replacement part to save Vanellope's video game, "Sugar Rush." In way over their heads, Ralph and Vanellope rely on the citizens of the internet -- the netizens -- to help navigate their way, including an entrepreneur named Yesss, who is the head algorithm and the heart and soul of trend-making site BuzzzTube.</p>
+
+
+                                    <p><strong>Make a Booking:</strong></p>
+                                    <button class="button buttonhover" class="click" onclick="setHiddenFields('0','0','0')">Monday - 12pm</button>
+                                    <button class="button buttonhover" class="click" onclick="setHiddenFields('0','1','0')">Tuesday - 12pm</button>
+                                    <button class="button buttonhover" class="click" onclick="setHiddenFields('0','2','2')">Wednesday - 6pm</button>
+                                    <button class="button buttonhover" class="click" onclick="setHiddenFields('0','3','2')">Thursday - 6pm</button>
+                                    <button class="button buttonhover" class="click" onclick="setHiddenFields('0','4','2')">Friday - 6pm</button>
+                                    <button class="button buttonhover" class="click" onclick="setHiddenFields('0','5','0')">Saturday - 12pm</button>
+                                    <button class="button buttonhover" class="click" onclick="setHiddenFields('0','6','0')">Sunday - 12pm</button>
+                                    <hr />
+                                </div>
+                            </div>
+                        </div>
 
                     </div>
                     <div class="showing">
-                        <img src='../../media/Spiderweb.png' width='200' alt='Girlinthespiderswebimage'>
+                        <button id="button"><img src='../../media/Spiderweb.png' width='200' alt='Girlinthespiderswebimage'></button>
                         <p><strong>The Girl in the Spider's Web R</strong></p>
                         <ul>
                             <li>Monday - NA</li><br />
@@ -145,6 +169,27 @@
                             <li>Saturday - 6pm</li><br />
                             <li>Sunday - 6pm</li><br />
                         </ul>
+                        <div id="modalBox" class="modal">
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <div>
+                                    <p class="synopsissize"><span> <iframe width="560" height="315" src="https://www.youtube.com/embed/XKMSP9OKspQ?start=1"></iframe></span>
+                                        <!---Clip used for educational purposes from Sony Pictures Entertainment --->
+                                        <strong>The Girl in the Spider's Web R</strong><br /> <br />Synopsis<br /><br />
+                                        Fired from the National Security Agency, Frans Balder recruits hacker Lisbeth Salander to steal FireWall, a computer program that can access codes for nuclear weapons worldwide. The download soon draws attention from an NSA agent who traces the activity to Stockholm. Further problems arise when Russian thugs take Lisbeth's laptop and kidnap a math whiz who can make FireWall work. Now, Lisbeth and an unlikely ally must race against time to save the boy and recover the codes to avert disaster.</p>
+
+                                    <p><strong>Make a Booking:</strong></p>
+                                    <button class="button buttonhover notshowing">Monday - </button>
+                                    <button class="button buttonhover notshowing">Tuesday - </button>
+                                    <button class="button buttonhover">Wednesday - 9pm</button>
+                                    <button class="button buttonhover">Thursday - 9pm</button>
+                                    <button class="button buttonhover">Friday - 9pm</button>
+                                    <button class="button buttonhover">Saturday - 6pm</button>
+                                    <button class="button buttonhover">Sunday - 6pm</button>
+                                    <hr />
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="showing">
                         <img src='../../media/Boyerased.png' width='200' alt='BoyErasedImage'>
@@ -198,13 +243,7 @@
                         <button class="button buttonhover" class="click" onclick="setHiddenFields('0','5','0')">Saturday - 12pm</button>
                         <button class="button buttonhover" class="click" onclick="setHiddenFields('0','6','0')">Sunday - 12pm</button>
                         <hr />
-                        <!---<script>
-                            function setHiddenFields(movie_id) 
-                            {
-                                document.getElementById("moviePane").value = moviePane;
-                                console.log(moviePane+': '+document.getElementById("moviePane").value);
-                            }
-                        </script>--->
+
                     </div>
                     <div>
                         <p class="synopsissize"><span> <iframe width="560" height="315" src="https://www.youtube.com/embed/XKMSP9OKspQ?start=1"></iframe></span>
@@ -406,13 +445,9 @@
         <div>
             <button id='toggleWireframeCSS' onclick='toggleWireframe()'>Toggle Wireframe CSS</button>
         </div>
-        echo "<p>This is what is inside POST:</p>";
-preShow($_POST);
-        echo "<p>Fingers crossed there is something called 'user' in POST:</p>";
-preShow($_POST['movie']);
-        
+
     </footer>
-    
+
 </body>
 
 </html>
