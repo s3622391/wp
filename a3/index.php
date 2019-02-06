@@ -577,8 +577,8 @@
                             <button id="buttonThree"><img src='../../media/Starisborn.png' width='200' alt='AStarisBornImage'></button>
                             <p><strong>A Star is Born R</strong></p>
                             <ul>
-                                <li>Monday - 18pm</li><br />
-                                <li>Tuesday - 18pm</li><br />
+                                <li>Monday - 6pm</li><br />
+                                <li>Tuesday - 6pm</li><br />
                                 <li>Wednesday - NA</li><br />
                                 <li>Thursday - NA</li><br />
                                 <li>Friday - 6pm</li><br />
