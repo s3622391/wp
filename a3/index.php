@@ -160,9 +160,9 @@
                                         <div id="infoposition">
                                             <form action="https://titan.csit.rmit.edu.au/~e54061/wp/lunardo-formtest.php" method="post">
                                                 <fieldset class="seating1">
-                                                    <input id=movie[id] type="hidden" value="movie[id]"/>
-                                                    <input id=movie[day] type="hidden" value="movie[day]"/>
-                                                    <input id=movie[hour] type="hidden" value="movie[hour]"  /> 
+                                                    <input id=movie[id] type="hidden" value="movie"/>
+                                                    <input id=movie[day] type="hidden" value="day"/>
+                                                    <input id=movie[hour] type="hidden" value="time" /> 
 
                                                     <legend class="legendposition">Standard</legend>
                                                     <label for="seats[STA]">Adult</label>
