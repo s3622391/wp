@@ -280,12 +280,13 @@
                             <form action="https://titan.csit.rmit.edu.au/~e54061/wp/lunardo-formtest.php" method="post">
                                 <fieldset class="seating1">
 
-                                    <input id="movie[id]" type="hidden" name="movie[id]" value=getTitle() />
-                                    <input id="movie[day]" type="hidden" name="movie[day]" value=getDay() />
-                                    <input id="movie[hour]" type="hidden" name="movie[hour]" value=getHour() />
+                                    <input id="movie[id]" type="hidden" name="movie[id]" value="" />
+                                    <input id="movie[day]" type="hidden" name="movie[day]" value="" />
+                                    <input id="movie[hour]" type="hidden" name="movie[hour]" value="" />
                                     <legend class="legendposition">Standard</legend>
                                     <label for="seats[STA]">Adult</label>
                                     <select name="seats[STA]">
+                                        <option> </option>
                                         <option>0</option>
                                         <option>1</option>
                                         <option>2</option>
