@@ -155,12 +155,16 @@
                                         <button class="button buttonhover" class="click" onclick="setHiddenFields('0','5','0')">Saturday - 12pm</button>
                                         <button class="button buttonhover" class="click" onclick="setHiddenFields('0','6','0')">Sunday - 12pm</button>
                                         <hr />
+                                     <!--   <button class="button buttonhover" class="click" id=movie[id] onclick="getTitle()">test title</button> -->
+                                        
                                         <div id="infoposition">
                                             <form action="https://titan.csit.rmit.edu.au/~e54061/wp/lunardo-formtest.php" method="post">
                                                 <fieldset class="seating1">
-                                                    <input type="hidden" name="movie[id]" id=movie[id] />
-                                                    <input type="hidden" name="movie[day]" id=movie[day] />
-                                                    <input type="hidden" name="movie[hour]" id=movie[hour] />
+                                                    <input type="hidden" name="movie[id]" id=movie[id] value="getTitle()"/>
+                                                    <input type="hidden" name="movie[day]" id=movie[day] value="getDay()"/>
+                                                    <input type="hidden" name="movie[hour]" id=movie[hour] value="getHour()"/> 
+
+
                                                     <legend class="legendposition">Standard</legend>
                                                     <label for="seats[STA]">Adult</label>
                                                     <select name="seats[STA]">
@@ -730,7 +734,7 @@
                     <hr />
                 </div>
             </article>
- 
+
             <article>
                 <div>
                     <h2 id="Booking">Booking</h2>
