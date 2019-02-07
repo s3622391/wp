@@ -1,5 +1,13 @@
 <?php
     include_once('tools.php');
+
+function preShow( $arr, $returnAsString=false ) {
+$ret = '<pre>' . print_r($arr, true) . '</pre>';
+if ($returnAsString)
+return $ret;
+else 
+echo $ret; 
+}
 ?>
 
 <!DOCTYPE html>
@@ -15,7 +23,11 @@
     <link id='stylecss' type="text/css" rel="stylesheet" href="css/style.css">
     <style>
         <?php include("css/style.css"); ?>
-  </style>
+    </style>
+    <script>
+        <?php include("tools.js"); ?>
+
+    </script>
     <script type="text/javascript" src='../wireframe.js'>
         <?php include("../wireframe.js"); ?>
 
@@ -40,12 +52,6 @@
             <li class="one"><a href="#Booking">Booking</a><br /></li>
         </ul>
     </nav>
-
-    <form action="c:/MAMP/htdocs/wp/a3/zxcv.php" method="post">
-        Name: <input type="text" name="name"><br>
-        E-mail: <input type="text" name="email"><br>
-        <input type="submit">
-    </form>
 
     <main>
         <div>
@@ -270,7 +276,7 @@
                     <hr />
                 </div>
             </article>
-
+            <!--  -->
             <article>
                 <div>
                     <h2 id="Booking">Booking</h2>
@@ -425,6 +431,9 @@
             <button id='toggleWireframeCSS' onclick='toggleWireframe()'>Toggle Wireframe CSS</button>
         </div>
     </footer>
+    <div id="debugger">preShow($_POST);</div>
+    <div id="debugger">preShow($_GET);</div>
+    <div id="debugger">preShow($_SESSION);</div>
 
 </body>
 
