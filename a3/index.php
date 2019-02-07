@@ -26,23 +26,19 @@
 
 <body>
     <header>
-
         <div>
             <p id="top"><img src='../../media/cinema-logo.png' alt="Cinema Logo" width='200' height='200' class="align-centre" /></p>
             <p id="name">Lunardo</p>
         </div>
-
     </header>
 
     <nav id="navbar">
-
         <ul>
             <li class="one"><a href="#About" class="active">About Us </a></li>
             <li class="one"><a href="#SeatsandPricing">Seats and Pricing</a></li>
             <li class="one"><a href="#NowShowing">Now Showing</a></li>
-            <!-- <li class="one"><a href="#Booking">Booking</a><br /></li>-->
+            <li class="one"><a href="#Booking">Booking</a><br /></li>
         </ul>
-
     </nav>
 
     <form action="c:/MAMP/htdocs/wp/a3/zxcv.php" method="post">
@@ -52,7 +48,6 @@
     </form>
 
     <main>
-
         <div>
             <article>
                 <div id="aboutposition">
@@ -62,7 +57,6 @@
                     <p id="textfont">Welcome to the Lunardo Cinema! We have just finished our extensive refurbishment, revamping the place bring to you a fantastic movie experience with brand new seating now including reclinable First class.</p>
                     <p id="textfont">Our projection system has been upgraded and now has <a href="https://www.dolby.com/us/en/brands/dolby-vision.html">3D Dolby Vision</a> projection and <a href="https://www.dolby.com/us/en/brands/dolby-atmos.html">Dolby Atmos</a> sound. </p>
                     <p id="name"><strong>Come and check us out!</strong></p>
-
                 </div>
             </article>
             <article>
@@ -169,7 +163,6 @@
                                     </div>
                                 </div>
                             </div>
-
                         </div>
                         <div class="showing">
                             <button id="buttonOne"><img src='../../media/Spiderweb.png' width='200' alt='Girlinthespiderswebimage'></button>
@@ -205,7 +198,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <div class="showing">
                             <button id="buttonTwo"><img src='../../media/Boyerased.png' width='200' alt='BoyErasedImage'></button>
                             <p><strong>Boy Erased R</strong></p>
@@ -236,7 +228,6 @@
                                         <button class="button buttonhover" class="click" onclick="setHiddenFields('2','5','3')">Saturday - 9pm</button>
                                         <button class="button buttonhover" class="click" onclick="setHiddenFields(21','6','3')">Sunday - 9pm</button>
                                         <hr />
-
                                     </div>
                                 </div>
                             </div>
@@ -276,7 +267,6 @@
                             </div>
                         </div>
                     </section>
-
                     <hr />
                 </div>
             </article>
@@ -397,8 +387,7 @@
                                     <label>Expiry <input type="month" name=cust[expiry] /></label><br />
                                 </fieldset>
                                 <br />
-
-                                <button type="submit">Order</button>
+                                <button class="button buttonhover" type="submit">Order</button>
                             </form>
                         </div>
                         <br />
@@ -429,7 +418,6 @@
         <div>
             <button id='toggleWireframeCSS' onclick='toggleWireframe()'>Toggle Wireframe CSS</button>
         </div>
-
     </footer>
 
 </body>
