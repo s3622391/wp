@@ -40,10 +40,16 @@
             <li class="one"><a href="#About" class="active">About Us </a></li>
             <li class="one"><a href="#SeatsandPricing">Seats and Pricing</a></li>
             <li class="one"><a href="#NowShowing">Now Showing</a></li>
-            <li class="one"><a href="#Booking">Booking</a><br /></li>
+            <!-- <li class="one"><a href="#Booking">Booking</a><br /></li>-->
         </ul>
 
     </nav>
+
+    <form action="c:/MAMP/htdocs/wp/a3/zxcv.php" method="post">
+        Name: <input type="text" name="name"><br>
+        E-mail: <input type="text" name="email"><br>
+        <input type="submit">
+    </form>
 
     <main>
 
@@ -155,127 +161,11 @@
                                         <button class="button buttonhover" class="click" onclick="setHiddenFields('0','5','0')">Saturday - 12pm</button>
                                         <button class="button buttonhover" class="click" onclick="setHiddenFields('0','6','0')">Sunday - 12pm</button>
                                         <hr />
-                                        <!--temp testing buttons  -->
+                                        <!--temp testing buttons 
                                         <button class="button buttonhover" class="click" id=movie[id] onclick="getTitle()">test title</button>
                                         <button class="button buttonhover" class="click" id=movie[day] onclick="getDay()">test title</button>
-                                        <button class="button buttonhover" class="click" id=movie[hour] onclick="getHour()">test title</button>
-                                        
-                                        <div id="infoposition">
-                                            <form method="post" action="https://titan.csit.rmit.edu.au/~e54061/wp/lunardo-formtest.php">
-                                                <fieldset class="seating1">
-
-                                                    <input id=movie[id] type="text" name="movie[id]" value="" />
-                                                    <input id=movie[day] type="hidden" name="movie[day]" value="" />
-                                                    <input id=movie[hour] type="hidden" name="movie[hour]" value="" />
-
-                                                    <legend class="legendposition">Standard</legend>
-                                                    <label for="seats[STA]">Adult</label>
-                                                    <select name="seats[STA]">
-                                                        <option>0</option>
-                                                        <option>1</option>
-                                                        <option>2</option>
-                                                        <option>3</option>
-                                                        <option>4</option>
-                                                        <option>5</option>
-                                                        <option>6</option>
-                                                        <option>7</option>
-                                                        <option>8</option>
-                                                        <option>9</option>
-                                                        <option>10</option>
-                                                    </select>
-                                                    <br />
-                                                    <label for="seats[STP]">Concession</label>
-                                                    <select name="seats[STP]">
-                                                        <option>0</option>
-                                                        <option>1</option>
-                                                        <option>2</option>
-                                                        <option>3</option>
-                                                        <option>4</option>
-                                                        <option>5</option>
-                                                        <option>6</option>
-                                                        <option>7</option>
-                                                        <option>8</option>
-                                                        <option>9</option>
-                                                        <option>10</option>
-                                                    </select>
-                                                    <br />
-                                                    <label for="seats[STC]">Child</label>
-                                                    <select name="seats[STC]">
-                                                        <option>0</option>
-                                                        <option>1</option>
-                                                        <option>2</option>
-                                                        <option>3</option>
-                                                        <option>4</option>
-                                                        <option>5</option>
-                                                        <option>6</option>
-                                                        <option>7</option>
-                                                        <option>8</option>
-                                                        <option>9</option>
-                                                        <option>10</option>
-                                                    </select>
-                                                    <br />
-                                                </fieldset>
-                                                <fieldset class="seating2">
-                                                    <legend class="legendposition">First Class</legend>
-                                                    <label for="seats[FCA]">Adult</label>
-                                                    <select name="seats[FCA]">
-                                                        <option>0</option>
-                                                        <option>1</option>
-                                                        <option>2</option>
-                                                        <option>3</option>
-                                                        <option>4</option>
-                                                        <option>5</option>
-                                                        <option>6</option>
-                                                        <option>7</option>
-                                                        <option>8</option>
-                                                        <option>9</option>
-                                                        <option>10</option>
-                                                    </select>
-                                                    <br />
-                                                    <label for="seats[FCP]">Concession</label>
-                                                    <select name="seats[FCP]">
-                                                        <option>0</option>
-                                                        <option>1</option>
-                                                        <option>2</option>
-                                                        <option>3</option>
-                                                        <option>4</option>
-                                                        <option>5</option>
-                                                        <option>6</option>
-                                                        <option>7</option>
-                                                        <option>8</option>
-                                                        <option>9</option>
-                                                        <option>10</option>
-                                                    </select>
-                                                    <br />
-                                                    <label for="seats[FCC]">Child</label>
-                                                    <select name="seats[FCC]">
-                                                        <option>0</option>
-                                                        <option>1</option>
-                                                        <option>2</option>
-                                                        <option>3</option>
-                                                        <option>4</option>
-                                                        <option>5</option>
-                                                        <option>6</option>
-                                                        <option>7</option>
-                                                        <option>8</option>
-                                                        <option>9</option>
-                                                        <option>10</option>
-                                                    </select>
-                                                    <br />
-                                                </fieldset>
-
-                                                <fieldset class="bookingdetails">
-                                                    <label>Name <input type="text" name=cust[name] /></label><br />
-                                                    <label>Email <input type="email" name=cust[email] /></label><br />
-                                                    <label>Mobile <input type="tel" name=cust[mobile] /></label><br />
-                                                    <label>Credit Card <input type="text" name=cust[card] /></label><br />
-                                                    <label>Expiry <input type="month" name=cust[expiry] /></label><br />
-                                                </fieldset>
-                                                <br />
-
-                                                <button type="submit" class="subBox">Order</button>
-                                            </form>
-                                        </div>
+                                        <button class="button buttonhover" class="click" id=movie[hour] onclick="getHour()">test title</button>-->
+                                        <!--    action="https://titan.csit.rmit.edu.au/~e54061/wp/lunardo-formtest.php" -->
                                     </div>
                                 </div>
                             </div>
@@ -311,120 +201,6 @@
                                         <button class="button buttonhover" class="click" onclick="setHiddenFields('1','5','2')">Saturday - 6pm</button>
                                         <button class="button buttonhover" class="click" onclick="setHiddenFields('1','6','2')">Sunday - 6pm</button>
                                         <hr />
-                                        <div id="infoposition">
-                                            <form action="https://titan.csit.rmit.edu.au/~e54061/wp/lunardo-formtest.php" method="post">
-                                                <fieldset class="seating1">
-                                                    <input type="hidden" name="movie[id]" value=getTitle() />
-                                                    <input type="hidden" name="movie[day]" value=getDay() />
-                                                    <input type="hidden" name="movie[hour]" value=getHour() />
-                                                    <legend class="legendposition">Standard</legend>
-                                                    <label for="seats[STA]">Adult</label>
-                                                    <select name="seats[STA]">
-                                                        <option>0</option>
-                                                        <option>1</option>
-                                                        <option>2</option>
-                                                        <option>3</option>
-                                                        <option>4</option>
-                                                        <option>5</option>
-                                                        <option>6</option>
-                                                        <option>7</option>
-                                                        <option>8</option>
-                                                        <option>9</option>
-                                                        <option>10</option>
-                                                    </select>
-                                                    <br />
-                                                    <label for="seats[STP]">Concession</label>
-                                                    <select name="seats[STP]">
-                                                        <option>0</option>
-                                                        <option>1</option>
-                                                        <option>2</option>
-                                                        <option>3</option>
-                                                        <option>4</option>
-                                                        <option>5</option>
-                                                        <option>6</option>
-                                                        <option>7</option>
-                                                        <option>8</option>
-                                                        <option>9</option>
-                                                        <option>10</option>
-                                                    </select>
-                                                    <br />
-                                                    <label for="seats[STC]">Child</label>
-                                                    <select name="seats[STC]">
-                                                        <option>0</option>
-                                                        <option>1</option>
-                                                        <option>2</option>
-                                                        <option>3</option>
-                                                        <option>4</option>
-                                                        <option>5</option>
-                                                        <option>6</option>
-                                                        <option>7</option>
-                                                        <option>8</option>
-                                                        <option>9</option>
-                                                        <option>10</option>
-                                                    </select>
-                                                    <br />
-                                                </fieldset>
-                                                <fieldset class="seating2">
-                                                    <legend class="legendposition">First Class</legend>
-                                                    <label for="seats[FCA]">Adult</label>
-                                                    <select name="seats[FCA]">
-                                                        <option>0</option>
-                                                        <option>1</option>
-                                                        <option>2</option>
-                                                        <option>3</option>
-                                                        <option>4</option>
-                                                        <option>5</option>
-                                                        <option>6</option>
-                                                        <option>7</option>
-                                                        <option>8</option>
-                                                        <option>9</option>
-                                                        <option>10</option>
-                                                    </select>
-                                                    <br />
-                                                    <label for="seats[FCP]">Concession</label>
-                                                    <select name="seats[FCP]">
-                                                        <option>0</option>
-                                                        <option>1</option>
-                                                        <option>2</option>
-                                                        <option>3</option>
-                                                        <option>4</option>
-                                                        <option>5</option>
-                                                        <option>6</option>
-                                                        <option>7</option>
-                                                        <option>8</option>
-                                                        <option>9</option>
-                                                        <option>10</option>
-                                                    </select>
-                                                    <br />
-                                                    <label for="seats[FCC]">Child</label>
-                                                    <select name="seats[FCC]">
-                                                        <option>0</option>
-                                                        <option>1</option>
-                                                        <option>2</option>
-                                                        <option>3</option>
-                                                        <option>4</option>
-                                                        <option>5</option>
-                                                        <option>6</option>
-                                                        <option>7</option>
-                                                        <option>8</option>
-                                                        <option>9</option>
-                                                        <option>10</option>
-                                                    </select>
-                                                    <br />
-                                                </fieldset>
-
-                                                <fieldset class="bookingdetails">
-                                                    <label>Name <input type="text" name=cust[name] /></label><br />
-                                                    <label>Email <input type="email" name=cust[email] /></label><br />
-                                                    <label>Mobile <input type="tel" name=cust[mobile] /></label><br />
-                                                    <label>Credit Card <input type="text" name=cust[card] /></label><br />
-                                                    <label>Expiry <input type="month" name=cust[expiry] /></label><br />
-                                                </fieldset>
-                                                <br />
-
-                                                <button type="submit" class="subBox">Order</button>
-                                            </form>
-                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -460,120 +236,7 @@
                                         <button class="button buttonhover" class="click" onclick="setHiddenFields('2','5','3')">Saturday - 9pm</button>
                                         <button class="button buttonhover" class="click" onclick="setHiddenFields(21','6','3')">Sunday - 9pm</button>
                                         <hr />
-                                        <div id="infoposition">
-                                            <form action="https://titan.csit.rmit.edu.au/~e54061/wp/lunardo-formtest.php" method="post">
-                                                <fieldset class="seating1">
-                                                    <input type="hidden" name="movie[id]" value=getTitle() />
-                                                    <input type="hidden" name="movie[day]" value=getDay() />
-                                                    <input type="hidden" name="movie[hour]" value=getHour() />
-                                                    <legend class="legendposition">Standard</legend>
-                                                    <label for="seats[STA]">Adult</label>
-                                                    <select name="seats[STA]">
-                                                        <option>0</option>
-                                                        <option>1</option>
-                                                        <option>2</option>
-                                                        <option>3</option>
-                                                        <option>4</option>
-                                                        <option>5</option>
-                                                        <option>6</option>
-                                                        <option>7</option>
-                                                        <option>8</option>
-                                                        <option>9</option>
-                                                        <option>10</option>
-                                                    </select>
-                                                    <br />
-                                                    <label for="seats[STP]">Concession</label>
-                                                    <select name="seats[STP]">
-                                                        <option>0</option>
-                                                        <option>1</option>
-                                                        <option>2</option>
-                                                        <option>3</option>
-                                                        <option>4</option>
-                                                        <option>5</option>
-                                                        <option>6</option>
-                                                        <option>7</option>
-                                                        <option>8</option>
-                                                        <option>9</option>
-                                                        <option>10</option>
-                                                    </select>
-                                                    <br />
-                                                    <label for="seats[STC]">Child</label>
-                                                    <select name="seats[STC]">
-                                                        <option>0</option>
-                                                        <option>1</option>
-                                                        <option>2</option>
-                                                        <option>3</option>
-                                                        <option>4</option>
-                                                        <option>5</option>
-                                                        <option>6</option>
-                                                        <option>7</option>
-                                                        <option>8</option>
-                                                        <option>9</option>
-                                                        <option>10</option>
-                                                    </select>
-                                                    <br />
-                                                </fieldset>
-                                                <fieldset class="seating2">
-                                                    <legend class="legendposition">First Class</legend>
-                                                    <label for="seats[FCA]">Adult</label>
-                                                    <select name="seats[FCA]">
-                                                        <option>0</option>
-                                                        <option>1</option>
-                                                        <option>2</option>
-                                                        <option>3</option>
-                                                        <option>4</option>
-                                                        <option>5</option>
-                                                        <option>6</option>
-                                                        <option>7</option>
-                                                        <option>8</option>
-                                                        <option>9</option>
-                                                        <option>10</option>
-                                                    </select>
-                                                    <br />
-                                                    <label for="seats[FCP]">Concession</label>
-                                                    <select name="seats[FCP]">
-                                                        <option>0</option>
-                                                        <option>1</option>
-                                                        <option>2</option>
-                                                        <option>3</option>
-                                                        <option>4</option>
-                                                        <option>5</option>
-                                                        <option>6</option>
-                                                        <option>7</option>
-                                                        <option>8</option>
-                                                        <option>9</option>
-                                                        <option>10</option>
-                                                    </select>
-                                                    <br />
-                                                    <label for="seats[FCC]">Child</label>
-                                                    <select name="seats[FCC]">
-                                                        <option>0</option>
-                                                        <option>1</option>
-                                                        <option>2</option>
-                                                        <option>3</option>
-                                                        <option>4</option>
-                                                        <option>5</option>
-                                                        <option>6</option>
-                                                        <option>7</option>
-                                                        <option>8</option>
-                                                        <option>9</option>
-                                                        <option>10</option>
-                                                    </select>
-                                                    <br />
-                                                </fieldset>
 
-                                                <fieldset class="bookingdetails">
-                                                    <label>Name <input type="text" name=cust[name] /></label><br />
-                                                    <label>Email <input type="email" name=cust[email] /></label><br />
-                                                    <label>Mobile <input type="tel" name=cust[mobile] /></label><br />
-                                                    <label>Credit Card <input type="text" name=cust[card] /></label><br />
-                                                    <label>Expiry <input type="month" name=cust[expiry] /></label><br />
-                                                </fieldset>
-                                                <br />
-
-                                                <button type="submit" class="subBox">Order</button>
-                                            </form>
-                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -608,122 +271,7 @@
                                         <button class="button buttonhover" class="click" onclick="setHiddenFields('3','5','1')">Saturday - 3pm</button>
                                         <button class="button buttonhover" class="click" onclick="setHiddenFields('3','6','1')">Sunday - 3pm</button>
                                         <hr />
-                                        <div id="infoposition">
-                                            <form action="https://titan.csit.rmit.edu.au/~e54061/wp/lunardo-formtest.php" method="post">
-                                                <fieldset class="seating1">
-                                                    <input type="hidden" name="movie[id]" value=getTitle() />
-                                                    <input type="hidden" name="movie[day]" value=getDay() />
-                                                    <input type="hidden" name="movie[hour]" value=getHour() />
-                                                    <legend class="legendposition">Standard</legend>
-                                                    <label for="seats[STA]">Adult</label>
-                                                    <select name="seats[STA]">
-                                                        <option>0</option>
-                                                        <option>1</option>
-                                                        <option>2</option>
-                                                        <option>3</option>
-                                                        <option>4</option>
-                                                        <option>5</option>
-                                                        <option>6</option>
-                                                        <option>7</option>
-                                                        <option>8</option>
-                                                        <option>9</option>
-                                                        <option>10</option>
-                                                    </select>
-                                                    <br />
-                                                    <label for="seats[STP]">Concession</label>
-                                                    <select name="seats[STP]">
-                                                        <option>0</option>
-                                                        <option>1</option>
-                                                        <option>2</option>
-                                                        <option>3</option>
-                                                        <option>4</option>
-                                                        <option>5</option>
-                                                        <option>6</option>
-                                                        <option>7</option>
-                                                        <option>8</option>
-                                                        <option>9</option>
-                                                        <option>10</option>
-                                                    </select>
-                                                    <br />
-                                                    <label for="seats[STC]">Child</label>
-                                                    <select name="seats[STC]">
-                                                        <option>0</option>
-                                                        <option>1</option>
-                                                        <option>2</option>
-                                                        <option>3</option>
-                                                        <option>4</option>
-                                                        <option>5</option>
-                                                        <option>6</option>
-                                                        <option>7</option>
-                                                        <option>8</option>
-                                                        <option>9</option>
-                                                        <option>10</option>
-                                                    </select>
-                                                    <br />
-                                                </fieldset>
-                                                <fieldset class="seating2">
-                                                    <legend class="legendposition">First Class</legend>
-                                                    <label for="seats[FCA]">Adult</label>
-                                                    <select name="seats[FCA]">
-                                                        <option>0</option>
-                                                        <option>1</option>
-                                                        <option>2</option>
-                                                        <option>3</option>
-                                                        <option>4</option>
-                                                        <option>5</option>
-                                                        <option>6</option>
-                                                        <option>7</option>
-                                                        <option>8</option>
-                                                        <option>9</option>
-                                                        <option>10</option>
-                                                    </select>
-                                                    <br />
-                                                    <label for="seats[FCP]">Concession</label>
-                                                    <select name="seats[FCP]">
-                                                        <option>0</option>
-                                                        <option>1</option>
-                                                        <option>2</option>
-                                                        <option>3</option>
-                                                        <option>4</option>
-                                                        <option>5</option>
-                                                        <option>6</option>
-                                                        <option>7</option>
-                                                        <option>8</option>
-                                                        <option>9</option>
-                                                        <option>10</option>
-                                                    </select>
-                                                    <br />
-                                                    <label for="seats[FCC]">Child</label>
-                                                    <select name="seats[FCC]">
-                                                        <option>0</option>
-                                                        <option>1</option>
-                                                        <option>2</option>
-                                                        <option>3</option>
-                                                        <option>4</option>
-                                                        <option>5</option>
-                                                        <option>6</option>
-                                                        <option>7</option>
-                                                        <option>8</option>
-                                                        <option>9</option>
-                                                        <option>10</option>
-                                                    </select>
-                                                    <br />
-                                                </fieldset>
-
-                                                <fieldset class="bookingdetails">
-                                                    <label>Name <input type="text" name=cust[name] /></label><br />
-                                                    <label>Email <input type="email" name=cust[email] /></label><br />
-                                                    <label>Mobile <input type="tel" name=cust[mobile] /></label><br />
-                                                    <label>Credit Card <input type="text" name=cust[card] /></label><br />
-                                                    <label>Expiry <input type="month" name=cust[expiry] /></label><br />
-                                                </fieldset>
-                                                <br />
-
-                                                <button type="submit" class="subBox">Order</button>
-                                            </form>
-                                        </div>
                                     </div>
-
                                 </div>
                             </div>
                         </div>
@@ -741,9 +289,10 @@
                         <div id="infoposition">
                             <form action="https://titan.csit.rmit.edu.au/~e54061/wp/lunardo-formtest.php" method="post">
                                 <fieldset class="seating1">
-                                    <input type="hidden" name="movie[id]" value=getTitle() />
-                                    <input type="hidden" name="movie[day]" value=getDay() />
-                                    <input type="hidden" name="movie[hour]" value=getHour() />
+
+                                    <input id="movie[id]" type="hidden" name="movie[id]" value=getTitle() />
+                                    <input id="movie[day]" type="hidden" name="movie[day]" value=getDay() />
+                                    <input id="movie[hour]" type="hidden" name="movie[hour]" value=getHour() />
                                     <legend class="legendposition">Standard</legend>
                                     <label for="seats[STA]">Adult</label>
                                     <select name="seats[STA]">
