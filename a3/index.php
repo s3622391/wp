@@ -164,7 +164,6 @@
                                                     <input id=movie[day] type="hidden" value="movie[day]"/>
                                                     <input id=movie[hour] type="hidden" value="movie[hour]"  /> 
 
-
                                                     <legend class="legendposition">Standard</legend>
                                                     <label for="seats[STA]">Adult</label>
                                                     <select name="seats[STA]">
@@ -272,7 +271,6 @@
 
                                                 <button type="submit" class="subBox">Order</button>
                                             </form>
-
                                         </div>
                                     </div>
                                 </div>
@@ -422,7 +420,6 @@
 
                                                 <button type="submit" class="subBox">Order</button>
                                             </form>
-
                                         </div>
                                     </div>
                                 </div>
@@ -726,9 +723,6 @@
                                 </div>
                             </div>
                         </div>
-
-
-
                     </section>
 
                     <hr />
@@ -853,11 +847,9 @@
 
                                 <button type="submit">Order</button>
                             </form>
-
                         </div>
                         <br />
                         <span id="clear"></span>
-
                     </section>
                 </div>
             </article>
