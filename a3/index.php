@@ -155,15 +155,18 @@
                                         <button class="button buttonhover" class="click" onclick="setHiddenFields('0','5','0')">Saturday - 12pm</button>
                                         <button class="button buttonhover" class="click" onclick="setHiddenFields('0','6','0')">Sunday - 12pm</button>
                                         <hr />
-                                        <!--   <button class="button buttonhover" class="click" id=movie[id] onclick="getTitle()">test title</button> action="https://titan.csit.rmit.edu.au/~e54061/wp/lunardo-formtest.php"-->
-
+                                        <!--temp testing buttons  -->
+                                        <button class="button buttonhover" class="click" id=movie[id] onclick="getTitle()">test title</button>
+                                        <button class="button buttonhover" class="click" id=movie[day] onclick="getDay()">test title</button>
+                                        <button class="button buttonhover" class="click" id=movie[hour] onclick="getHour()">test title</button>
+                                        
                                         <div id="infoposition">
-                                            <form method="post" action="https://titan.csit.rmit.edu.au/~e54061/wp/lunardo-formtest.php">;
+                                            <form method="post" action="https://titan.csit.rmit.edu.au/~e54061/wp/lunardo-formtest.php">
                                                 <fieldset class="seating1">
-                                                    
-                                                    <input id=movie[id] type="hidden" name=movie[id] value="" />
-                                                <input id=movie[day] type="hidden" name=movie[day] value="" />
-                                                <input id=movie[hour] type="hidden" name=movie[hour] value="" />
+
+                                                    <input id=movie[id] type="text" name="movie[id]" value="" />
+                                                    <input id=movie[day] type="hidden" name="movie[day]" value="" />
+                                                    <input id=movie[hour] type="hidden" name="movie[hour]" value="" />
 
                                                     <legend class="legendposition">Standard</legend>
                                                     <label for="seats[STA]">Adult</label>
@@ -260,7 +263,7 @@
                                                     </select>
                                                     <br />
                                                 </fieldset>
-                                                
+
                                                 <fieldset class="bookingdetails">
                                                     <label>Name <input type="text" name=cust[name] /></label><br />
                                                     <label>Email <input type="email" name=cust[email] /></label><br />
