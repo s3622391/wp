@@ -302,6 +302,7 @@
                                     <br />
                                     <label for="seats[STP]">Concession</label>
                                     <select name="seats[STP]">
+                                        <option> </option>
                                         <option>0</option>
                                         <option>1</option>
                                         <option>2</option>
@@ -317,6 +318,7 @@
                                     <br />
                                     <label for="seats[STC]">Child</label>
                                     <select name="seats[STC]">
+                                        <option> </option>
                                         <option>0</option>
                                         <option>1</option>
                                         <option>2</option>
@@ -335,6 +337,7 @@
                                     <legend class="legendposition">First Class</legend>
                                     <label for="seats[FCA]">Adult</label>
                                     <select name="seats[FCA]">
+                                        <option> </option>
                                         <option>0</option>
                                         <option>1</option>
                                         <option>2</option>
@@ -350,6 +353,7 @@
                                     <br />
                                     <label for="seats[FCP]">Concession</label>
                                     <select name="seats[FCP]">
+                                        <option> </option>
                                         <option>0</option>
                                         <option>1</option>
                                         <option>2</option>
@@ -365,6 +369,7 @@
                                     <br />
                                     <label for="seats[FCC]">Child</label>
                                     <select name="seats[FCC]">
+                                        <option> </option>
                                         <option>0</option>
                                         <option>1</option>
                                         <option>2</option>
