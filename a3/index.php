@@ -427,7 +427,7 @@ include_once('tools.php');
             <button id='toggleWireframeCSS' onclick='toggleWireframe()'>Toggle Wireframe CSS</button>
         </div>
     </footer>
-    printMyCode();
+    <p id="errorcode">printMyCode()</p>
     <div id="debugger">preShow($_POST);</div>
     <div id="debugger">preShow($_GET);</div>
     <div id="debugger">preShow($_SESSION);</div>

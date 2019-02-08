@@ -168,7 +168,8 @@ td,
 }
 
 .seating1,
-.seating2 {
+.seating2,
+#errorcode {
     float: left;
     margin: 30px;
     padding: 30px;

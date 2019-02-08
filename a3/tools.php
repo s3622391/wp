@@ -9,7 +9,7 @@ if (!empty($_POST)) {
 }
 
 function printMyCode() {
-  $lines = file($_SERVER['SCRIPT_FILENAME']);
+  $lines = file($_SERVER['PHP_SELF']);
   echo "<pre class='mycode'><ol>";
   foreach ($lines as $line)
      echo '<li>'.rtrim(htmlentities($line)).'</li>';
