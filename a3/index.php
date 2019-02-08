@@ -279,7 +279,7 @@ include_once('tools.php');
                             <form action="<?= $_SERVER['PHP_SELF']; ?>" method="post">
                                 <fieldset class="seating1">
                                     
-                                    //values hard coded for testing PHP
+                                <!--    Values hard coded for testing PHP  -->
 
                                     <input id="movie[id]" type="hidden" name="movie[id]" value="RBI" />
                                     <input id="movie[day]" type="hidden" name="movie[day]" value="MON" />
@@ -387,12 +387,13 @@ include_once('tools.php');
                                 </fieldset>
 
                                 <fieldset class="bookingdetails">
-                                    <label>Name <input type="text" name="cust[name]" value=<?=$name ?> > </label><br />
-                                    <label>Email <input type="email" name=cust[email] /></label><br />
-                                    <label>Mobile <input type="tel" name=cust[mobile] /></label><br />
-                                    <label>Credit Card <input type="text" name=cust[card] /></label><br />
-                                    <label>Expiry <input type="month" name=cust[expiry] /></label><br />
-                                </fieldset>
+                                    <label id="cName">Name <input type="text" name="cust[name]" /> </label><br />
+                                    <label id="cEmail">Email <input type="email" name=cust[email] /></label><br />
+                                    <label id="cMobile">Mobile <input type="text" name=cust[mobile] /></label><br />
+                                    <label id="cCard">Credit Card <input type="text" name=cust[card] /></label><br />
+                                    <label id="cExpiry">Expiry <input type="month" name=cust[expiry] /></label><br />
+                                </fieldset>                                                               
+                                
                                 <br />
                                 <button class="button buttonhover" type="submit">Order</button>
                             </form>

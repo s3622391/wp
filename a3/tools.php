@@ -2,20 +2,12 @@
 session_start();
 print_r($_POST);
 
-$nameError = " ";
-$name = " ";
-
-if ($_server["REQUEST_Method"] == "POST") {
-    if (empty($_POST["cust[name]"])) {
-        $nameError = "A name is required";
-    } else {
-        $name = testName($_POST["cust[name]"]);
-        
-        if (!preg_match("/^[a-zA-Z ]*$/",$name)) {
-            $nameError = "Only letters and spacebar please";
-        }
-    }
-}
+<?php 
+  if (!empty($_POST)) {
+    echo "Hi {$_POST['cust']['name']},<br>";
+    echo "It looks like you want to see a movie on {$_POST['movie']['day']} at {$_POST['movie']['hour']}.";
+  }
+?>
 
 function preShow( $arr, $returnAsString=false ) {
 $ret = '<pre>' . print_r($arr, true) . '</pre>';
