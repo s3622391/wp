@@ -18,7 +18,7 @@ function printMyCode() {
 
 printMyCode()
 
-function preShow( $arr, $returnAsString=false ) {
+/*function preShow( $arr, $returnAsString=false ) {
 $ret = '<pre>' . print_r($arr, true) . '</pre>';
 if ($returnAsString)
 return $ret;
@@ -27,3 +27,4 @@ echo $ret;
 }
 
 ?>
+*/
