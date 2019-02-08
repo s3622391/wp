@@ -16,6 +16,7 @@ function printMyCode() {
   echo '</ol></pre>';
 }
 
+printMyCode()
 
 function preShow( $arr, $returnAsString=false ) {
 $ret = '<pre>' . print_r($arr, true) . '</pre>';
