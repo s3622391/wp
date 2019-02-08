@@ -278,10 +278,12 @@ include_once('tools.php');
                         <div id="infoposition">
                             <form action="<?= $_SERVER['PHP_SELF']; ?>" method="post">
                                 <fieldset class="seating1">
+                                    
+                                    //values hard coded for testing PHP
 
-                                    <input id="movie[id]" type="hidden" name="movie[id]" value="" />
-                                    <input id="movie[day]" type="hidden" name="movie[day]" value="" />
-                                    <input id="movie[hour]" type="hidden" name="movie[hour]" value="" />
+                                    <input id="movie[id]" type="hidden" name="movie[id]" value="RBI" />
+                                    <input id="movie[day]" type="hidden" name="movie[day]" value="MON" />
+                                    <input id="movie[hour]" type="hidden" name="movie[hour]" value="12" />
                                     <legend class="legendposition">Standard</legend>
                                     <label for="seats[STA]">Adult</label>
                                     <select name="seats[STA]">
