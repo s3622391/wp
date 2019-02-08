@@ -1,5 +1,5 @@
 <?php
-    include_once('tools.php');
+include_once('tools.php');
 
 ?>
 
@@ -385,7 +385,7 @@
                                 </fieldset>
 
                                 <fieldset class="bookingdetails">
-                                    <label>Name <input type="text" name="cust[name]"value=<?= $name ?>  > </label><br />
+                                    <label>Name <input type="text" name="cust[name]" value=<?=$name ?> > </label><br />
                                     <label>Email <input type="email" name=cust[email] /></label><br />
                                     <label>Mobile <input type="tel" name=cust[mobile] /></label><br />
                                     <label>Credit Card <input type="text" name=cust[card] /></label><br />
