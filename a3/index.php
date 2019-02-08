@@ -1,23 +1,6 @@
 <?php
- //   include_once('tools.php');
+    include_once('tools.php');
 
-session_start();
-print_r($_POST);
-
-$nameError = "";
-$name = " ";
-
-if ($_server["REQUEST_Method"] == "POST") {
-    if (empty($_POST["cust[name]"])) {
-        $nameError = "A name is required";
-    } else {
-        $name = testName($_POST["cust[name]"]);
-        
-        if (!preg_match("/^[a-zA-Z ]*$/",$name)) {
-            $nameError = "Only letters and spacebar please";
-        }
-    }
-}
 ?>
 
 <!DOCTYPE html>
@@ -402,7 +385,7 @@ if ($_server["REQUEST_Method"] == "POST") {
                                 </fieldset>
 
                                 <fieldset class="bookingdetails">
-                                    <label>Name <input type="text" name="cust[name]" value=<?= $name ?> /></label><br />
+                                    <label>Name <input type="text" name="cust[name]"value=<?= $name ?>  > </label><br />
                                     <label>Email <input type="email" name=cust[email] /></label><br />
                                     <label>Mobile <input type="tel" name=cust[mobile] /></label><br />
                                     <label>Credit Card <input type="text" name=cust[card] /></label><br />
