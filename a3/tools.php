@@ -8,6 +8,14 @@ if (!empty($_POST)) {
     echo "It looks like you want to see a movie on {$_POST['movie']['day']} at {$_POST['movie']['hour']}.";
 }
 
+function printMyCode() {
+  $lines = file($_SERVER['SCRIPT_FILENAME']);
+  echo "<pre class='mycode'><ol>";
+  foreach ($lines as $line)
+     echo '<li>'.rtrim(htmlentities($line)).'</li>';
+  echo '</ol></pre>';
+}
+
 
 function preShow( $arr, $returnAsString=false ) {
 $ret = '<pre>' . print_r($arr, true) . '</pre>';
