@@ -18,7 +18,7 @@ function printMyCode() {
 
 printMyCode()
     
-echo ($_POST['PHP_SELF'])    
+//echo ($_POST['PHP_SELF'])    
 
 $cust[name]=''; 
     
