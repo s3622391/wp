@@ -22,16 +22,14 @@ printMyCode()
 */
 $name=''; 
     
-if(!empty ($_POST['submitted'])){
+if(!empty ($_POST['submitted']))
+{
     $name = trim($_POST['cust[name]']);
     if (empty($name)){
         $name_error='Name must be entered'
     }
-}  
-    
-    
-    
-    
+}     
+       
 /*
 function preShow( $arr, $returnAsString=false ) {
 $ret = '<pre>' . print_r($arr, true) . '</pre>';
