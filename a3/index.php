@@ -387,7 +387,8 @@ include_once('tools.php');
                                 </fieldset>
 
                                 <fieldset class="bookingdetails">
-                                    <label id="cName">Name <input type="text" name="cust[name]" /> </label><br />
+                                    <label id="cName">Name <input type="text" name="cust[name]" value='<?php echo htmlentities($cust[name]) ?>'/> </label>
+                                    <span class='error'><?php echo $name_error ?></span><br />
                                     <label id="cEmail">Email <input type="email" name=cust[email] /></label><br />
                                     <label id="cMobile">Mobile <input type="text" name=cust[mobile] /></label><br />
                                     <label id="cCard">Credit Card <input type="text" name=cust[card] /></label><br />
@@ -395,7 +396,7 @@ include_once('tools.php');
                                 </fieldset>                                                               
                                 
                                 <br />
-                                <button class="button buttonhover" type="submit">Order</button>
+                                <button class="button buttonhover" type="submit" name="submitted" id='submit'>Order</button>
                             </form>
                         </div>
                         <br />
@@ -427,11 +428,11 @@ include_once('tools.php');
             <button id='toggleWireframeCSS' onclick='toggleWireframe()'>Toggle Wireframe CSS</button>
         </div>
     </footer>
-    <p id="errorcode"></p>
+ <!--   <p id="errorcode"></p>
     <div id="debugger">preShow($_POST);</div>
     <div id="debugger">preShow($_GET);</div>
     <div id="debugger">preShow($_SESSION);</div>
-
+-->
 </body>
 
 </html>

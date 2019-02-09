@@ -18,15 +18,27 @@ function printMyCode() {
 
 printMyCode()
     
-?>
+echo ($_POST['PHP_SELF'])    
 
-/*function preShow( $arr, $returnAsString=false ) {
+$cust[name]=''; 
+    
+if(!empty ($_POST['submitted'])){
+    $cust[name] = trim($_POST['cust[name]']);
+    if (empty($cust[name])){
+        $name_error='Name must be entered'
+    }
+}  
+    
+    
+    
+    
+/*
+function preShow( $arr, $returnAsString=false ) {
 $ret = '<pre>' . print_r($arr, true) . '</pre>';
 if ($returnAsString)
 return $ret;
 else 
 echo $ret; 
 }
-
-?>
 */
+?>
