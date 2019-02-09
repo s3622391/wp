@@ -269,7 +269,8 @@ include_once('tools.php');
                     <hr />
                 </div>
             </article>
-            <!-- https://titan.csit.rmit.edu.au/~e54061/wp/lunardo-formtest.php -->
+            <!-- https://titan.csit.rmit.edu.au/~e54061/wp/lunardo-formtest.php
+                   -->
             <article>
                 <div>
                     <h2 id="Booking">Booking</h2>
@@ -278,15 +279,15 @@ include_once('tools.php');
                         <div id="infoposition">
                             <form action="<?= $_SERVER['PHP_SELF']; ?>" method="post">
                                 <fieldset class="seating1">
-                                    
-                                <!--    Values hard coded for testing PHP  -->
+
+                                    <!--    Values hard coded for testing PHP  -->
 
                                     <input id="movie[id]" type="hidden" name="movie[id]" value="RBI" />
                                     <input id="movie[day]" type="hidden" name="movie[day]" value="MON" />
                                     <input id="movie[hour]" type="hidden" name="movie[hour]" value="12" />
-                                    <legend class="legendposition">Standard</legend>
+                                    <legend class="legendposition">Standard Seating</legend>
                                     <label for="seats[STA]">Adult</label>
-                                    <select name="seats[STA]">
+                                    <select id="seats[STA]" name="seats[STA]">
                                         <option> </option>
                                         <option>0</option>
                                         <option>1</option>
@@ -302,7 +303,7 @@ include_once('tools.php');
                                     </select>
                                     <br />
                                     <label for="seats[STP]">Concession</label>
-                                    <select name="seats[STP]">
+                                    <select id="seats[STP]" name="seats[STP]">
                                         <option> </option>
                                         <option>0</option>
                                         <option>1</option>
@@ -318,7 +319,7 @@ include_once('tools.php');
                                     </select>
                                     <br />
                                     <label for="seats[STC]">Child</label>
-                                    <select name="seats[STC]">
+                                    <select id="seats[STC]" name="seats[STC]">
                                         <option> </option>
                                         <option>0</option>
                                         <option>1</option>
@@ -335,7 +336,7 @@ include_once('tools.php');
                                     <br />
                                 </fieldset>
                                 <fieldset class="seating2">
-                                    <legend class="legendposition">First Class</legend>
+                                    <legend class="legendposition">First Class Seating</legend>
                                     <label for="seats[FCA]">Adult</label>
                                     <select name="seats[FCA]">
                                         <option> </option>
@@ -387,19 +388,20 @@ include_once('tools.php');
                                 </fieldset>
 
                                 <fieldset class="bookingdetails">
-                                    <label id="cName">Name <input type="text" name="cust[name]" value='<?php echo htmlentities($name) ?>'/> </label>
-                                    <span class='error'><?php echo $name_error ?></span><br />
+                                    <label id="cName">Name <input type="text" name="cust[name]" value='<?php echo htmlentities($name) ?>' /> </label>
+                                    <!--   <span class='error'><?php echo $name_error ?></span><br />  -->
                                     <label id="cEmail">Email <input type="email" name=cust[email] /></label><br />
                                     <label id="cMobile">Mobile <input type="text" name=cust[mobile] /></label><br />
                                     <label id="cCard">Credit Card <input type="text" name=cust[card] /></label><br />
                                     <label id="cExpiry">Expiry <input type="month" name=cust[expiry] /></label><br />
-                                </fieldset>                                                               
-                                
+                                </fieldset>
                                 <br />
+                                <p id="curentTotal" > </p> 
                                 <button class="button buttonhover" type="submit" name="submitted" id='submit'>Order</button>
                             </form>
                         </div>
                         <br />
+                        <P id="curentTotal"></P>
                         <span id="clear"></span>
                     </section>
                 </div>
@@ -428,7 +430,7 @@ include_once('tools.php');
             <button id='toggleWireframeCSS' onclick='toggleWireframe()'>Toggle Wireframe CSS</button>
         </div>
     </footer>
- <!--   <p id="errorcode"></p>
+    <!--   <p id="errorcode"></p>
     <div id="debugger">preShow($_POST);</div>
     <div id="debugger">preShow($_GET);</div>
     <div id="debugger">preShow($_SESSION);</div>

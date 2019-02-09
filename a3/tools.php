@@ -38,5 +38,18 @@ return $ret;
 else 
 echo $ret; 
 }
+
+
+Seat Type	     All Day Monday and Wednesday	12pm Weekdays	All other times
+Standard Adult	    $14.00	                    $14.00	        $19.80
+Standard Consession	$12.50	                    $12.50	        $17.50
+Standard Child	    $11.00	                    $11.00	        $15.30
+First Adult	        $24.00	                    $24.00	        $30.00
+First Consession	$22.50	                    $22.50	        $27.00
+First Child	        $21.00	                    $21.00	        $24.00
+
+ 
+
+
 */
 ?>
