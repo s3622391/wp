@@ -20,8 +20,7 @@ printMyCode()
     
 //echo ($_POST['PHP_SELF'])    
 */
-$name=''; 
-    
+$name='';    
 if(!empty ($_POST['submitted']))
 {
     $name = trim($_POST['cust[name]']);

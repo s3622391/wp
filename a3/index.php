@@ -387,7 +387,7 @@ include_once('tools.php');
                                 </fieldset>
 
                                 <fieldset class="bookingdetails">
-                                    <label id="cName">Name <input type="text" name="cust[name]" value='<?php echo htmlentities($cust[name]) ?>'/> </label>
+                                    <label id="cName">Name <input type="text" name="cust[name]" value='<?php echo htmlentities($name) ?>'/> </label>
                                     <span class='error'><?php echo $name_error ?></span><br />
                                     <label id="cEmail">Email <input type="email" name=cust[email] /></label><br />
                                     <label id="cMobile">Mobile <input type="text" name=cust[mobile] /></label><br />
