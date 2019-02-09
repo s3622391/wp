@@ -8,7 +8,7 @@ if (!empty($_POST)) {
     echo "It looks like you want to see a movie on {$_POST['movie']['day']} at {$_POST['movie']['hour']}.";
 }
 
-function printMyCode() {
+/*function printMyCode() {
   $lines = file($_SERVER['PHP_SELF']);
   echo "<pre class='mycode'><ol>";
   foreach ($lines as $line)
@@ -19,7 +19,7 @@ function printMyCode() {
 printMyCode()
     
 //echo ($_POST['PHP_SELF'])    
-
+*/
 $name=''; 
     
 if(!empty ($_POST['submitted'])){
