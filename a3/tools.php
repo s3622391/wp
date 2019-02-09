@@ -20,11 +20,11 @@ printMyCode()
     
 //echo ($_POST['PHP_SELF'])    
 
-$cust[name]=''; 
+$name=''; 
     
 if(!empty ($_POST['submitted'])){
-    $cust[name] = trim($_POST['cust[name]']);
-    if (empty($cust[name])){
+    $name = trim($_POST['cust[name]']);
+    if (empty($name)){
         $name_error='Name must be entered'
     }
 }  
