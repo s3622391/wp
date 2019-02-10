@@ -64,7 +64,7 @@ $pricesObject = ['full' => ['STA' => 19.8,
 
 echo $movieObject['RBI']["title"];
 echo $movieObject['BER']["description"];  
-echo $pricesObject['full']["screenings"]['FCA'];
+echo $pricesObject['full']['FCA'];
 
 /*
 function preShow( $arr, $returnAsString=false ) {
