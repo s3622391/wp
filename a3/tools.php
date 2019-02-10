@@ -15,9 +15,9 @@ $RBI['screenings'] = ['MON' => 12,
                       'SAT' => 12,
                       'SUN' => 12  ]
                             
-
+echo "<h1>PHP website is working</h1>";
  
-//echo $RBI["title"];
+echo "$RBI["title"]";
     /*,
     'GSW' => [
         'title' => "The Girl in the Spider's",
