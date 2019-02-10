@@ -4,19 +4,23 @@ print_r($_POST);
 
 error_reporting(E_ERROR | E_WARNING | E_PARSE | E_NOTICE);
 
-$RBI['title'] = 'Ralph Breaks the Internet';
-$RBI['rating'] = 'PG';
-$RBI['description'] = '<P>Video game bad guy Ralph and fellow misfit Vanellope von Schweetz must risk it all by traveling to the World Wide Web in search of a replacement part to save Vanellopes video game, Sugar Rush. In way over their heads, Ralph and Vanellope rely on the citizens of the internet -- the netizens -- to help navigate their way, including an entrepreneur named Yesss, who is the head algorithm and the heart and soul of trend-making site BuzzzTube.</p>';
-$RBI['screenings'] = ['MON' => 12,
-                      'TUE' => 12,
-                      'WED' => 18,
-                      'THU' => 18,
-                      'FRI' => 18,
-                      'SAT' => 12,
-                      'SUN' => 12  ];
+$movieObject['RBI']['title'] = 'Ralph Breaks the Internet';
+$movieObject['RBI']['rating'] = 'PG';
+$movieObject['RBI']['description'] = '<P>Video game bad guy Ralph and fellow misfit Vanellope von Schweetz must risk it all by traveling to the World Wide Web in search of a replacement part to save Vanellopes video game, Sugar Rush. In way over their heads, Ralph and Vanellope rely on the citizens of the internet -- the netizens -- to help navigate their way, including an entrepreneur named Yesss, who is the head algorithm and the heart and soul of trend-making site BuzzzTube.</p>';
+$movieObject['RBI']['screenings'] = ['MON' => 12,
+                                     'TUE' => 12,
+                                     'WED' => 18,
+                                     'THU' => 18,
+                                     'FRI' => 18,
+                                     'SAT' => 12,
+                                     'SUN' => 12  ];
  
 
-   
+echo $movieObject['RBI']["title"];
+echo $movieObject['RBI']["description"];  
+echo $movieObject['RBI']["screenings"]['FRI'];
+
+/*   
 $GSW['title'] = "The Girl in the Spider's";
 $GSW['rating'] = 'R';
 $GSW['description'] = "<P>Fired from the National Security Agency, Frans Balder recruits hacker Lisbeth Salander to steal FireWall, a computer program that can access codes for nuclear weapons worldwide. The download soon draws attention from an NSA agent who traces the activity to Stockholm. Further problems arise when Russian thugs take Lisbeths laptop and kidnap a math whiz who can make FireWall work. Now, Lisbeth and an unlikely ally must race against time to save the boy and recover the codes to avert disaster.</p>";
@@ -64,7 +68,8 @@ echo $RBI["title"];
 echo $GSW["description"];  
 echo $ASB["screenings"]['FRI'];  
 echo $pricesObject["full"][STA];  
-echo $pricesObject["disc"][FCC];  
+echo $pricesObject["disc"][FCC]; 
+*/
 /*
 function preShow( $arr, $returnAsString=false ) {
 $ret = '<pre>' . print_r($arr, true) . '</pre>';
