@@ -390,7 +390,7 @@ include_once('tools.php');
                                     <label id="cName">Name <input type="text" name="cust[name]" required /> </label>
                                     <label id="cEmail">Email <input type="email" name=cust[email]></label><br />
                                     <label id="cMobile">Mobile <input type="tel" name=cust[mobile] pattern="[^(\(04\)|04\+614)[]?\d{4}[]?\d{4}$]" required /></label><br />
-                                    <label id="cCard">Credit Card <input type="text" name=cust[card] pattern="[^\d{14}$]" required /></label><br />
+                                    <label id="cCard">Credit Card <input type="text" name=cust[card] pattern="[^?\d{14}$]" required /></label><br />
                                     <label id="cExpiry">Expiry <input type="month" name=cust[expiry] required /></label><br />
                                 </fieldset>
                                 <br />
