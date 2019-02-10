@@ -14,68 +14,57 @@ $RBI['screenings'] = ['MON' => 12,
                       'FRI' => 18,
                       'SAT' => 12,
                       'SUN' => 12  ];
-                            
-echo "<h1>PHP website is working</h1>";
  
-echo $RBI["title"];
-    /*,
-    'GSW' => [
-        'title' => "The Girl in the Spider's",
-        'rating' => 'R',
-        'description' => "<P>Fired from the National Security Agency, Frans Balder recruits hacker Lisbeth Salander to steal FireWall, a computer program that can access codes for nuclear weapons worldwide. The download soon draws attention from an NSA agent who traces the activity to Stockholm. Further problems arise when Russian thugs take Lisbeths laptop and kidnap a math whiz who can make FireWall work. Now, Lisbeth and an unlikely ally must race against time to save the boy and recover the codes to avert disaster.</p>",
-        'screenings' => [
-            'WED' => 21,
-            'THU' => 21,
-            'FRI' => 21,
-            'SAT' => 18,
-            'SUN' => 18
-        ]
-    ],
-    'BER' => [
-        'title' => "Boy Erased",
-        'rating' => 'R',
-        'description' => "<P>Jared Eamons, the son of a small-town Baptist pastor, must overcome the fallout after being outed as gay to his parents. His father and mother struggle to reconcile their love for their son with their beliefs. Fearing a loss of family, friends and community, Jared is pressured into attending a conversion therapy program. While there, Jared comes into conflict with its leader and begins his journey to finding his own voice and accepting his true self.</p>",
-        'screenings' => [
-            'WED' => 12,
-            'THU' => 12,
-            'FRI' => 12,
-            'SAT' => 21,
-            'SUN' => 21
-        ]
-    ],
-    'ASB' => [
-        'title' => "A Star is Born",
-        'rating' => 'R',
-        'description' => "<P>Seasoned musician Jackson Maine discovers -- and falls in love with -- struggling artist Ally. She has just about given up on her dream to make it big as a singer until Jackson coaxes her into the spotlight. But even as Allys career takes off, the personal side of their relationship is breaking down, as Jackson fights an ongoing battle with his own internal demons.</p>",
-        'screenings' => [
-            'MON' => 18,
-            'TUE' => 18,
-            'FRI' => 18,
-            'SAT' => 15,
-            'SUN' => 15
-    ]
-   ]
-]
 
-$pricesObject = [
-    'full' => [
-        'STA' => 19.8,
-        'STP' => 17.5,
-        'STC' => 15.3,
-        'FCA' => 30,
-        'FCP' => 27,
-        'FCC' => 24
-    ],
-    'disc' => [
-        'STA' => 14,
-        'STP' => 12.5,
-        'STC' => 11,
-        'FCA' => 24,
-        'FCP' => 22.5,
-        'FCC' => 21
-    ]
-]
+   
+$GSW['title'] = "The Girl in the Spider's";
+$GSW['rating'] = 'R';
+$GSW['description'] = "<P>Fired from the National Security Agency, Frans Balder recruits hacker Lisbeth Salander to steal FireWall, a computer program that can access codes for nuclear weapons worldwide. The download soon draws attention from an NSA agent who traces the activity to Stockholm. Further problems arise when Russian thugs take Lisbeths laptop and kidnap a math whiz who can make FireWall work. Now, Lisbeth and an unlikely ally must race against time to save the boy and recover the codes to avert disaster.</p>";
+$GSW['screenings'] = ['WED' => 21,
+                      'THU' => 21,
+                      'FRI' => 21,
+                      'SAT' => 18,
+                      'SUN' => 18 ];
+
+$BER['title'] = "Boy Erased";
+$BER['rating'] = 'R';
+$BER['description'] = "<P>Jared Eamons, the son of a small-town Baptist pastor, must overcome the fallout after being outed as gay to his parents. His father and mother struggle to reconcile their love for their son with their beliefs. Fearing a loss of family, friends and community, Jared is pressured into attending a conversion therapy program. While there, Jared comes into conflict with its leader and begins his journey to finding his own voice and accepting his true self.</p>";
+$BER['screenings'] = ['WED' => 12,
+                      'THU' => 12,
+                      'FRI' => 12,
+                      'SAT' => 21,
+                      'SUN' => 21  ];
     
+$ASB['title'] = "A Star is Born";
+$ASB['rating'] = 'R';
+$ASB['description'] = "<P>Seasoned musician Jackson Maine discovers -- and falls in love with -- struggling artist Ally. She has just about given up on her dream to make it big as a singer until Jackson coaxes her into the spotlight. But even as Allys career takes off, the personal side of their relationship is breaking down, as Jackson fights an ongoing battle with his own internal demons.</p>";
+$ASB['screenings'] = ['MON' => 18,
+                      'TUE' => 18,
+                      'FRI' => 18,
+                      'SAT' => 15,
+                      'SUN' => 15  ];
+
+$pricesObject = ['full' => ['STA' => 19.8,
+                            'STP' => 17.5,
+                            'STC' => 15.3,
+                            'FCA' => 30,
+                            'FCP' => 27,
+                            'FCC' => 24
+                            ],
+                 'disc' => ['STA' => 14,
+                            'STP' => 12.5,
+                            'STC' => 11,
+                            'FCA' => 24,
+                            'FCP' => 22.5,
+                            'FCC' => 21
+                            ]
+                ];
+
+echo $RBI["title"];
+echo $GSW["description"];  
+echo $ASB["screenings"]['FRI'];  
+echo $pricesObject["full"][STA];  
+echo $pricesObject["disc"][FCC];  
 /*
 function preShow( $arr, $returnAsString=false ) {
 $ret = '<pre>' . print_r($arr, true) . '</pre>';
