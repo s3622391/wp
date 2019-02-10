@@ -280,11 +280,6 @@ include_once('tools.php');
                             <form action="<?= $_SERVER['PHP_SELF']; ?>" method="post">
                                 <fieldset class="seating1">
 
-                                    <!--    Values hard coded for testing PHP 
- value="RBI" 
-  value="SUN"
- value="12" -->
-
                                     <input id="movie[id]" type="hidden" name="movie[id]" />
                                     <input id="movie[day]" type="hidden" name="movie[day]" />
                                     <input id="movie[hour]" type="hidden"  name="movie[hour]" />
@@ -391,16 +386,20 @@ include_once('tools.php');
                                 </fieldset>
 
                                 <fieldset class="bookingdetails">
-                                    <label id="cName">Name <input type="text" name="cust[name]" value='' /> </label>
-                                    <!--   <span class='error'><?php echo $name_error ?></span><br />  -->
-                                    <label id="cEmail">Email <input type="email" name=cust[email] /></label><br />
-                                    <label id="cMobile">Mobile <input type="text" name=cust[mobile] /></label><br />
-                                    <label id="cCard">Credit Card <input type="text" name=cust[card] /></label><br />
-                                    <label id="cExpiry">Expiry <input type="month" name=cust[expiry] /></label><br />
+                                    <label id="cName">Name <input type="text" name="cust[name]" value='' required /> </label>
+                                    <p id=nameError></p>
+                                    <label id="cEmail">Email <input type="email" name=cust[email] /></label>
+                                    <p id=emailError></p><br />
+                                    <label id="cMobile">Mobile <input type="tel" name=cust[mobile] required /></label>
+                                    <p id=mobileError></p><br />
+                                    <label id="cCard">Credit Card <input type="text" name=cust[card] required /></label>
+                                    <p id=cardError></p><br />
+                                    <label id="cExpiry">Expiry <input type="month" name=cust[expiry] required /></label>
+                                    <p id=expiryError></p><br />
                                 </fieldset>
                                 <br />
                                 <p id="curentTotal"> </p>
-                                <button class="button buttonhover" type="submit" name="submitted" id='submit'>Order</button>
+                                <button class="button buttonhover" type="submit" name="submitted" id='submit' onclick="validate()">Order</button>
                             </form>
                         </div>
                         <br />
