@@ -13,7 +13,7 @@ $RBI['screenings'] = ['MON' => 12,
                       'THU' => 18,
                       'FRI' => 18,
                       'SAT' => 12,
-                      'SUN' => 12  ]
+                      'SUN' => 12  ];
                             
 echo "<h1>PHP website is working</h1>";
  
