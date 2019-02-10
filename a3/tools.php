@@ -19,7 +19,7 @@ $moviesObject = [ 'RBI' => ['title' => 'Ralph Breaks the Internet',
                             ]
 ]
  
-echo $movieObject['RBI']['title'];
+echo $moviesObject['RBI'];
     /*,
     'GSW' => [
         'title' => "The Girl in the Spider's",
