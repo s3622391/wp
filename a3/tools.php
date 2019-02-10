@@ -3,12 +3,12 @@ session_start();
 print_r($_POST);
 
 error_reporting(E_ERROR | E_WARNING | E_PARSE | E_NOTICE);
-
+/*
 $moviesObject = [
     'RBI' => [
         'title' => 'Ralph Breaks the Internet',
         'rating' => 'PG',
-        'description' => ''<P>Video game bad guy Ralph and fellow misfit Vanellope von Schweetz must risk it all by traveling to the World Wide Web in search of a replacement part to save Vanellopes video game, Sugar Rush. In way over their heads, Ralph and Vanellope rely on the citizens of the internet -- the netizens -- to help navigate their way, including an entrepreneur named Yesss, who is the head algorithm and the heart and soul of trend-making site BuzzzTube.</p>',
+        'description' => '<P>Video game bad guy Ralph and fellow misfit Vanellope von Schweetz must risk it all by traveling to the World Wide Web in search of a replacement part to save Vanellopes video game, Sugar Rush. In way over their heads, Ralph and Vanellope rely on the citizens of the internet -- the netizens -- to help navigate their way, including an entrepreneur named Yesss, who is the head algorithm and the heart and soul of trend-making site BuzzzTube.</p>',
         'screenings' => [
             'MON' => 12,
             'TUE' => 12,
