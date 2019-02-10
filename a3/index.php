@@ -146,7 +146,7 @@ include_once('tools.php');
 
 
                                         <p><strong>Make a Booking:</strong></p>
-                                        <button class="button buttonhover" class="click" onclick="setHiddenFields('0','0','0')" >Monday - 12pm</button>
+                                        <button class="button buttonhover" class="click" onclick="setHiddenFields('0','0','0')">Monday - 12pm</button>
                                         <button class="button buttonhover" class="click" onclick="setHiddenFields('0','1','0')">Tuesday - 12pm</button>
                                         <button class="button buttonhover" class="click" onclick="setHiddenFields('0','2','2')">Wednesday - 6pm</button>
                                         <button class="button buttonhover" class="click" onclick="setHiddenFields('0','3','2')">Thursday - 6pm</button>
@@ -282,7 +282,7 @@ include_once('tools.php');
 
                                     <input id="movie[id]" type="hidden" name="movie[id]" />
                                     <input id="movie[day]" type="hidden" name="movie[day]" />
-                                    <input id="movie[hour]" type="hidden"  name="movie[hour]" />
+                                    <input id="movie[hour]" type="hidden" name="movie[hour]" />
                                     <legend class="legendposition">Standard Seating</legend>
                                     <label for="seats[STA]">Adult</label>
                                     <select id="seats[STA]" name="seats[STA]" onclick="runningTotal()">
@@ -384,11 +384,11 @@ include_once('tools.php');
                                     </select>
                                     <br />
                                 </fieldset>
-
+                                <!-- pattern="^[a-zA-Z ]$" title="A->Z Upper & lower case only"  -->
                                 <fieldset class="bookingdetails">
-                                    <label id="cName">Name <input type="text" name="cust[name]" pattern="^[a-zA-Z ]$" title="A->Z Upper & lower case only" required /> </label>
+                                    <label id="cName">Name <input type="text" name="cust[name]" required /> </label>
                                     <label id="cEmail">Email <input type="email" name=cust[email] pattern="/^[a-zA-Z0-9_\-.]+@[a-zA-Z0-9\-.]+$/"></label><br />
-                                    <label id="cMobile">Mobile <input type="tel" name=cust[mobile] pattern="[^(\(04\)|04\+614)[]?\d{4}[]?\d{4}$]"  required /></label><br />
+                                    <label id="cMobile">Mobile <input type="tel" name=cust[mobile] pattern="[^(\(04\)|04\+614)[]?\d{4}[]?\d{4}$]" required /></label><br />
                                     <label id="cCard">Credit Card <input type="text" name=cust[card] pattern="^3(?:[47]\d([ -]?)\d{4}(?:\1\d{4}){2}|0[0-5]\d{11}|[68]\d{12})$|^4(?:\d\d\d)?([ -]?)\d{4}(?:\2\d{4}){2}$|^6011([ -]?)\d{4}(?:\3\d{4}){2}$|^5[1-5]\d\d([ -]?)\d{4}(?:\4\d{4}){2}$|^2014\d{11}$|^2149\d{11}$|^2131\d{11}$|^1800\d{11}$|^3\d{15}$" required /></label><br />
                                     <label id="cExpiry">Expiry <input type="month" name=cust[expiry] required /></label><br />
                                 </fieldset>
@@ -400,7 +400,7 @@ include_once('tools.php');
                         <br />
 
                         <!--<button onclick="runningTotal()"> Total </button>-->
-                        
+
                         <span id="clear"></span>
                     </section>
                 </div>
