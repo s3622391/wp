@@ -73,6 +73,21 @@ li a:hover {
     background-color: lightcyan;
 }
 
+#curentTotal {
+    min-height: 40px;
+    color: blue;
+    text-align: center;
+    font-size: 200%;
+    border-radius: 8px;
+    border-width: thick;
+    border-style: double;
+    padding: 10px 10px;
+    width: 240px;
+    margin: 2%;
+    background-color: lightskyblue;
+}
+
+
 .showing {
     display: inline-block;
     min-width: 220px;
@@ -178,6 +193,8 @@ td,
     font-size: 150%;
     background-color: peachpuff;
 }
+
+
 
 .legendposition {
     text-align: left;

@@ -146,7 +146,7 @@ include_once('tools.php');
 
 
                                         <p><strong>Make a Booking:</strong></p>
-                                        <button class="button buttonhover" class="click" onclick="setHiddenFields('0','0','0')">Monday - 12pm</button>
+                                        <button class="button buttonhover" class="click" onclick="setHiddenFields('0','0','0')" >Monday - 12pm</button>
                                         <button class="button buttonhover" class="click" onclick="setHiddenFields('0','1','0')">Tuesday - 12pm</button>
                                         <button class="button buttonhover" class="click" onclick="setHiddenFields('0','2','2')">Wednesday - 6pm</button>
                                         <button class="button buttonhover" class="click" onclick="setHiddenFields('0','3','2')">Thursday - 6pm</button>
@@ -280,15 +280,18 @@ include_once('tools.php');
                             <form action="<?= $_SERVER['PHP_SELF']; ?>" method="post">
                                 <fieldset class="seating1">
 
-                                    <!--    Values hard coded for testing PHP  -->
+                                    <!--    Values hard coded for testing PHP 
+ value="RBI" 
+  value="SUN"
+ value="12" -->
 
-                                    <input id="movie[id]" type="hidden" name="movie[id]" value="RBI" />
-                                    <input id="movie[day]" type="hidden" name="movie[day]" value="MON" />
-                                    <input id="movie[hour]" type="hidden" name="movie[hour]" value="12" />
+                                    <input id="movie[id]" type="hidden" name="movie[id]" />
+                                    <input id="movie[day]" type="hidden" name="movie[day]" />
+                                    <input id="movie[hour]" type="hidden"  name="movie[hour]" />
                                     <legend class="legendposition">Standard Seating</legend>
                                     <label for="seats[STA]">Adult</label>
-                                    <select id="seats[STA]" name="seats[STA]">
-                                        <option> </option>
+                                    <select id="seats[STA]" name="seats[STA]" onclick="runningTotal()">
+                                        <!--         <option> </option> -->
                                         <option>0</option>
                                         <option>1</option>
                                         <option>2</option>
@@ -303,8 +306,8 @@ include_once('tools.php');
                                     </select>
                                     <br />
                                     <label for="seats[STP]">Concession</label>
-                                    <select id="seats[STP]" name="seats[STP]">
-                                        <option> </option>
+                                    <select id="seats[STP]" name="seats[STP]" onclick="runningTotal()">
+                                        <!--        <option> </option> -->
                                         <option>0</option>
                                         <option>1</option>
                                         <option>2</option>
@@ -319,8 +322,8 @@ include_once('tools.php');
                                     </select>
                                     <br />
                                     <label for="seats[STC]">Child</label>
-                                    <select id="seats[STC]" name="seats[STC]">
-                                        <option> </option>
+                                    <select id="seats[STC]" name="seats[STC]" onclick="runningTotal()">
+                                        <!--       <option> </option> -->
                                         <option>0</option>
                                         <option>1</option>
                                         <option>2</option>
@@ -338,8 +341,8 @@ include_once('tools.php');
                                 <fieldset class="seating2">
                                     <legend class="legendposition">First Class Seating</legend>
                                     <label for="seats[FCA]">Adult</label>
-                                    <select name="seats[FCA]">
-                                        <option> </option>
+                                    <select id="seats[FCA]" name="seats[FCA]" onclick="runningTotal()">
+                                        <!--        <option> </option> -->
                                         <option>0</option>
                                         <option>1</option>
                                         <option>2</option>
@@ -354,8 +357,8 @@ include_once('tools.php');
                                     </select>
                                     <br />
                                     <label for="seats[FCP]">Concession</label>
-                                    <select name="seats[FCP]">
-                                        <option> </option>
+                                    <select id="seats[FCP]" name="seats[FCP]" onclick="runningTotal()">
+                                        <!--       <option> </option> -->
                                         <option>0</option>
                                         <option>1</option>
                                         <option>2</option>
@@ -370,8 +373,8 @@ include_once('tools.php');
                                     </select>
                                     <br />
                                     <label for="seats[FCC]">Child</label>
-                                    <select name="seats[FCC]">
-                                        <option> </option>
+                                    <select id="seats[FCC]" name="seats[FCC]" onclick="runningTotal()">
+                                        <!--        <option> </option> -->
                                         <option>0</option>
                                         <option>1</option>
                                         <option>2</option>
@@ -388,7 +391,7 @@ include_once('tools.php');
                                 </fieldset>
 
                                 <fieldset class="bookingdetails">
-                                    <label id="cName">Name <input type="text" name="cust[name]" value='<?php echo htmlentities($name) ?>' /> </label>
+                                    <label id="cName">Name <input type="text" name="cust[name]" value='' /> </label>
                                     <!--   <span class='error'><?php echo $name_error ?></span><br />  -->
                                     <label id="cEmail">Email <input type="email" name=cust[email] /></label><br />
                                     <label id="cMobile">Mobile <input type="text" name=cust[mobile] /></label><br />
@@ -396,12 +399,14 @@ include_once('tools.php');
                                     <label id="cExpiry">Expiry <input type="month" name=cust[expiry] /></label><br />
                                 </fieldset>
                                 <br />
-                                <p id="curentTotal" > </p> 
+                                <p id="curentTotal"> </p>
                                 <button class="button buttonhover" type="submit" name="submitted" id='submit'>Order</button>
                             </form>
                         </div>
                         <br />
-                        <P id="curentTotal"></P>
+
+                        <!--<button onclick="runningTotal()"> Total </button>-->
+                        
                         <span id="clear"></span>
                     </section>
                 </div>
@@ -434,6 +439,7 @@ include_once('tools.php');
     <div id="debugger">preShow($_POST);</div>
     <div id="debugger">preShow($_GET);</div>
     <div id="debugger">preShow($_SESSION);</div>
+
 -->
 </body>
 
