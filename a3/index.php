@@ -269,15 +269,15 @@ include_once('tools.php');
                     <hr />
                 </div>
             </article>
-            <!--- 
-                   -->
+            <!--- "https://titan.csit.rmit.edu.au/~e54061/wp/lunardo-formtest.php"
+              <?= $_SERVER['PHP_SELF']; ?>     -->
             <article id="bookingArticle">
                 <div>
                     <h2 id="Booking">Booking</h2>
                     <hr />
                     <section id="showbooking">
                         <div id="infoposition">
-                            <form action="https://titan.csit.rmit.edu.au/~e54061/wp/lunardo-formtest.php" method="post">
+                            <form action=<?= $_SERVER['PHP_SELF']; ?> method="post">
                                 <fieldset class="seating1">
 
                                     <input id="movie[id]" type="hidden" name="movie[id]" />
