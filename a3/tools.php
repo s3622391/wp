@@ -95,6 +95,5 @@ function printMyCode() {
 printMyCode()
     
 //echo ($_POST['PHP_SELF'])    
-*/
 
 ?>
