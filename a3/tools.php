@@ -62,9 +62,9 @@ $pricesObject = ['full' => ['STA' => 19.8,
                             ]
                 ];
 
-echo $movieObject['RBI']["title"];
-echo $movieObject['BER']["description"];  
-echo $pricesObject['full']['FCA'];
+echo $movieObject['GSW']["title"];
+echo $movieObject['ASB']["description"];  
+echo $pricesObject['full']['FCC'];
 
 /*
 function preShow( $arr, $returnAsString=false ) {
@@ -75,7 +75,6 @@ else
 echo $ret; 
 }
 
-
 Seat Type	     All Day Monday and Wednesday	12pm Weekdays	All other times
 Standard Adult	    $14.00	                    $14.00	        $19.80
 Standard Consession	$12.50	                    $12.50	        $17.50
@@ -84,12 +83,8 @@ First Adult	        $24.00	                    $24.00	        $30.00
 First Consession	$22.50	                    $22.50	        $27.00
 First Child	        $21.00	                    $21.00	        $24.00
 
-  ['MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT', 'SUN'];
-temp.Mhr = ['12', '15', '18', '21'];
-
-
-*/
-/*function printMyCode() {
+ */
+function printMyCode() {
   $lines = file($_SERVER['PHP_SELF']);
   echo "<pre class='mycode'><ol>";
   foreach ($lines as $line)

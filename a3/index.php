@@ -118,7 +118,7 @@ include_once('tools.php');
                 </div>
             </article>
             <article>
-                <div>
+                <div id="bookingArticle">
                     <h2 id="NowShowing">Now Showing</h2>
                     <hr />
                     <section>
@@ -271,7 +271,7 @@ include_once('tools.php');
             </article>
             <!-- https://titan.csit.rmit.edu.au/~e54061/wp/lunardo-formtest.php
                    -->
-            <article>
+            <article id="bookingArticle">
                 <div>
                     <h2 id="Booking">Booking</h2>
                     <hr />
@@ -384,17 +384,17 @@ include_once('tools.php');
                                     </select>
                                     <br />
                                 </fieldset>
-                                <!-- pattern="^[a-zA-Z ]$" title="A->Z Upper & lower case only" 
-                                     pattern="/^[a-zA-Z0-9_\-.]+@[a-zA-Z0-9\-.]+$/" 
-                                     pattern="[^?\d{14}$]" -->
+                                <!-- pattern="/^[a-zA-Z0-9_\-.]+@[a-zA-Z0-9\-.]+$/" 
+                                     ^(\(04\)|04|\+614)( ?\d){8}$ -->
                                 <fieldset class="bookingdetails">
-                                    <label id="cName">Name <input type="text" name="cust[name]" required /> </label>
-                                    <label id="cEmail">Email <input type="email" name=cust[email]></label><br />
-                                    <label id="cMobile">Mobile <input type="tel" name=cust[mobile] pattern="[^(\(04\)|04\+614)[]?\d{4}[]?\d{4}$]" required /></label><br />
-                                    <label id="cCard">Credit Card <input type="text" name=cust[card]  required /></label><br />
+                                    <label id="cName">Name   <input type="text" name="cust[name]" pattern="^[a-zA-Z \-.']{1,100}$" title="A->Z Upper & lower case only" required /></label><br />
+                                    <label id="cEmail">Email   <input type="email" name=cust[email]></label><br />
+                                    <label id="cMobile">Mobile   <input type="tel" name=cust[mobile] pattern="^(\(04\)|04|\+614)( ?\d){8}$" required /></label><br />
+                                    <label id="cCard">Credit Card   <input type="text" name=cust[card] pattern="^[(?\d)]{13,16}$" required /></label><br />
                                     <label id="cExpiry">Expiry <input type="month" name=cust[expiry] required /></label><br />
+
                                 </fieldset>
-                                <br />
+                                <br />                                
                                 <p id="curentTotal"> </p>
                                 <button class="button buttonhover" type="submit" name="submitted" id='submit' onclick="validate()">Order</button>
                             </form>
