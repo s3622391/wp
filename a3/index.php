@@ -277,7 +277,7 @@ include_once('tools.php');
                     <hr />
                     <section id="showbooking">
                         <div id="infoposition">
-                            <form action=<?= $_SERVER['PHP_SELF']; ?> method="post">
+                            <form action=<?=$_SERVER['PHP_SELF']; ?> method="post">
                                 <fieldset class="seating1">
 
                                     <input id="movie[id]" type="hidden" name="movie[id]" />
@@ -387,14 +387,13 @@ include_once('tools.php');
                                 <!-- pattern="/^[a-zA-Z0-9_\-.]+@[a-zA-Z0-9\-.]+$/" 
                                      ^(\(04\)|04|\+614)( ?\d){8}$ -->
                                 <fieldset class="bookingdetails">
-                                    <label id="cName">Name   <input type="text" name="cust[name]" pattern="^[a-zA-Z \-.']{1,100}$" title="A->Z Upper & lower case only" required /></label><br />
-                                    <label id="cEmail">Email   <input type="email" name=cust[email]></label><br />
-                                    <label id="cMobile">Mobile   <input type="tel" name=cust[mobile] pattern="^(\(04\)|04|\+614)( ?\d){8}$" required /></label><br />
-                                    <label id="cCard">Credit Card   <input type="text" name=cust[card] pattern="^[(?\d)]{13,16}$" required /></label><br />
+                                    <label id="cName">Name <input type="text" name="cust[name]" pattern="^[a-zA-Z \-.']{1,100}$" title="A->Z Upper & lower case only" required /></label><br />
+                                    <label id="cEmail">Email <input type="email" name=cust[email]></label><br />
+                                    <label id="cMobile">Mobile <input type="tel" name=cust[mobile] pattern="^(\(04\)|04|\+614)( ?\d){8}$" required /></label><br />
+                                    <label id="cCard">Credit Card <input type="text" name=cust[card] pattern="^[(?\d)]{13,16}$" required /></label><br />
                                     <label id="cExpiry">Expiry <input type="month" name=cust[expiry] required /></label><br />
-
                                 </fieldset>
-                                <br />                                
+                                <br />
                                 <p id="curentTotal"> </p>
                                 <button class="button buttonhover" type="submit" name="submitted" id='submit' onclick="validateExpiry()">Order</button>
                             </form>
