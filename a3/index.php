@@ -269,7 +269,7 @@ include_once('tools.php');
                     <hr />
                 </div>
             </article>
-            <!-- https://titan.csit.rmit.edu.au/~e54061/wp/lunardo-formtest.php
+            <!--- 
                    -->
             <article id="bookingArticle">
                 <div>
@@ -277,7 +277,7 @@ include_once('tools.php');
                     <hr />
                     <section id="showbooking">
                         <div id="infoposition">
-                            <form action="<?= $_SERVER['PHP_SELF']; ?>" method="post">
+                            <form action="https://titan.csit.rmit.edu.au/~e54061/wp/lunardo-formtest.php" method="post">
                                 <fieldset class="seating1">
 
                                     <input id="movie[id]" type="hidden" name="movie[id]" />
@@ -396,7 +396,7 @@ include_once('tools.php');
                                 </fieldset>
                                 <br />                                
                                 <p id="curentTotal"> </p>
-                                <button class="button buttonhover" type="submit" name="submitted" id='submit' onclick="validate()">Order</button>
+                                <button class="button buttonhover" type="submit" name="submitted" id='submit' onclick="validateExpiry()">Order</button>
                             </form>
                         </div>
                         <br />
