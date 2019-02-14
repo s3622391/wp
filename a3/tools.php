@@ -66,9 +66,12 @@ echo $movieObject['GSW']["title"];
 echo $movieObject['ASB']["description"];  
 echo $pricesObject['full']['FCC'];
 
+$temp = $movieObject['RBI'];
+echo $temp;
+
 $file = fopen("bookings.txt","w");
 
-foreach ($list as $movieObject['RBI'])
+foreach ($list as $temp)
   {
   fputcsv($file,$movieObject['RBI']);
   }
