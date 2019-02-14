@@ -67,7 +67,8 @@ echo $movieObject['ASB']["description"];
 echo $pricesObject['full']['FCC'];
 
 
-$value = "test toast line./n"
+$value = "test toast line./n";
+
 $file = fopen("bookings.txt","w");
 
 
