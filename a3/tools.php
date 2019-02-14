@@ -66,12 +66,13 @@ echo $movieObject['GSW']["title"];
 echo $movieObject['ASB']["description"];  
 echo $pricesObject['full']['FCC'];
 
+
+$value = "test toast line./n"
 $file = fopen("bookings.txt","w");
 
-foreach($movieObject as $value){
-    echo "$value";
-    fputcsv($file,$value);
-}
+
+fputcsv($file,$value);
+
 
 fclose($file);
 
