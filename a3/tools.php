@@ -67,13 +67,19 @@ echo $movieObject['ASB']["description"];
 echo $pricesObject['full']['FCC'];
 
 
-$value = "test toast line./n";
+$list = array
+(
+"Peter,Griffin,Oslo,Norway",
+"Glenn,Quagmire,Oslo,Norway",
+);
+
 
 $file = fopen("bookings.txt","w");
 
-
-fputcsv($file,$value);
-
+foreach ($list as $line)
+  {
+  fputcsv($file,explode(',',$line));
+  }
 
 fclose($file);
 
