@@ -65,16 +65,11 @@ $pricesObject = ['full' => ['STA' => 19.8,
 echo $movieObject['GSW']["title"];
 echo $movieObject['ASB']["description"];  
 echo $pricesObject['full']['FCC'];
-echo $pricesObject['full']['FCC'];
-echo $pricesObject['full']['FCC'];
-echo $pricesObject['full']['FCC'];
-
-
 
 $file = fopen("bookings.txt","w");
 
 foreach ($movieObject as $field) {
-    fputcsv($file,$field);
+    fputcsv($file,implode(",",$field));
 }
 
 fclose($file);
@@ -98,7 +93,7 @@ First Consession	$22.50	                    $22.50	        $27.00
 First Child	        $21.00	                    $21.00	        $24.00
 
  */
-function printMyCode() {
+/*function printMyCode() {
   $lines = file($_SERVER['PHP_SELF']);
   echo "<pre class='mycode'><ol>";
   foreach ($lines as $line)
@@ -106,7 +101,7 @@ function printMyCode() {
   echo '</ol></pre>';
 }
 
-printMyCode()
+printMyCode()  */
     
 //echo ($_POST['PHP_SELF'])    
 
