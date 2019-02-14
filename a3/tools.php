@@ -65,14 +65,20 @@ $pricesObject = ['full' => ['STA' => 19.8,
 echo $movieObject['GSW']["title"];
 echo $movieObject['ASB']["description"];  
 echo $pricesObject['full']['FCC'];
+echo $pricesObject['full']['FCC'];
+echo $pricesObject['full']['FCC'];
+echo $pricesObject['full']['FCC'];
+
+
 
 $file = fopen("bookings.txt","w");
 
-foreach ($movieObject as $line) {
-    fputcsv($file,explode(',',$line));
+foreach ($movieObject as $field) {
+    fputcsv($file,$field);
 }
 
 fclose($file);
+
 
 /*
 function preShow( $arr, $returnAsString=false ) {
