@@ -66,19 +66,11 @@ echo $movieObject['GSW']["title"];
 echo $movieObject['ASB']["description"];  
 echo $pricesObject['full']['FCC'];
 
-
-$list = array
-(
-"Peter,Griffin,Oslo,Norway",
-"Glenn,Quagmire,Oslo,Norway",
-);
-
-
 $file = fopen("bookings.txt","w");
 
-foreach ($list as $line)
+foreach ($list as $movieObject['RBI'])
   {
-  fputcsv($file,explode(',',$line));
+  fputcsv($file,$movieObject['RBI']);
   }
 
 fclose($file);
