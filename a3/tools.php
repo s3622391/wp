@@ -68,11 +68,10 @@ echo $pricesObject['full']['FCC'];
 
 $file = fopen("bookings.txt","w");
 
-$list = $movieObject;
+fputcsv($file,$movieObject['GSW']["title"]);
+fputcsv($file,$movieObject['ASB']["title"]);
+fputcsv($file,$movieObject['RBI']["title"]);
 
-foreach ($list as $line) {
-    fputcsv($file,$line);
-}
 
 fclose($file);
 
