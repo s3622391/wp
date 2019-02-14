@@ -1,5 +1,6 @@
 <?php
 session_start();
+
 print_r($_POST);
 
 error_reporting(E_ERROR | E_WARNING | E_PARSE | E_NOTICE);
@@ -62,23 +63,26 @@ $pricesObject = ['full' => ['STA' => 19.8,
                             ]
                 ];
 
-echo $movieObject['GSW']["title"];
-echo $movieObject['ASB']["description"];  
-echo $pricesObject['full']['FCC'];
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+ echo $_POST[$cust['name']];
+}
 
-$temp = $movieObject['RBI'];
-echo $temp;
+
+
+/*$temp = $clientInfo;
 
 $file = fopen("bookings.txt","w");
 
-foreach ($list as $temp)
+
+
+foreach ($temp as $field)
   {
-  fputcsv($file,$movieObject['RBI']);
+  fputcsv($file,$temp);
   }
 
 fclose($file);
 
-
+*/
 /*
 function preShow( $arr, $returnAsString=false ) {
 $ret = '<pre>' . print_r($arr, true) . '</pre>';
@@ -87,7 +91,18 @@ return $ret;
 else 
 echo $ret; 
 }
-
+$clientInfo = array ('name' => $Name, 'email' => $_REQUEST['email'] );
+   $Name = $_REQUEST["cust[name]"];
+    $Email = $_REQUEST['email'];
+    $Mobile = $_REQUEST['mobile'];
+    $Card = $_REQUEST['card'];
+    $Expiry = $_REQUEST['expiry'];
+    
+ echo $clientInfo['name'];
+echo $clientInfo['email'];   
+echo $movieObject['GSW']["title"];
+echo $movieObject['ASB']["description"];  
+echo $pricesObject['full']['FCC'];
 
 fputcsv($file,$movieObject['GSW']["title"]);
 

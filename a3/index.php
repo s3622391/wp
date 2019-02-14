@@ -395,7 +395,8 @@ include_once('tools.php');
                                 </fieldset>
                                 <br />
                                 <p id="curentTotal"> </p>
-                                <button class="button buttonhover" type="submit" name="submitted" id='submit' onclick="validateExpiry()">Order</button>
+                                <button class="button buttonhover" type="submit" name="submitted" id='submit' >Order</button>
+                                <button class="button buttonhover" type="reset" name="reset" id='reset' >Reset</button>
                             </form>
                         </div>
                         <br />
