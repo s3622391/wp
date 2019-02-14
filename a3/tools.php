@@ -66,6 +66,14 @@ echo $movieObject['GSW']["title"];
 echo $movieObject['ASB']["description"];  
 echo $pricesObject['full']['FCC'];
 
+$file = fopen("bookings.txt","w");
+
+foreach ($movieObject as $line) {
+    fputcsv($file,explode(',',$line));
+}
+
+fclose($file);
+
 /*
 function preShow( $arr, $returnAsString=false ) {
 $ret = '<pre>' . print_r($arr, true) . '</pre>';
