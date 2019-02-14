@@ -68,8 +68,10 @@ echo $pricesObject['full']['FCC'];
 
 $file = fopen("bookings.txt","w");
 
-foreach ($movieObject as $field) {
-    fputcsv($file,implode(",",$field));
+$list = $movieObject;
+
+foreach ($list as $line) {
+    fputcsv($file,$line);
 }
 
 fclose($file);
@@ -83,6 +85,9 @@ return $ret;
 else 
 echo $ret; 
 }
+
+
+
 
 Seat Type	     All Day Monday and Wednesday	12pm Weekdays	All other times
 Standard Adult	    $14.00	                    $14.00	        $19.80
