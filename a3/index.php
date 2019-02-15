@@ -277,7 +277,7 @@ include_once('tools.php');
                     <hr />
                     <section id="showbooking">
                         <div id="infoposition">
-                            <form action=<?=$_SERVER['PHP_SELF']; ?> method="post">
+                            <form method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>">
                                 <fieldset class="seating1">
 
                                     <input id="movie[id]" type="hidden" name="movie[id]" />
@@ -384,19 +384,20 @@ include_once('tools.php');
                                     </select>
                                     <br />
                                 </fieldset>
-                                <!-- pattern="/^[a-zA-Z0-9_\-.]+@[a-zA-Z0-9\-.]+$/" 
-                                     ^(\(04\)|04|\+614)( ?\d){8}$ -->
+                                <!-- 
+                                 
+                                -->
                                 <fieldset class="bookingdetails">
                                     <label id="cName">Name <input type="text" name="cust[name]" pattern="^[a-zA-Z \-.']{1,100}$" title="A->Z Upper & lower case only" required /></label><br />
                                     <label id="cEmail">Email <input type="email" name=cust[email]></label><br />
-                                    <label id="cMobile">Mobile <input type="tel" name=cust[mobile] pattern="^(\(04\)|04|\+614)( ?\d){8}$" required /></label><br />
-                                    <label id="cCard">Credit Card <input type="text" name=cust[card] pattern="^[(?\d)]{13,16}$" required /></label><br />
-                                    <label id="cExpiry">Expiry <input type="month" name=cust[expiry] required /></label><br />
+                                    <label id="cMobile">Mobile <input type="tel" name=cust[mobile] pattern="^(\(04\)|04|\+614)( ?\d){8}$" title="Australian numbers only" required /></label><br />
+                                    <label id="cCard">Credit Card <input type="text" name=cust[card] pattern="^[(?\d)]{13,16}$" title="minimum 13, max 16 numbers" required /></label><br />
+                                    <label id="cExpiry">Expiry <input type="month" name=cust[expiry] /></label><br />
                                 </fieldset>
                                 <br />
                                 <p id="curentTotal"> </p>
-                                <button class="button buttonhover" type="submit" name="submitted" id='submit' >Order</button>
-                                <button class="button buttonhover" type="reset" name="reset" id='reset' >Reset</button>
+                                <button class="button buttonhover" type="submit" name="submitted" id='submit'>Order</button>
+                                <button class="button buttonhover" type="reset" name="reset" id='reset'>Reset</button>
                             </form>
                         </div>
                         <br />
@@ -431,10 +432,11 @@ include_once('tools.php');
             <button id='toggleWireframeCSS' onclick='toggleWireframe()'>Toggle Wireframe CSS</button>
         </div>
     </footer>
-    <!--   <p id="errorcode"></p>
-    <div id="debugger">preShow($_POST);</div>
-    <div id="debugger">preShow($_GET);</div>
-    <div id="debugger">preShow($_SESSION);</div>
+  <!--  <p id="errorcode">Debugger</p>
+    <div id="debugger"><?php get = $_REQUEST[$_GET];
+                        echo get ?></div>
+    <div id="debugger"><?php echo $_REQUEST[$_POST] ?></div>
+    <div id="debugger"><?php echo $_REQUEST[$_SESSION] ?></div>
 
 -->
 </body>

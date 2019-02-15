@@ -1,8 +1,6 @@
 <?php
 session_start();
 
-print_r($_POST);
-
 error_reporting(E_ERROR | E_WARNING | E_PARSE | E_NOTICE);
 
 $movieObject['RBI']['title'] = 'Ralph Breaks the Internet';
@@ -63,58 +61,152 @@ $pricesObject = ['full' => ['STA' => 19.8,
                             ]
                 ];
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
- echo $_POST[$cust['name']];
-}
 
+$discountDay1 = 'MON';
+$discountDay2 = 'WED';
+$selectedTime = $_POST['movie']['hour'];
+$selectedDay = $_POST['movie']['day'];
+$total = 0;
 
-
-/*$temp = $clientInfo;
-
-$file = fopen("bookings.txt","w");
-
-
-
-foreach ($temp as $field)
-  {
-  fputcsv($file,$temp);
-  }
-
-fclose($file);
-
-*/
-/*
-function preShow( $arr, $returnAsString=false ) {
-$ret = '<pre>' . print_r($arr, true) . '</pre>';
-if ($returnAsString)
-return $ret;
-else 
-echo $ret; 
-}
-$clientInfo = array ('name' => $Name, 'email' => $_REQUEST['email'] );
-   $Name = $_REQUEST["cust[name]"];
-    $Email = $_REQUEST['email'];
-    $Mobile = $_REQUEST['mobile'];
-    $Card = $_REQUEST['card'];
-    $Expiry = $_REQUEST['expiry'];
+if (($selectedTime == 12) || ($selectedDay == $discountDay1) || ($selectedDay == $discountDay2)) {
     
- echo $clientInfo['name'];
-echo $clientInfo['email'];   
-echo $movieObject['GSW']["title"];
-echo $movieObject['ASB']["description"];  
-echo $pricesObject['full']['FCC'];
+   // echo " 12 or MON or WED ";
+    
+   if ($_POST['seats']['STA'] >= 0 ){       
+       $total += number_format($_POST['seats']['STA'] * $pricesObject['disc']['STA'],2);
+   };
+   if ($_POST['seats']['STP'] >= 0 ){
+       $total += number_format($_POST['seats']['STP'] * $pricesObject['disc']['STP'],2);
+   };
+   if ($_POST['seats']['STC'] >= 0 ){                
+       $total += number_format($_POST['seats']['STC'] * $pricesObject['disc']['STC'],2);
+   };
+   if ($_POST['seats']['FCA'] >= 0 ){                
+       $total += number_format($_POST['seats']['FCA'] * $pricesObject['disc']['FCA'],2);
+   };                
+   if ($_POST['seats']['FCP'] >= 0 ){                
+       $total += number_format($_POST['seats']['FCP'] * $pricesObject['disc']['FCP'],2);
+   };            
+   if ($_POST['seats']['FCC'] >= 0 ){                
+       $total += number_format($_POST['seats']['FCC'] * $pricesObject['disc']['FCC'],2);
+   };               
+           
+} 
+else {
+    
+   // echo " All other values ";
+    
+    if($_POST['seats']['STA'] != 0 ){
+       $total += number_format($_POST['seats']['STA'] * $pricesObject['full']['STA'],2);
+   };
+   if($_POST['seats']['STP'] != 0 ){
+       $total += number_format($_POST['seats']['STP'] * $pricesObject['full']['STP'],2);
+   };
+   if($_POST['seats']['STC'] != 0 ){                
+       $total += number_format($_POST['seats']['STC'] * $pricesObject['full']['STC'],2);
+   };
+   if($_POST['seats']['FCA'] != 0 ){                
+       $total += number_format($_POST['seats']['FCA'] * $pricesObject['full']['FCA'],2);
+   };                
+   if($_POST['seats']['FCP'] != 0 ){                
+       $total += number_format($_POST['seats']['FCP'] * $pricesObject['full']['FCP'],2);
+   };            
+   if($_POST['seats']['FCC'] != 0 ){                
+       $total += number_format($_POST['seats']['FCC'] * $pricesObject['full']['FCC'],2);
+   };               
+                                                      
+}
 
-fputcsv($file,$movieObject['GSW']["title"]);
+/*if ( empty( $_SESSION['cust'] || $_SESSION['movie'] || $_SESSION['seats'])){
+    header('Location: index.php');
+} */
 
-Seat Type	     All Day Monday and Wednesday	12pm Weekdays	All other times
-Standard Adult	    $14.00	                    $14.00	        $19.80
-Standard Consession	$12.50	                    $12.50	        $17.50
-Standard Child	    $11.00	                    $11.00	        $15.30
-First Adult	        $24.00	                    $24.00	        $30.00
-First Consession	$22.50	                    $22.50	        $27.00
-First Child	        $21.00	                    $21.00	        $24.00
+// echo $total;
 
- */
+$errorsFound = 0;
+$cleanName = checkInput($_POST['cust']['name']);
+if (!preg_match("/^[a-zA-Z ]*$/",$cleanName)) {
+    $nameErr = '<span style="color:red">"Only letters and white space permitted"</span>';
+    $errorsFound ++;
+}
+if ($errorsFound == 0) {
+  $_SESSION['cust']['name'] = $cleanName;
+}
+
+$cleanMobile = checkInput($_POST['cust']['mobile']);
+if (!preg_match("/^(\(04\)|04|\+614)( ?\d){8}$/",$cleanMobile)) {
+    $mobileErr = '<span style="color:red">"Australian mobile number only"</span>';
+    $errorsFound ++;
+}
+if ($errorsFound == 0) {
+  $_SESSION['cust']['mobile'] = $cleanMobile;
+}
+
+$cleanEmail = checkInput($_POST['cust']['email']);
+if (!filter_var($cleanEmail, FILTER_VALIDATE_EMAIL)) {
+    $emailErr = '<span style="color:red">"Email format not permitted"</span>';
+    $errorsFound ++;
+}
+if ($errorsFound == 0) {
+  $_SESSION['cust']['email'] = $cleanEmail;
+}
+
+$cleanCard = checkInput($_POST['cust']['card']);
+if (!preg_match("/^[0-9]{13,16}$/",$cleanCard)) {
+    $cardErr = '<span style="color:red">"13 to 16 digits required"</span>';
+    $errorsFound ++;
+}
+
+$cleanExpiry = checkInput($_POST['cust']['expiry']);
+$expiry = $cleanExpiry;
+$currentYearMon = date("m/Y");
+$currentDay = date("d");
+
+$exp = strtotime($expiry);
+$currentDate = strtotime($currentYearMon);
+
+if ($currentDate >= $exp) {
+    $expiryErr = "Card out of date";
+    $errorsFound ++;
+}
+
+function checkInput($data) {
+  $data = trim($data);
+  $data = stripslashes($data);
+  $data = htmlspecialchars($data);
+  return $data;
+}
+
+$_SESSION['movie']['id'] = $_POST['movie']['id'];
+$_SESSION['movie']['day'] = $_POST['movie']['day'];
+$_SESSION['movie']['hour'] = $_POST['movie']['hour'];
+$_SESSION['seats']['STA'] = $_POST['seats']['STA'];
+$_SESSION['seats']['STP'] = $_POST['seats']['STP'];
+$_SESSION['seats']['STC'] = $_POST['seats']['STC'];
+$_SESSION['seats']['FCA'] = $_POST['seats']['FCA'];
+$_SESSION['seats']['FCP'] = $_POST['seats']['FCP'];
+$_SESSION['seats']['FCC'] = $_POST['seats']['FCC'];
+
+$now = date('d/m h:i');
+ 
+$cells = array_merge(
+    [ $now ] ,
+    $_SESSION['cust'],
+    $_SESSION['movie'],
+    $_SESSION['seats'],
+    [ $total ]
+);  
+
+//print_r($_SESSION);    
+    
+print_r($cells);
+
+
+$file = fopen("bookings.txt","a");
+    
+fputcsv($file,$cells);
+  
+
 /*function printMyCode() {
   $lines = file($_SERVER['PHP_SELF']);
   echo "<pre class='mycode'><ol>";
