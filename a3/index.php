@@ -269,15 +269,14 @@ include_once('tools.php');
                     <hr />
                 </div>
             </article>
-            <!--- "https://titan.csit.rmit.edu.au/~e54061/wp/lunardo-formtest.php"
-              <?= $_SERVER['PHP_SELF']; ?>     -->
+            <!--- "https://titan.csit.rmit.edu.au/~e54061/wp/lunardo-formtest.php"    -->
             <article id="bookingArticle">
                 <div>
                     <h2 id="Booking">Booking</h2>
                     <hr />
                     <section id="showbooking">
                         <div id="infoposition">
-                            <form method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>">
+                            <form method="post" action="index.php">
                                 <fieldset class="seating1">
 
                                     <input id="movie[id]" type="hidden" name="movie[id]" />
@@ -432,13 +431,7 @@ include_once('tools.php');
             <button id='toggleWireframeCSS' onclick='toggleWireframe()'>Toggle Wireframe CSS</button>
         </div>
     </footer>
-  <!--  <p id="errorcode">Debugger</p>
-    <div id="debugger"><?php get = $_REQUEST[$_GET];
-                        echo get ?></div>
-    <div id="debugger"><?php echo $_REQUEST[$_POST] ?></div>
-    <div id="debugger"><?php echo $_REQUEST[$_SESSION] ?></div>
 
--->
 </body>
 
 </html>

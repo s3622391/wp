@@ -199,7 +199,7 @@ $cells = array_merge(
 
 //print_r($_SESSION);    
     
-print_r($cells);
+//print_r($cells);
 
 
 $file = fopen("bookings.txt","a");
