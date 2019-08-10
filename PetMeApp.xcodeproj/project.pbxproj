@@ -1,0 +1,441 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		33DBC787A2FD272DC43D14B2 /* Pods_PetMeApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC9E3C17C333814A76192E50 /* Pods_PetMeApp.framework */; };
+		6D41758722E880600081B051 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D41758622E880600081B051 /* AppDelegate.swift */; };
+		6D41758922E880600081B051 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D41758822E880600081B051 /* SceneDelegate.swift */; };
+		6D41758B22E880600081B051 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D41758A22E880600081B051 /* ViewController.swift */; };
+		6D41758E22E880600081B051 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D41758C22E880600081B051 /* Main.storyboard */; };
+		6D41759022E880610081B051 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D41758F22E880610081B051 /* Assets.xcassets */; };
+		6D41759322E880610081B051 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D41759122E880610081B051 /* LaunchScreen.storyboard */; };
+		6D41759B22E881AF0081B051 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6D41759A22E881AF0081B051 /* GoogleService-Info.plist */; };
+		6D41759D22E88C7A0081B051 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D41759C22E88C7A0081B051 /* ProfileViewController.swift */; };
+		6D41759F22E9C8180081B051 /* logo-petme.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D41759E22E9C8170081B051 /* logo-petme.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		26B49736713D786A45FE2462 /* Pods-PetMeApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PetMeApp.debug.xcconfig"; path = "Target Support Files/Pods-PetMeApp/Pods-PetMeApp.debug.xcconfig"; sourceTree = "<group>"; };
+		447943177E6C930B37E0FA9A /* Pods-PetMeApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PetMeApp.release.xcconfig"; path = "Target Support Files/Pods-PetMeApp/Pods-PetMeApp.release.xcconfig"; sourceTree = "<group>"; };
+		6D41758322E880600081B051 /* PetMeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetMeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D41758622E880600081B051 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6D41758822E880600081B051 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		6D41758A22E880600081B051 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6D41758D22E880600081B051 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6D41758F22E880610081B051 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6D41759222E880610081B051 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6D41759422E880610081B051 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D41759A22E881AF0081B051 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		6D41759C22E88C7A0081B051 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		6D41759E22E9C8170081B051 /* logo-petme.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo-petme.png"; sourceTree = "<group>"; };
+		EC9E3C17C333814A76192E50 /* Pods_PetMeApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PetMeApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6D41758022E880600081B051 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33DBC787A2FD272DC43D14B2 /* Pods_PetMeApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3362F7CFCD1456A1E3E5D6CF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				26B49736713D786A45FE2462 /* Pods-PetMeApp.debug.xcconfig */,
+				447943177E6C930B37E0FA9A /* Pods-PetMeApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		33B8FE2EAEEB14C15E70B5A0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EC9E3C17C333814A76192E50 /* Pods_PetMeApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6D41757A22E880600081B051 = {
+			isa = PBXGroup;
+			children = (
+				6D41758522E880600081B051 /* PetMeApp */,
+				6D41758422E880600081B051 /* Products */,
+				3362F7CFCD1456A1E3E5D6CF /* Pods */,
+				33B8FE2EAEEB14C15E70B5A0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6D41758422E880600081B051 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6D41758322E880600081B051 /* PetMeApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6D41758522E880600081B051 /* PetMeApp */ = {
+			isa = PBXGroup;
+			children = (
+				6D41758622E880600081B051 /* AppDelegate.swift */,
+				6D41758822E880600081B051 /* SceneDelegate.swift */,
+				6D41759C22E88C7A0081B051 /* ProfileViewController.swift */,
+				6D41758A22E880600081B051 /* ViewController.swift */,
+				6D41758C22E880600081B051 /* Main.storyboard */,
+				6D41759E22E9C8170081B051 /* logo-petme.png */,
+				6D41758F22E880610081B051 /* Assets.xcassets */,
+				6D41759122E880610081B051 /* LaunchScreen.storyboard */,
+				6D41759A22E881AF0081B051 /* GoogleService-Info.plist */,
+				6D41759422E880610081B051 /* Info.plist */,
+			);
+			path = PetMeApp;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6D41758222E880600081B051 /* PetMeApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D41759722E880610081B051 /* Build configuration list for PBXNativeTarget "PetMeApp" */;
+			buildPhases = (
+				A4743283EACDB88A74274751 /* [CP] Check Pods Manifest.lock */,
+				6D41757F22E880600081B051 /* Sources */,
+				6D41758022E880600081B051 /* Frameworks */,
+				6D41758122E880600081B051 /* Resources */,
+				9FD6C24CA6B7DECE1FB0F19B /* [CP] Embed Pods Frameworks */,
+				1FB3D8D0C09270C1B2FBC0BB /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PetMeApp;
+			productName = PetMeApp;
+			productReference = 6D41758322E880600081B051 /* PetMeApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6D41757B22E880600081B051 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = "Dina Mogilevsky";
+				TargetAttributes = {
+					6D41758222E880600081B051 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+				};
+			};
+			buildConfigurationList = 6D41757E22E880600081B051 /* Build configuration list for PBXProject "PetMeApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6D41757A22E880600081B051;
+			productRefGroup = 6D41758422E880600081B051 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6D41758222E880600081B051 /* PetMeApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6D41758122E880600081B051 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D41759F22E9C8180081B051 /* logo-petme.png in Resources */,
+				6D41759322E880610081B051 /* LaunchScreen.storyboard in Resources */,
+				6D41759B22E881AF0081B051 /* GoogleService-Info.plist in Resources */,
+				6D41759022E880610081B051 /* Assets.xcassets in Resources */,
+				6D41758E22E880600081B051 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1FB3D8D0C09270C1B2FBC0BB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PetMeApp/Pods-PetMeApp-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PetMeApp/Pods-PetMeApp-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PetMeApp/Pods-PetMeApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9FD6C24CA6B7DECE1FB0F19B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PetMeApp/Pods-PetMeApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PetMeApp/Pods-PetMeApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PetMeApp/Pods-PetMeApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A4743283EACDB88A74274751 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PetMeApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6D41757F22E880600081B051 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D41758B22E880600081B051 /* ViewController.swift in Sources */,
+				6D41758722E880600081B051 /* AppDelegate.swift in Sources */,
+				6D41759D22E88C7A0081B051 /* ProfileViewController.swift in Sources */,
+				6D41758922E880600081B051 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6D41758C22E880600081B051 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6D41758D22E880600081B051 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6D41759122E880610081B051 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6D41759222E880610081B051 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6D41759522E880610081B051 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6D41759622E880610081B051 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6D41759822E880610081B051 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26B49736713D786A45FE2462 /* Pods-PetMeApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PetMeApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dmogilevsky.PetMeApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6D41759922E880610081B051 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 447943177E6C930B37E0FA9A /* Pods-PetMeApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PetMeApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dmogilevsky.PetMeApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6D41757E22E880600081B051 /* Build configuration list for PBXProject "PetMeApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D41759522E880610081B051 /* Debug */,
+				6D41759622E880610081B051 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6D41759722E880610081B051 /* Build configuration list for PBXNativeTarget "PetMeApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D41759822E880610081B051 /* Debug */,
+				6D41759922E880610081B051 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6D41757B22E880600081B051 /* Project object */;
+}
